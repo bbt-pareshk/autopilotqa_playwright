@@ -10,7 +10,7 @@ const TEST_ROLE = process.env.TEST_ROLE;
 ========================================================= */
 
 test.describe('Login – Single User', () => {
-  test('Admin user can login successfully @regression @sanity', async ({ loginAs, page }) => {
+  test('Admin user can login successfully @regression @smoke', async ({ loginAs, page }) => {
     // Arrange
     const role = UserRole.ADMIN;
 
@@ -47,7 +47,7 @@ test.describe('Login – All Users', () => {
 ========================================================= */
 
 test.describe('Login – Negative', () => {
-  test('Login fails with invalid credentials @automation', async ({ page }) => {
+  test('Login fails with invalid credentials @smoke', async ({ page }) => {
     // Arrange
     const loginPage = new LoginPage(page);
 
