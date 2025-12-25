@@ -85,3 +85,6 @@ $RECYCLE.BIN/
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+allure-results/
+allure-report/

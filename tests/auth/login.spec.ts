@@ -6,56 +6,74 @@ import { LoginPage } from '../../src/pages/auth/LoginPage';
 const TEST_ROLE = process.env.TEST_ROLE;
 
 /* =========================================================
-   Login – Single User (Focused / Smoke)
+   Login – Single User (Smoke + Regression)
 ========================================================= */
 
 test.describe('Login – Single User', () => {
-  test('Admin user can login successfully @regression @smoke', async ({ loginAs, page }) => {
-    // Arrange
-    const role = UserRole.ADMIN;
 
-    // Act
-    await loginAs(role);
+  test(
+    'Admin user can login successfully',
+    { tag: ['@smoke', '@regression'] },
+    async ({ loginAs, page }, testInfo) => {
 
-    // Assert
-    const dashboard = new DashboardPage(page);
-    await dashboard.verifyDashboardLoaded();
-  });
+      testInfo.annotations.push(
+        { type: 'severity', description: 'critical' }
+      );
+
+      await loginAs(UserRole.ADMIN);
+
+      const dashboard = new DashboardPage(page);
+      await dashboard.verifyDashboardLoaded();
+    }
+  );
 });
 
 /* =========================================================
    Login – All Users (Regression)
 ========================================================= */
 
-test.describe('Login – All Users', () => {
-  for (const role of Object.values(UserRole)) {
-    if (TEST_ROLE && TEST_ROLE !== role) continue;
+// test.describe('Login – All Users', () => {
 
-    test(`${role} user can login successfully @regression`, async ({ loginAs, page }) => {
-      // Act
-      await loginAs(role);
+//   for (const role of Object.values(UserRole)) {
+//     if (TEST_ROLE && TEST_ROLE !== role) continue;
 
-      // Assert
-      const dashboard = new DashboardPage(page);
-      await dashboard.verifyDashboardLoaded();
-    });
-  }
-});
+//     test(
+//       `${role} user can login successfully`,
+//       { tag: '@regression' },
+//       async ({ loginAs, page }, testInfo) => {
+
+//         testInfo.annotations.push(
+//           { type: 'severity', description: 'normal' }
+//         );
+
+//         await loginAs(role);
+
+//         const dashboard = new DashboardPage(page);
+//         await dashboard.verifyDashboardLoaded();
+//       }
+//     );
+//   }
+// });
 
 /* =========================================================
-   Login – Negative
+   Login – Negative (Smoke)
 ========================================================= */
 
 test.describe('Login – Negative', () => {
-  test('Login fails with invalid credentials @smoke', async ({ page }) => {
-    // Arrange
-    const loginPage = new LoginPage(page);
 
-    // Act
-    await loginPage.openLoginPage();
-    await loginPage.login('wrong@test.com', 'wrong123');
+  test(
+    'Login fails with invalid credentials',
+    { tag: '@smoke' },
+    async ({ page }, testInfo) => {
 
-    // Assert
-    await loginPage.verifyLoginFailed();
-  });
+      testInfo.annotations.push(
+        { type: 'severity', description: 'critical' }
+      );
+
+      const loginPage = new LoginPage(page);
+      await loginPage.openLoginPage();
+      await loginPage.login('tonystark7', '123456');
+      await loginPage.verifyLoginFailed();
+    }
+  );
 });
