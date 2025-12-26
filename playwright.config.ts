@@ -1,29 +1,30 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
   timeout: 60_000,
   retries: 0,
+
   reporter: [
     ['list'],
-    ['html', { open: 'never' }], // CI-safe
-    ['allure-playwright', {
-      outputFolder: 'allure-results',
-      detail: true,
-      suiteTitle: true,
-    }]
+    ['html', { open: process.env.CI ? 'never' : 'on-failure' }],
+    [
+      'allure-playwright',
+      {
+        outputFolder: 'allure-results',
+        detail: true,
+        suiteTitle: true,
+      },
+    ],
   ],
 
   use: {
-    headless: process.env.CI === 'true', // true on CI, false locally
+    headless: process.env.CI === 'true',
     actionTimeout: 10_000,
     navigationTimeout: 15_000,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'on-first-retry',
-    args: process.env.CI === 'true'
-      ? ['--no-sandbox', '--disable-setuid-sandbox']
-      : [],
   },
 
   projects: [
@@ -32,6 +33,13 @@ export default defineConfig({
       use: {
         browserName: 'chromium',
         channel: 'chrome',
+
+        // ✅ CORRECT PLACE FOR ARGS
+        launchOptions: process.env.CI === 'true'
+          ? {
+              args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            }
+          : {},
       },
     },
   ],
