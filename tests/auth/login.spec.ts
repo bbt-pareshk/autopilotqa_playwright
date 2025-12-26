@@ -59,21 +59,21 @@ test.describe('Login – Single User', () => {
    Login – Negative (Smoke)
 ========================================================= */
 
-// test.describe('Login – Negative', () => {
+test.describe('Login – Negative', () => {
 
-//   test(
-//     'Login fails with invalid credentials',
-//     { tag: '@smoke' },
-//     async ({ page }, testInfo) => {
+  test(
+    'Login fails with invalid credentials',
+    { tag: '@smoke' },
+    async ({ page }, testInfo) => {
 
-//       testInfo.annotations.push(
-//         { type: 'severity', description: 'critical' }
-//       );
+      testInfo.annotations.push(
+        { type: 'severity', description: 'critical' }
+      );
 
-//       const loginPage = new LoginPage(page);
-//       await loginPage.openLoginPage();
-//       await loginPage.login('tonystark7', '123456');
-//       await loginPage.verifyLoginFailed();
-//     }
-//   );
-// });
+      const loginPage = new LoginPage(page);
+      await loginPage.openLoginPage();
+      await loginPage.login('tonystark7', '123456');
+      await loginPage.verifyLoginFailed();
+    }
+  );
+});
