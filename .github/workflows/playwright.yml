@@ -27,14 +27,14 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30  # Fail workflow if it hangs too long
+    timeout-minutes: 30  # Workflow will fail if it hangs too long
 
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2️⃣ Setup Node.js with caching for faster builds
+      # 2️⃣ Setup Node.js with caching
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -71,7 +71,6 @@ jobs:
             node scripts/check-critical.js
           else
             echo "No critical check script found, skipping"
-          fi
 
       # 7️⃣ Generate Allure report (only if tests succeed)
       - name: Generate Allure Report
@@ -92,7 +91,7 @@ jobs:
       # 9️⃣ Deploy Allure Report to GitHub Pages
       - name: Deploy Allure Report to GitHub Pages
         if: ${{ success() }}
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
@@ -100,17 +99,8 @@ jobs:
           user_name: github-actions
           user_email: github-actions@github.com
 
-      # 🔟 Create workflow summary link to Allure report
+      # 🔟 Add workflow summary link to Allure report
       - name: Add Allure Report link to workflow summary
         if: ${{ success() }}
         run: |
           echo "Allure Report: [View Report](https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY}/index.html)" >> $GITHUB_STEP_SUMMARY
-
-      # Optional: Send Slack notification (requires SLACK_WEBHOOK secret)
-      #- name: Slack Notification
-      #  if: ${{ failure() }}
-      #  uses: rtCamp/action-slack-notify@v2
-      #  with:
-      #    webhook_url: ${{ secrets.SLACK_WEBHOOK }}
-      #    message: "Playwright tests failed for ${{ github.repository }} #${{ github.run_number }}"
-
