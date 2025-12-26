@@ -69,9 +69,9 @@ jobs:
         run: |
           echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }}"
           if [ "${{ inputs.suite }}" = "smoke" ]; then
-            npx playwright test --grep @smoke || true
+            npx playwright test --grep-tag @smoke || true
           else
-            npx playwright test --grep @regression || true
+            npx playwright test --grep-tag @regression || true
           fi
 
       # 7️⃣ Optional severity gate
