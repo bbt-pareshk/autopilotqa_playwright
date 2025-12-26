@@ -1,1 +1,1 @@
-[{"uid":"2ac3a17abff21962","name":"Admin user can login successfully","time":{"start":1766751402635,"stop":1766751417034,"duration":14399},"status":"passed","severity":"normal"}]
+[{"uid":"f8f1749a78bacac8","name":"Admin user can login successfully","time":{"start":1766752424333,"stop":1766752436876,"duration":12543},"status":"passed","severity":"normal"},{"uid":"67ac161b5b93c80","name":"Login fails with invalid credentials","time":{"start":1766752440235,"stop":1766752449032,"duration":8797},"status":"passed","severity":"normal"}]
