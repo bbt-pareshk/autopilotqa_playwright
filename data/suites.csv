@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","18547","Admin user can login successfully","chromium","2025-12-26","failed","2025-12-26","Login – Single User","auth/login.spec.ts","",""
+"","19714","Admin user can login successfully","chromium","2025-12-26","failed","2025-12-26","Login – Single User","auth/login.spec.ts","",""
