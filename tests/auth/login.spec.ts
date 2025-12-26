@@ -63,7 +63,7 @@ test.describe('Login – Negative', () => {
 
   test(
     'Login fails with invalid credentials',
-   { tag: ['@smoke'] },
+{ tag: '@smoke' },
     async ({ page }, testInfo) => {
 
       testInfo.annotations.push(
