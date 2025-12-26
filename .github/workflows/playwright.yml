@@ -49,7 +49,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # 5️⃣ Install system dependencies for Chromium (fixed list)
+      # 5️⃣ Install system dependencies for Chromium
       - name: Install Playwright Linux dependencies
         run: |
           sudo apt-get update
@@ -79,19 +79,18 @@ jobs:
             libwoff1
 
       # 6️⃣ Run Playwright Tests
-- name: Run Playwright Tests
-  id: playwright
-  env:
-    ENVIRONMENT: ${{ inputs.environment }}
-    CI: true
-  run: |
-    echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }} environment"
-    if [ "${{ inputs.suite }}" = "smoke" ]; then
-      npx playwright test --grep @smoke
-    else
-      npx playwright test --grep @regression
-    fi
-
+      - name: Run Playwright Tests
+        id: playwright
+        env:
+          ENVIRONMENT: ${{ inputs.environment }}
+          CI: true  # triggers headless mode in playwright.config.ts
+        run: |
+          echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }} environment"
+          if [ "${{ inputs.suite }}" = "smoke" ]; then
+            npx playwright test --grep @smoke
+          else
+            npx playwright test --grep @regression
+          fi
 
       # 7️⃣ Fail build on critical failures (optional)
       - name: Fail build on critical failures
