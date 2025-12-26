@@ -71,6 +71,7 @@ jobs:
             node scripts/check-critical.js
           else
             echo "No critical check script found, skipping"
+          fi
 
       # 7️⃣ Generate Allure report (only if tests succeed)
       - name: Generate Allure Report
