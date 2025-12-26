@@ -1,23 +1,34 @@
-name: Playwright Tests
+name: Playwright Test 
 
 on:
+  workflow_dispatch:
+    inputs:
+      test_type:
+        description: 'Which tests to run?'
+        required: true
+        default: 'smoke'
+        type: choice
+        options:
+          - smoke
+          - regression
+
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
 jobs:
-  playwright-test:
-    runs-on: ubuntu-latest
+  test:
+    name: Run Playwright Tests
+    runs-on: windows-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
@@ -25,5 +36,12 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
-        run: npx playwright test
+      - name: Run tests based on type
+        run: |
+          if [ "${{ github.event.inputs.test_type }}" == "regression" ]; then
+            npx playwright test --grep "@regression"
+          else
+            npx playwright test --grep "@smoke"
+          fi
+        env:
+          CI: true

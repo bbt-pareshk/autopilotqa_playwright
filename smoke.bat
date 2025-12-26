@@ -1,17 +1,7 @@
 @echo off
-cls
+echo Running SMOKE tests...
 
-echo ======================================
-echo        RUNNING SMOKE SUITE
-echo ======================================
-
-npx playwright test --grep "@smoke"
-
-echo ======================================
-echo     GENERATING ALLURE REPORT
-echo ======================================
-
-npx allure generate allure-results --clean -o allure-report
-npx allure open allure-report
+npm run smoke
+npm run allure:report
 
 pause

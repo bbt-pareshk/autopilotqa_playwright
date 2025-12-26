@@ -19,7 +19,7 @@ export default defineConfig({
 
     // Shared test settings
   use: {
-    headless: false,
+    headless: process.env.CI ? true : false,
     actionTimeout: 10_000,
     navigationTimeout: 15_000,
     screenshot: 'only-on-failure',
