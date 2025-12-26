@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","12543","Admin user can login successfully","chromium","2025-12-26","passed","2025-12-26","Login – Single User","auth/login.spec.ts","",""
-"","8797","Login fails with invalid credentials","chromium","2025-12-26","passed","2025-12-26","Login – Negative","auth/login.spec.ts","",""
+"","16059","Login fails with invalid credentials","chromium","2025-12-26","failed","2025-12-26","Login – Negative","auth/login.spec.ts","",""
+"","19821","Admin user can login successfully","chromium","2025-12-26","passed","2025-12-26","Login – Single User","auth/login.spec.ts","",""
