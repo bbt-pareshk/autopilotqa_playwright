@@ -79,18 +79,19 @@ jobs:
             libwoff1
 
       # 6️⃣ Run Playwright Tests
-      - name: Run Playwright Tests
-        id: playwright
-        env:
-          ENVIRONMENT: ${{ inputs.environment }}
-          CI: true  # triggers headless mode in playwright.config.ts
-        run: |
-          echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }} environment"
-          if [ "${{ inputs.suite }}" = "smoke" ]; then
-            npx playwright test --browser=chromium --grep @smoke
-          else
-            npx playwright test --browser=chromium --grep @regression
-          fi
+- name: Run Playwright Tests
+  id: playwright
+  env:
+    ENVIRONMENT: ${{ inputs.environment }}
+    CI: true
+  run: |
+    echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }} environment"
+    if [ "${{ inputs.suite }}" = "smoke" ]; then
+      npx playwright test --grep @smoke
+    else
+      npx playwright test --grep @regression
+    fi
+
 
       # 7️⃣ Fail build on critical failures (optional)
       - name: Fail build on critical failures
