@@ -1,0 +1,1450 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - text: Hoco MicroService's current address is
+        - link "qa.hocodev.co" [ref=e7] [cursor=pointer]:
+          - /url: https://qa.hocodev.co
+        - text: . Do Not Respect to Other Addresses!
+      - link "" [ref=e8] [cursor=pointer]:
+        - /url: javascript://
+        - generic [ref=e9]: 
+    - banner [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e15]:
+          - generic [ref=e17]:
+            - link [ref=e19] [cursor=pointer]:
+              - /url: /
+            - switch [checked] [ref=e25] [cursor=pointer]
+          - generic [ref=e29]:
+            - link "New" [ref=e31] [cursor=pointer]:
+              - /url: /spin_a_wheel
+              - generic [ref=e32]:
+                - img [ref=e33]
+                - emphasis [ref=e34]: New
+            - link "Design1 Design2 New" [ref=e36] [cursor=pointer]:
+              - /url: javascript://
+              - generic [ref=e37]: Design1
+              - generic [ref=e38]: Design2
+              - generic [ref=e39]: New
+            - link "Statistics" [ref=e41] [cursor=pointer]:
+              - /url: https://s5.sir.sportradar.com/betradar/en
+              - text: 
+              - generic [ref=e42]: Statistics
+            - link "Claim Bonus" [ref=e44] [cursor=pointer]:
+              - /url: /content/lost_bonus
+              - text: 
+              - generic [ref=e45]: Claim Bonus
+            - link "Deposit Now" [ref=e48] [cursor=pointer]:
+              - /url: javascript://
+            - generic [ref=e50]:
+              - link "Sports 2" [ref=e51] [cursor=pointer]:
+                - /url: javascript://
+              - link "Sports 1" [ref=e52] [cursor=pointer]:
+                - /url: javascript://
+            - link "Refer & Earn New" [ref=e54] [cursor=pointer]:
+              - /url: /account/referearn
+              - text: 
+              - generic [ref=e55]: Refer & Earn
+              - emphasis [ref=e56]: New
+            - list [ref=e58]:
+              - listitem [ref=e59]:
+                - link "908.99 EUR  " [ref=e60] [cursor=pointer]:
+                  - /url: javascript://
+                  - generic [ref=e61]:
+                    - generic [ref=e62]: "908.99"
+                    - generic [ref=e63]: EUR
+                  - generic [ref=e64]: 
+                  - generic [ref=e65]: 
+                - list:
+                  - listitem [ref=e66]:
+                    - 'link "Real Balance : 908.99 EUR" [ref=e67]':
+                      - /url: javascript://
+                      - generic [ref=e69]: "Real Balance :"
+                      - generic [ref=e70]:
+                        - generic [ref=e71]: "908.99"
+                        - generic [ref=e72]: EUR
+                  - listitem [ref=e73]:
+                    - 'link "Bonus Balance : 0.00 EUR" [ref=e74]':
+                      - /url: javascript://
+                      - generic [ref=e76]: "Bonus Balance :"
+                      - generic [ref=e77]:
+                        - generic [ref=e78]: "0.00"
+                        - generic [ref=e79]: EUR
+                  - listitem [ref=e80]:
+                    - 'link "Deposit Wager : 867.30 EUR" [ref=e81]':
+                      - /url: javascript://
+                      - generic [ref=e83]: "Deposit Wager :"
+                      - generic [ref=e84]:
+                        - generic [ref=e85]: "867.30"
+                        - generic [ref=e86]: EUR
+                  - listitem [ref=e87]:
+                    - 'link "Point shop : 0" [ref=e88]':
+                      - /url: javascript://
+                      - generic [ref=e90]: "Point shop :"
+                      - generic [ref=e92]: "0"
+              - listitem [ref=e93]:
+                - link " 4" [ref=e94] [cursor=pointer]:
+                  - /url: javascript://
+                  - generic [ref=e95]: 
+                  - generic [ref=e96]: "4"
+              - listitem [ref=e97]:
+                - link " My Account " [ref=e98] [cursor=pointer]:
+                  - /url: /account/personal_detail
+                  - generic [ref=e99]: 
+                  - generic [ref=e100]: My Account
+                  - generic [ref=e101]: 
+                - list:
+                  - listitem [ref=e102]:
+                    - link " My Bets" [ref=e103] [cursor=pointer]:
+                      - /url: /account/mybets
+                      - generic [ref=e104]: 
+                      - generic [ref=e105]: My Bets
+                  - listitem [ref=e106]:
+                    - link " Deposit" [ref=e107] [cursor=pointer]:
+                      - /url: /account/finance/pay
+                      - generic [ref=e108]: 
+                      - generic [ref=e109]: Deposit
+                  - listitem [ref=e110]:
+                    - link " Withdraw" [ref=e111] [cursor=pointer]:
+                      - /url: /account/finance/payout
+                      - generic [ref=e112]: 
+                      - generic [ref=e113]: Withdraw
+                  - listitem [ref=e114]:
+                    - link " Balance" [ref=e115] [cursor=pointer]:
+                      - /url: /account/balance_summary
+                      - generic [ref=e116]: 
+                      - generic [ref=e117]: Balance
+                  - listitem [ref=e118]:
+                    - link " Logout" [ref=e119] [cursor=pointer]:
+                      - /url: javascript://
+                      - generic [ref=e120]: 
+                      - generic [ref=e121]: Logout
+            - generic [ref=e123] [cursor=pointer]:
+              - combobox "en" [ref=e124]:
+                - generic [ref=e125]:
+                  - img "en" [ref=e127]
+                  - generic [ref=e128]: EN
+              - button "dropdown trigger" [ref=e129]:
+                - img [ref=e131]
+        - list [ref=e137]:
+          - listitem [ref=e138]:
+            - link "Sports Betting" [ref=e139] [cursor=pointer]:
+              - /url: /sport/pregame
+              - generic [ref=e140]: Sports Betting
+          - listitem [ref=e141]:
+            - link "Live Betting" [ref=e142] [cursor=pointer]:
+              - /url: /sport/live
+              - generic [ref=e143]: Live Betting
+          - listitem [ref=e144]:
+            - link "Slot Casino" [ref=e145] [cursor=pointer]:
+              - /url: /casino/slot
+              - generic [ref=e146]: Slot Casino
+          - listitem [ref=e147]:
+            - link "Live Casino" [ref=e148] [cursor=pointer]:
+              - /url: /casino/live
+              - generic [ref=e149]: Live Casino
+          - listitem [ref=e150]:
+            - link "Virtual Sports" [ref=e151] [cursor=pointer]:
+              - /url: /casino/virtual
+              - generic [ref=e152]: Virtual Sports
+          - listitem [ref=e153]:
+            - link "Fast Games" [ref=e154] [cursor=pointer]:
+              - /url: /casino/category/1017?pgType=4&category=1017
+              - generic [ref=e155]: Fast Games
+          - listitem [ref=e156]:
+            - link "Crash Games" [ref=e157] [cursor=pointer]:
+              - /url: /casino/category/46?pgType=4&category=46
+              - generic [ref=e158]: Crash Games
+          - listitem [ref=e159]:
+            - link "Affiliate" [ref=e160] [cursor=pointer]:
+              - /url: http://qa.hocoaffiliatepanel.com/
+              - generic [ref=e161]: Affiliate
+          - listitem [ref=e162]:
+            - link "Promotion" [ref=e163] [cursor=pointer]:
+              - /url: /content/promotion
+              - generic [ref=e164]: Promotion
+          - listitem [ref=e165]:
+            - link "Popular League" [ref=e166] [cursor=pointer]:
+              - /url: /sport/pregame?view=2&sport=6046&country=971&league=573
+              - generic [ref=e167]: Popular League
+  - generic [ref=e170]:
+    - generic [ref=e173]:
+      - generic [ref=e175]:
+        - generic [ref=e178]:
+          - generic:
+            - group "1 / 3" [ref=e179]:
+              - link [ref=e180] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e181]
+            - group "2 / 3" [ref=e182]:
+              - link [ref=e183] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e184]
+            - group "3 / 3" [ref=e185]:
+              - link [ref=e186] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e187]
+        - generic [ref=e188]:
+          - button "Previous slide" [ref=e189] [cursor=pointer]:
+            - generic [ref=e190]: 
+          - generic [ref=e191]:
+            - generic [ref=e192]: "2"
+            - text: /
+            - generic [ref=e193]: "3"
+          - button "Next slide" [ref=e194] [cursor=pointer]:
+            - generic [ref=e195]: 
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - heading "Bet By Sports" [level=3] [ref=e200]
+          - generic [ref=e205]:
+            - generic:
+              - group "1 / 34" [ref=e206]:
+                - generic [ref=e207] [cursor=pointer]:
+                  - img "Football" [ref=e209]
+                  - generic [ref=e210]: Football
+              - group "2 / 34" [ref=e211]:
+                - generic [ref=e212] [cursor=pointer]:
+                  - img "Basketball" [ref=e214]
+                  - generic [ref=e215]: Basketball
+              - group "3 / 34" [ref=e216]:
+                - generic [ref=e217] [cursor=pointer]:
+                  - img "Volleyball" [ref=e219]
+                  - generic [ref=e220]: Volleyball
+              - group "4 / 34" [ref=e221]:
+                - generic [ref=e222] [cursor=pointer]:
+                  - img "Tennis" [ref=e224]
+                  - generic [ref=e225]: Tennis
+              - group "5 / 34" [ref=e226]:
+                - generic [ref=e227] [cursor=pointer]:
+                  - img "Baseball" [ref=e229]
+                  - generic [ref=e230]: Baseball
+              - group "6 / 34" [ref=e231]:
+                - generic [ref=e232] [cursor=pointer]:
+                  - img "Ice Hockey" [ref=e234]
+                  - generic [ref=e235]: Ice Hockey
+              - group "7 / 34" [ref=e236]:
+                - generic [ref=e237] [cursor=pointer]:
+                  - img "Handball" [ref=e239]
+                  - generic [ref=e240]: Handball
+              - group "8 / 34" [ref=e241]:
+                - generic [ref=e242] [cursor=pointer]:
+                  - img "Table Tennis" [ref=e244]
+                  - generic [ref=e245]: Table Tennis
+              - group "9 / 34" [ref=e246]:
+                - generic [ref=e247] [cursor=pointer]:
+                  - img "MMA" [ref=e249]
+                  - generic [ref=e250]: MMA
+              - group "10 / 34" [ref=e251]:
+                - generic [ref=e252] [cursor=pointer]:
+                  - img "Boxing" [ref=e254]
+                  - generic [ref=e255]: Boxing
+              - group "11 / 34" [ref=e256]:
+                - generic [ref=e257] [cursor=pointer]:
+                  - 'img "Counter-Strike: GO (CS:GO)" [ref=e259]'
+                  - generic [ref=e260]: "Counter-Strike: GO (CS:GO)"
+              - group "12 / 34" [ref=e261]:
+                - generic [ref=e262] [cursor=pointer]:
+                  - img "Cricket" [ref=e264]
+                  - generic [ref=e265]: Cricket
+              - group "13 / 34" [ref=e266]:
+                - generic [ref=e267] [cursor=pointer]:
+                  - img "Dota 2" [ref=e269]
+                  - generic [ref=e270]: Dota 2
+              - group "14 / 34" [ref=e271]:
+                - generic [ref=e272] [cursor=pointer]:
+                  - img "League of Legends (LoL)" [ref=e274]
+                  - generic [ref=e275]: League of Legends (LoL)
+              - group "15 / 34" [ref=e276]:
+                - generic [ref=e277] [cursor=pointer]:
+                  - img "E-Football" [ref=e279]
+                  - generic [ref=e280]: E-Football
+              - group "16 / 34" [ref=e281]:
+                - generic [ref=e282] [cursor=pointer]:
+                  - img "E-Basketball" [ref=e284]
+                  - generic [ref=e285]: E-Basketball
+              - group "17 / 34" [ref=e286]:
+                - generic [ref=e287] [cursor=pointer]:
+                  - img "Futsal" [ref=e289]
+                  - generic [ref=e290]: Futsal
+              - group "18 / 34" [ref=e291]:
+                - generic [ref=e292] [cursor=pointer]:
+                  - img "Bandy" [ref=e294]
+                  - generic [ref=e295]: Bandy
+              - group "19 / 34" [ref=e296]:
+                - generic [ref=e297] [cursor=pointer]:
+                  - img "Floorball" [ref=e299]
+                  - generic [ref=e300]: Floorball
+              - group "20 / 34" [ref=e301]:
+                - generic [ref=e302] [cursor=pointer]:
+                  - img "Cycling" [ref=e304]
+                  - generic [ref=e305]: Cycling
+              - group "21 / 34" [ref=e306]:
+                - generic [ref=e307] [cursor=pointer]:
+                  - img "American Football" [ref=e309]
+                  - generic [ref=e310]: American Football
+              - group "22 / 34" [ref=e311]:
+                - generic [ref=e312] [cursor=pointer]:
+                  - img "Darts_Da" [ref=e314]
+                  - generic [ref=e315]: Darts_Da
+              - group "23 / 34" [ref=e316]:
+                - generic [ref=e317] [cursor=pointer]:
+                  - img "Snooker" [ref=e319]
+                  - generic [ref=e320]: Snooker
+              - group "24 / 34" [ref=e321]:
+                - generic [ref=e322] [cursor=pointer]:
+                  - img "Call of Duty (COD)" [ref=e324]
+                  - generic [ref=e325]: Call of Duty (COD)
+              - group "25 / 34" [ref=e326]:
+                - generic [ref=e327] [cursor=pointer]:
+                  - img "Special bets" [ref=e329]
+                  - generic [ref=e330]: Special bets
+              - group "26 / 34" [ref=e331]:
+                - generic [ref=e332] [cursor=pointer]:
+                  - img "Water Polo" [ref=e334]
+                  - generic [ref=e335]: Water Polo
+              - group "27 / 34" [ref=e336]:
+                - generic [ref=e337] [cursor=pointer]:
+                  - img "Biathlon" [ref=e339]
+                  - generic [ref=e340]: Biathlon
+              - group "28 / 34" [ref=e341]:
+                - generic [ref=e342] [cursor=pointer]:
+                  - img "Rugby League" [ref=e344]
+                  - generic [ref=e345]: Rugby League
+              - group "29 / 34" [ref=e346]:
+                - generic [ref=e347] [cursor=pointer]:
+                  - img "Aussie Rules" [ref=e349]
+                  - generic [ref=e350]: Aussie Rules
+              - group "30 / 34" [ref=e351]:
+                - generic [ref=e352] [cursor=pointer]:
+                  - img "3x3 Basketball" [ref=e354]
+                  - generic [ref=e355]: 3x3 Basketball
+              - group "31 / 34" [ref=e356]:
+                - generic [ref=e357] [cursor=pointer]:
+                  - img "Golf" [ref=e359]
+                  - generic [ref=e360]: Golf
+              - group "32 / 34" [ref=e361]:
+                - generic [ref=e362] [cursor=pointer]:
+                  - img "Formula 1" [ref=e364]
+                  - generic [ref=e365]: Formula 1
+              - group "33 / 34" [ref=e366]:
+                - generic [ref=e367] [cursor=pointer]:
+                  - img "Rugby Union" [ref=e369]
+                  - generic [ref=e370]: Rugby Union
+              - group "34 / 34" [ref=e371]:
+                - generic [ref=e372] [cursor=pointer]:
+                  - img "Politics" [ref=e374]
+                  - generic [ref=e375]: Politics
+        - generic [ref=e377] [cursor=pointer]:
+          - img [ref=e379]
+          - heading "Live Sports" [level=2] [ref=e380]
+        - generic [ref=e382] [cursor=pointer]:
+          - img [ref=e384]
+          - heading "Pre Sports" [level=2] [ref=e385]
+        - generic [ref=e387] [cursor=pointer]:
+          - img [ref=e389]
+          - heading "Live Casino" [level=2] [ref=e390]
+        - generic [ref=e392] [cursor=pointer]:
+          - img [ref=e394]
+          - heading "Slot Casino" [level=2] [ref=e395]
+        - generic [ref=e397] [cursor=pointer]:
+          - img [ref=e399]
+          - heading "Promotion World" [level=2] [ref=e400]
+        - heading "Claim Bonus" [level=2] [ref=e404] [cursor=pointer]
+        - generic [ref=e405]:
+          - generic [ref=e407]:
+            - heading "Top Slot Games" [level=3] [ref=e408]
+            - button "7 Show All" [ref=e410] [cursor=pointer]:
+              - paragraph [ref=e411]: "7"
+              - generic [ref=e412]: Show All
+          - list [ref=e415]:
+            - listitem [ref=e416]:
+              - generic [ref=e417] [cursor=pointer]:
+                - generic [ref=e418]:
+                  - img [ref=e419]
+                  - generic [ref=e421]:
+                    - paragraph [ref=e422]: 3 Oaks
+                    - link "Real Play" [ref=e423]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e424]:
+                      - /url: javascript://
+                - generic [ref=e425]: 3 China Pots
+            - listitem [ref=e426]:
+              - generic [ref=e427] [cursor=pointer]:
+                - generic [ref=e428]:
+                  - img [ref=e429]
+                  - generic [ref=e431]:
+                    - paragraph [ref=e432]: 3 Oaks
+                    - link "Real Play" [ref=e433]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e434]:
+                      - /url: javascript://
+                - generic [ref=e435]: 3 Clover Pots
+            - listitem [ref=e436]:
+              - generic [ref=e437] [cursor=pointer]:
+                - generic [ref=e438]:
+                  - img [ref=e439]
+                  - generic [ref=e441]:
+                    - paragraph [ref=e442]: 3 Oaks
+                    - link "Real Play" [ref=e443]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e444]:
+                      - /url: javascript://
+                - generic [ref=e445]: 3 Clover Pots Extra
+            - listitem [ref=e446]:
+              - generic [ref=e447] [cursor=pointer]:
+                - generic [ref=e448]:
+                  - img [ref=e449]
+                  - generic [ref=e451]:
+                    - paragraph [ref=e452]: 3 Oaks
+                    - link "Real Play" [ref=e453]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e454]:
+                      - /url: javascript://
+                - generic [ref=e455]: 3 Coins
+            - listitem [ref=e456]:
+              - generic [ref=e457] [cursor=pointer]:
+                - generic [ref=e458]:
+                  - img [ref=e459]
+                  - generic [ref=e461]:
+                    - paragraph [ref=e462]: 3 Oaks
+                    - link "Real Play" [ref=e463]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e464]:
+                      - /url: javascript://
+                - generic [ref=e465]: "3 Coins: Egypt"
+            - listitem [ref=e466]:
+              - generic [ref=e467] [cursor=pointer]:
+                - generic [ref=e468]:
+                  - img [ref=e469]
+                  - generic [ref=e471]:
+                    - paragraph [ref=e472]: 1X2 Gaming
+                    - link "Real Play" [ref=e473]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e474]:
+                      - /url: javascript://
+                - generic [ref=e475]: 3 Card Holdem
+            - listitem [ref=e476]:
+              - generic [ref=e477] [cursor=pointer]:
+                - generic [ref=e478]:
+                  - img [ref=e479]
+                  - generic [ref=e481]:
+                    - paragraph [ref=e482]: 1X2 Gaming
+                    - link "Real Play" [ref=e483]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e484]:
+                      - /url: javascript://
+                - generic [ref=e485]: 6in1 Blackjack
+        - generic [ref=e486]:
+          - heading "Popular Pre Matches" [level=3] [ref=e488]
+          - generic [ref=e489]:
+            - generic [ref=e494]:
+              - generic:
+                - group "1 / 22" [ref=e495]:
+                  - generic [ref=e496] [cursor=pointer]:
+                    - img "Football" [ref=e498]
+                    - generic [ref=e499]: Football
+                - group "2 / 22" [ref=e500]:
+                  - generic [ref=e501] [cursor=pointer]:
+                    - img "Basketball" [ref=e503]
+                    - generic: Basketball
+                - group "3 / 22" [ref=e504]:
+                  - generic [ref=e505] [cursor=pointer]:
+                    - img "Volleyball" [ref=e507]
+                    - generic: Volleyball
+                - group "4 / 22" [ref=e508]:
+                  - generic [ref=e509] [cursor=pointer]:
+                    - img "Tennis" [ref=e511]
+                    - generic: Tennis
+                - group "5 / 22" [ref=e512]:
+                  - generic [ref=e513] [cursor=pointer]:
+                    - img "Ice Hockey" [ref=e515]
+                    - generic: Ice Hockey
+                - group "6 / 22" [ref=e516]:
+                  - generic [ref=e517] [cursor=pointer]:
+                    - img "Handball" [ref=e519]
+                    - generic: Handball
+                - group "7 / 22" [ref=e520]:
+                  - generic [ref=e521] [cursor=pointer]:
+                    - img "Table Tennis" [ref=e523]
+                    - generic: Table Tennis
+                - group "8 / 22" [ref=e524]:
+                  - generic [ref=e525] [cursor=pointer]:
+                    - img "MMA" [ref=e527]
+                    - generic: MMA
+                - group "9 / 22" [ref=e528]:
+                  - generic [ref=e529] [cursor=pointer]:
+                    - img "Boxing" [ref=e531]
+                    - generic: Boxing
+                - group "10 / 22" [ref=e532]:
+                  - generic [ref=e533] [cursor=pointer]:
+                    - 'img "Counter-Strike: GO (CS:GO)" [ref=e535]'
+                    - generic: "Counter-Strike: GO (CS:GO)"
+                - group "11 / 22" [ref=e536]:
+                  - generic [ref=e537] [cursor=pointer]:
+                    - img "Cricket" [ref=e539]
+                    - generic: Cricket
+                - group "12 / 22" [ref=e540]:
+                  - generic [ref=e541] [cursor=pointer]:
+                    - img "Dota 2" [ref=e543]
+                    - generic: Dota 2
+                - group "13 / 22" [ref=e544]:
+                  - generic [ref=e545] [cursor=pointer]:
+                    - img "League of Legends (LoL)" [ref=e547]
+                    - generic: League of Legends (LoL)
+                - group "14 / 22" [ref=e548]:
+                  - generic [ref=e549] [cursor=pointer]:
+                    - img "Futsal" [ref=e551]
+                    - generic: Futsal
+                - group "15 / 22" [ref=e552]:
+                  - generic [ref=e553] [cursor=pointer]:
+                    - img "Bandy" [ref=e555]
+                    - generic: Bandy
+                - group "16 / 22" [ref=e556]:
+                  - generic [ref=e557] [cursor=pointer]:
+                    - img "Floorball" [ref=e559]
+                    - generic: Floorball
+                - group "17 / 22" [ref=e560]:
+                  - generic [ref=e561] [cursor=pointer]:
+                    - img "American Football" [ref=e563]
+                    - generic: American Football
+                - group "18 / 22" [ref=e564]:
+                  - generic [ref=e565] [cursor=pointer]:
+                    - img "Darts_Da" [ref=e567]
+                    - generic: Darts_Da
+                - group "19 / 22" [ref=e568]:
+                  - generic [ref=e569] [cursor=pointer]:
+                    - img "Snooker" [ref=e571]
+                    - generic: Snooker
+                - group "20 / 22" [ref=e572]:
+                  - generic [ref=e573] [cursor=pointer]:
+                    - img "Water Polo" [ref=e575]
+                    - generic: Water Polo
+                - group "21 / 22" [ref=e576]:
+                  - generic [ref=e577] [cursor=pointer]:
+                    - img "Aussie Rules" [ref=e579]
+                    - generic: Aussie Rules
+                - group "22 / 22" [ref=e580]:
+                  - generic [ref=e581] [cursor=pointer]:
+                    - img "Rugby Union" [ref=e583]
+                    - generic: Rugby Union
+            - generic [ref=e586]:
+              - link "Match Result" [ref=e587] [cursor=pointer]:
+                - /url: javascript://
+              - link "Total Goals" [ref=e588] [cursor=pointer]:
+                - /url: javascript://
+              - link "Both Teams To Score" [ref=e589] [cursor=pointer]:
+                - /url: javascript://
+            - generic [ref=e593]:
+              - generic:
+                - group "1 / 12" [ref=e594]:
+                  - generic [ref=e595] [cursor=pointer]:
+                    - generic [ref=e596]:
+                      - generic [ref=e598]:
+                        - img [ref=e600]
+                        - generic [ref=e601]: World - World Cup Europe Qualification
+                      - generic [ref=e602]:
+                        - generic [ref=e603]: 
+                        - generic [ref=e604]: 27/03 • 01:15
+                    - generic [ref=e606]:
+                      - generic [ref=e607]:
+                        - generic [ref=e608]: 
+                        - generic [ref=e609]: "+409"
+                      - generic [ref=e610]:
+                        - generic [ref=e611]: Poland
+                        - img [ref=e613]
+                        - generic [ref=e618]: Albania
+                    - generic [ref=e619]:
+                      - generic [ref=e621]:
+                        - generic [ref=e622]: "1"
+                        - generic [ref=e623]: "1.57"
+                      - generic [ref=e625]:
+                        - generic [ref=e626]: X
+                        - generic [ref=e627]: "3.39"
+                      - generic [ref=e629]:
+                        - generic [ref=e630]: "2"
+                        - generic [ref=e631]: "5.30"
+                - group "2 / 12" [ref=e632]:
+                  - generic [ref=e633] [cursor=pointer]:
+                    - generic [ref=e634]:
+                      - generic [ref=e636]:
+                        - img [ref=e638]
+                        - generic [ref=e639]: Europe - UEFA Europa League
+                      - generic [ref=e640]:
+                        - generic [ref=e641]: 
+                        - generic [ref=e642]: 23/01 • 01:30
+                    - generic [ref=e644]:
+                      - generic [ref=e645]:
+                        - generic [ref=e646]: 
+                        - generic [ref=e647]: "+425"
+                      - generic [ref=e648]:
+                        - generic [ref=e649]: Glasgow Rangers
+                        - img [ref=e651]
+                        - generic [ref=e656]: PFC Ludogorets Razgrad
+                    - generic [ref=e657]:
+                      - generic [ref=e659]:
+                        - generic [ref=e660]: "1"
+                        - generic [ref=e661]: "1.74"
+                      - generic [ref=e663]:
+                        - generic [ref=e664]: X
+                        - generic [ref=e665]: "3.77"
+                      - generic [ref=e667]:
+                        - generic [ref=e668]: "2"
+                        - generic [ref=e669]: "4.33"
+                - group "3 / 12" [ref=e670]:
+                  - generic [ref=e671] [cursor=pointer]:
+                    - generic [ref=e672]:
+                      - generic [ref=e674]:
+                        - img [ref=e676]
+                        - generic [ref=e677]: World - World Cup Europe Qualification
+                      - generic [ref=e678]:
+                        - generic [ref=e679]: 
+                        - generic [ref=e680]: 26/03 • 22:30
+                    - generic [ref=e682]:
+                      - generic [ref=e683]:
+                        - generic [ref=e684]: 
+                        - generic [ref=e685]: "+413"
+                      - generic [ref=e686]:
+                        - generic [ref=e687]: Ukraine
+                        - img [ref=e689]
+                        - generic [ref=e694]: Sweden
+                    - generic [ref=e695]:
+                      - generic [ref=e697]:
+                        - generic [ref=e698]: "1"
+                        - generic [ref=e699]: "2.58"
+                      - generic [ref=e701]:
+                        - generic [ref=e702]: X
+                        - generic [ref=e703]: "3.01"
+                      - generic [ref=e705]:
+                        - generic [ref=e706]: "2"
+                        - generic [ref=e707]: "2.50"
+                - group "4 / 12" [ref=e708]:
+                  - generic [ref=e709] [cursor=pointer]:
+                    - generic [ref=e710]:
+                      - generic [ref=e712]:
+                        - img [ref=e714]
+                        - generic [ref=e715]: World - World Cup Europe Qualification
+                      - generic [ref=e716]:
+                        - generic [ref=e717]: 
+                        - generic [ref=e718]: 26/03 • 22:30
+                    - generic [ref=e720]:
+                      - generic [ref=e721]:
+                        - generic [ref=e722]: 
+                        - generic [ref=e723]: "+407"
+                      - generic [ref=e724]:
+                        - generic [ref=e725]: Italy
+                        - img [ref=e727]
+                        - generic [ref=e732]: Northern Ireland
+                    - generic [ref=e733]:
+                      - generic [ref=e735]:
+                        - generic [ref=e736]: "1"
+                        - generic [ref=e737]: "1.28"
+                      - generic [ref=e739]:
+                        - generic [ref=e740]: X
+                        - generic [ref=e741]: "4.33"
+                      - generic [ref=e743]:
+                        - generic [ref=e744]: "2"
+                        - generic [ref=e745]: "9.30"
+                - group "5 / 12" [ref=e746]:
+                  - generic [ref=e747] [cursor=pointer]:
+                    - generic [ref=e748]:
+                      - generic [ref=e750]:
+                        - img [ref=e752]
+                        - generic [ref=e753]: World - World Cup Europe Qualification
+                      - generic [ref=e754]:
+                        - generic [ref=e755]: 
+                        - generic [ref=e756]: 26/03 • 22:30
+                    - generic [ref=e758]:
+                      - generic [ref=e759]:
+                        - generic [ref=e760]: 
+                        - generic [ref=e761]: "+411"
+                      - generic [ref=e762]:
+                        - generic [ref=e763]: Czech Republic
+                        - img [ref=e765]
+                        - generic [ref=e770]: Republic of Ireland
+                    - generic [ref=e771]:
+                      - generic [ref=e773]:
+                        - generic [ref=e774]: "1"
+                        - generic [ref=e775]: "1.83"
+                      - generic [ref=e777]:
+                        - generic [ref=e778]: X
+                        - generic [ref=e779]: "3.31"
+                      - generic [ref=e781]:
+                        - generic [ref=e782]: "2"
+                        - generic [ref=e783]: "3.69"
+                - group "6 / 12" [ref=e784]:
+                  - generic [ref=e785] [cursor=pointer]:
+                    - generic [ref=e786]:
+                      - generic [ref=e788]:
+                        - img [ref=e790]
+                        - generic [ref=e791]: World - World Cup Europe Qualification
+                      - generic [ref=e792]:
+                        - generic [ref=e793]: 
+                        - generic [ref=e794]: 26/03 • 22:30
+                    - generic [ref=e796]:
+                      - generic [ref=e797]:
+                        - generic [ref=e798]: 
+                        - generic [ref=e799]: "+407"
+                      - generic [ref=e800]:
+                        - generic [ref=e801]: Denmark
+                        - img [ref=e803]
+                        - generic [ref=e808]: North Macedonia
+                    - generic [ref=e809]:
+                      - generic [ref=e811]:
+                        - generic [ref=e812]: "1"
+                        - generic [ref=e813]: "1.26"
+                      - generic [ref=e815]:
+                        - generic [ref=e816]: X
+                        - generic [ref=e817]: "4.60"
+                      - generic [ref=e819]:
+                        - generic [ref=e820]: "2"
+                        - generic [ref=e821]: "9.00"
+                - group "7 / 12" [ref=e822]:
+                  - generic [ref=e823] [cursor=pointer]:
+                    - generic [ref=e824]:
+                      - generic [ref=e826]:
+                        - img [ref=e828]
+                        - generic [ref=e829]: World - World Cup Europe Qualification
+                      - generic [ref=e830]:
+                        - generic [ref=e831]: 
+                        - generic [ref=e832]: 26/03 • 22:30
+                    - generic [ref=e834]:
+                      - generic [ref=e835]:
+                        - generic [ref=e836]: 
+                        - generic [ref=e837]: "+409"
+                      - generic [ref=e838]:
+                        - generic [ref=e839]: Turkiye
+                        - img [ref=e841]
+                        - generic [ref=e846]: Romania
+                    - generic [ref=e847]:
+                      - generic [ref=e849]:
+                        - generic [ref=e850]: "1"
+                        - generic [ref=e851]: "1.50"
+                      - generic [ref=e853]:
+                        - generic [ref=e854]: X
+                        - generic [ref=e855]: "4.00"
+                      - generic [ref=e857]:
+                        - generic [ref=e858]: "2"
+                        - generic [ref=e859]: "4.90"
+                - group "8 / 12" [ref=e860]:
+                  - generic [ref=e861] [cursor=pointer]:
+                    - generic [ref=e862]:
+                      - generic [ref=e864]:
+                        - img [ref=e866]
+                        - generic [ref=e867]: World - World Cup Europe Qualification
+                      - generic [ref=e868]:
+                        - generic [ref=e869]: 
+                        - generic [ref=e870]: 26/03 • 22:30
+                    - generic [ref=e872]:
+                      - generic [ref=e873]:
+                        - generic [ref=e874]: 
+                        - generic [ref=e875]: "+411"
+                      - generic [ref=e876]:
+                        - generic [ref=e877]: Wales
+                        - img [ref=e879]
+                        - generic [ref=e884]: Bosnia and Herzegovina
+                    - generic [ref=e885]:
+                      - generic [ref=e887]:
+                        - generic [ref=e888]: "1"
+                        - generic [ref=e889]: "1.80"
+                      - generic [ref=e891]:
+                        - generic [ref=e892]: X
+                        - generic [ref=e893]: "3.09"
+                      - generic [ref=e895]:
+                        - generic [ref=e896]: "2"
+                        - generic [ref=e897]: "4.20"
+                - group "9 / 12" [ref=e898]:
+                  - generic [ref=e899] [cursor=pointer]:
+                    - generic [ref=e900]:
+                      - generic [ref=e902]:
+                        - img [ref=e904]
+                        - generic [ref=e905]: World - World Cup Europe Qualification
+                      - generic [ref=e906]:
+                        - generic [ref=e907]: 
+                        - generic [ref=e908]: 26/03 • 22:30
+                    - generic [ref=e910]:
+                      - generic [ref=e911]:
+                        - generic [ref=e912]: 
+                        - generic [ref=e913]: "+411"
+                      - generic [ref=e914]:
+                        - generic [ref=e915]: Slovakia
+                        - img [ref=e917]
+                        - generic [ref=e922]: Kosovo
+                    - generic [ref=e923]:
+                      - generic [ref=e925]:
+                        - generic [ref=e926]: "1"
+                        - generic [ref=e927]: "1.81"
+                      - generic [ref=e929]:
+                        - generic [ref=e930]: X
+                        - generic [ref=e931]: "3.23"
+                      - generic [ref=e933]:
+                        - generic [ref=e934]: "2"
+                        - generic [ref=e935]: "3.89"
+                - group "10 / 12" [ref=e936]:
+                  - generic [ref=e937] [cursor=pointer]:
+                    - generic [ref=e938]:
+                      - generic [ref=e940]:
+                        - img [ref=e942]
+                        - generic [ref=e943]: Russia - Premier League
+                      - generic [ref=e944]:
+                        - generic [ref=e945]: 
+                        - generic [ref=e946]: 28/02 • 14:30
+                    - generic [ref=e948]:
+                      - generic [ref=e949]:
+                        - generic [ref=e950]: 
+                        - generic [ref=e951]: "+250"
+                      - generic [ref=e952]:
+                        - generic [ref=e953]: Orenburg
+                        - img [ref=e955]
+                        - generic [ref=e960]: FK Akron
+                    - generic [ref=e961]:
+                      - generic [ref=e963]:
+                        - generic [ref=e964]: "1"
+                        - generic [ref=e965]: "2.32"
+                      - generic [ref=e967]:
+                        - generic [ref=e968]: X
+                        - generic [ref=e969]: "3.11"
+                      - generic [ref=e971]:
+                        - generic [ref=e972]: "2"
+                        - generic [ref=e973]: "3.01"
+                - group "11 / 12" [ref=e974]:
+                  - generic [ref=e975] [cursor=pointer]:
+                    - generic [ref=e976]:
+                      - generic [ref=e978]:
+                        - img [ref=e980]
+                        - generic [ref=e981]: Russia - Premier League
+                      - generic [ref=e982]:
+                        - generic [ref=e983]: 
+                        - generic [ref=e984]: 01/03 • 16:30
+                    - generic [ref=e986]:
+                      - generic [ref=e987]:
+                        - generic [ref=e988]: 
+                        - generic [ref=e989]: "+246"
+                      - generic [ref=e990]:
+                        - generic [ref=e991]: Dynamo Moscow
+                        - img [ref=e993]
+                        - generic [ref=e998]: Krylia Sovetov Samara
+                    - generic [ref=e999]:
+                      - generic [ref=e1001]:
+                        - generic [ref=e1002]: "1"
+                        - generic [ref=e1003]: "1.41"
+                      - generic [ref=e1005]:
+                        - generic [ref=e1006]: X
+                        - generic [ref=e1007]: "4.00"
+                      - generic [ref=e1009]:
+                        - generic [ref=e1010]: "2"
+                        - generic [ref=e1011]: "7.90"
+                - group "12 / 12" [ref=e1012]:
+                  - generic [ref=e1013] [cursor=pointer]:
+                    - generic [ref=e1014]:
+                      - generic [ref=e1016]:
+                        - img [ref=e1018]
+                        - generic [ref=e1019]: Russia - Premier League
+                      - generic [ref=e1020]:
+                        - generic [ref=e1021]: 
+                        - generic [ref=e1022]: 27/02 • 22:00
+                    - generic [ref=e1024]:
+                      - generic [ref=e1025]:
+                        - generic [ref=e1026]: 
+                        - generic [ref=e1027]: "+244"
+                      - generic [ref=e1028]:
+                        - generic [ref=e1029]: Zenit St. Petersburg
+                        - img [ref=e1031]
+                        - generic [ref=e1036]: FC Baltika Kaliningrad
+                    - generic [ref=e1037]:
+                      - generic [ref=e1039]:
+                        - generic [ref=e1040]: "1"
+                        - generic [ref=e1041]: "1.37"
+                      - generic [ref=e1043]:
+                        - generic [ref=e1044]: X
+                        - generic [ref=e1045]: "4.00"
+                      - generic [ref=e1047]:
+                        - generic [ref=e1048]: "2"
+                        - generic [ref=e1049]: "9.50"
+        - generic [ref=e1050]:
+          - generic [ref=e1052]:
+            - heading "Top Casino Games" [level=3] [ref=e1053]
+            - button "21 Show All" [ref=e1055] [cursor=pointer]:
+              - paragraph [ref=e1056]: "21"
+              - generic [ref=e1057]: Show All
+          - list [ref=e1060]:
+            - listitem [ref=e1061]:
+              - generic [ref=e1062] [cursor=pointer]:
+                - generic [ref=e1063]:
+                  - img [ref=e1064]
+                  - generic [ref=e1066]:
+                    - paragraph [ref=e1067]: 1X2 Gaming
+                    - link "Real Play" [ref=e1068]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1069]:
+                      - /url: javascript://
+                - generic [ref=e1070]: 3 Lucky Minecarts Hold and Win
+            - listitem [ref=e1071]:
+              - generic [ref=e1072] [cursor=pointer]:
+                - generic [ref=e1073]:
+                  - img [ref=e1074]
+                  - generic [ref=e1076]:
+                    - paragraph [ref=e1077]: 3 Oaks
+                    - link "Real Play" [ref=e1078]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1079]:
+                      - /url: javascript://
+                - generic [ref=e1080]: 3 China Pots
+            - listitem [ref=e1081]:
+              - generic [ref=e1082] [cursor=pointer]:
+                - generic [ref=e1083]:
+                  - img [ref=e1084]
+                  - generic [ref=e1086]:
+                    - paragraph [ref=e1087]: 3 Oaks
+                    - link "Real Play" [ref=e1088]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1089]:
+                      - /url: javascript://
+                - generic [ref=e1090]: 3 Clover Pots
+            - listitem [ref=e1091]:
+              - generic [ref=e1092] [cursor=pointer]:
+                - generic [ref=e1093]:
+                  - img [ref=e1094]
+                  - generic [ref=e1096]:
+                    - paragraph [ref=e1097]: 3 Oaks
+                    - link "Real Play" [ref=e1098]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1099]:
+                      - /url: javascript://
+                - generic [ref=e1100]: 3 Coins
+            - listitem [ref=e1101]:
+              - generic [ref=e1102] [cursor=pointer]:
+                - generic [ref=e1103]:
+                  - img [ref=e1104]
+                  - generic [ref=e1106]:
+                    - paragraph [ref=e1107]: 3 Oaks
+                    - link "Real Play" [ref=e1108]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1109]:
+                      - /url: javascript://
+                - generic [ref=e1110]: "3 Coins: Egypt"
+            - listitem [ref=e1111]:
+              - generic [ref=e1112] [cursor=pointer]:
+                - generic [ref=e1113]:
+                  - img [ref=e1114]
+                  - generic [ref=e1116]:
+                    - paragraph [ref=e1117]: 3 Oaks
+                    - link "Real Play" [ref=e1118]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1119]:
+                      - /url: javascript://
+                - generic [ref=e1120]: 3 Egypt Chests
+            - listitem [ref=e1121]:
+              - generic [ref=e1122] [cursor=pointer]:
+                - generic [ref=e1123]:
+                  - img [ref=e1124]
+                  - generic [ref=e1126]:
+                    - paragraph [ref=e1127]: 3 Oaks
+                    - link "Real Play" [ref=e1128]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1129]:
+                      - /url: javascript://
+                - generic [ref=e1130]: 3 Hot Chillies
+            - listitem [ref=e1131]:
+              - generic [ref=e1132] [cursor=pointer]:
+                - generic [ref=e1133]:
+                  - img [ref=e1134]
+                  - generic [ref=e1136]:
+                    - paragraph [ref=e1137]: 3 Oaks
+                    - link "Real Play" [ref=e1138]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1139]:
+                      - /url: javascript://
+                - generic [ref=e1140]: 3 Pots of Egypt
+            - listitem [ref=e1141]:
+              - generic [ref=e1142] [cursor=pointer]:
+                - generic [ref=e1143]:
+                  - img [ref=e1144]
+                  - generic [ref=e1146]:
+                    - paragraph [ref=e1147]: 3 Oaks
+                    - link "Real Play" [ref=e1148]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1149]:
+                      - /url: javascript://
+                - generic [ref=e1150]: BLACK WOLF 2
+            - listitem [ref=e1151]:
+              - generic [ref=e1152] [cursor=pointer]:
+                - generic [ref=e1153]:
+                  - img [ref=e1154]
+                  - generic [ref=e1156]:
+                    - paragraph [ref=e1157]: 3 Oaks
+                    - link "Real Play" [ref=e1158]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1159]:
+                      - /url: javascript://
+                - generic [ref=e1160]: "Book of Sun: Choice"
+            - listitem [ref=e1161]:
+              - generic [ref=e1162] [cursor=pointer]:
+                - generic [ref=e1163]:
+                  - img [ref=e1164]
+                  - generic [ref=e1166]:
+                    - paragraph [ref=e1167]: 1X2 Gaming
+                    - link "Real Play" [ref=e1168]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1169]:
+                      - /url: javascript://
+                - generic [ref=e1170]: 3 Card Holdem
+            - listitem [ref=e1171]:
+              - generic [ref=e1172] [cursor=pointer]:
+                - generic [ref=e1175]:
+                  - paragraph [ref=e1176]: 1X2 Gaming
+                  - link "Real Play" [ref=e1177]:
+                    - /url: javascript://
+                  - link "Fun Play" [ref=e1178]:
+                    - /url: javascript://
+                - generic [ref=e1179]: 3 Porky Banks Christmas
+        - generic [ref=e1183]:
+          - generic [ref=e1185]:
+            - heading "Highlighted Casino Games" [level=3] [ref=e1186]
+            - button "5 Show All" [ref=e1188] [cursor=pointer]:
+              - paragraph [ref=e1189]: "5"
+              - generic [ref=e1190]: Show All
+          - list [ref=e1193]:
+            - listitem [ref=e1194]:
+              - generic [ref=e1195] [cursor=pointer]:
+                - generic [ref=e1196]:
+                  - img [ref=e1197]
+                  - generic [ref=e1199]:
+                    - paragraph [ref=e1200]: 3 Oaks
+                    - link "Real Play" [ref=e1201]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1202]:
+                      - /url: javascript://
+                - generic [ref=e1203]: 3 China Pots
+            - listitem [ref=e1204]:
+              - generic [ref=e1205] [cursor=pointer]:
+                - generic [ref=e1206]:
+                  - img [ref=e1207]
+                  - generic [ref=e1209]:
+                    - paragraph [ref=e1210]: 3 Oaks
+                    - link "Real Play" [ref=e1211]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1212]:
+                      - /url: javascript://
+                - generic [ref=e1213]: 3 Clover Pots
+            - listitem [ref=e1214]:
+              - generic [ref=e1215] [cursor=pointer]:
+                - generic [ref=e1216]:
+                  - img [ref=e1217]
+                  - generic [ref=e1219]:
+                    - paragraph [ref=e1220]: 3 Oaks
+                    - link "Real Play" [ref=e1221]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1222]:
+                      - /url: javascript://
+                - generic [ref=e1223]: 3 Clover Pots Extra
+            - listitem [ref=e1224]:
+              - generic [ref=e1225] [cursor=pointer]:
+                - generic [ref=e1226]:
+                  - img [ref=e1227]
+                  - generic [ref=e1229]:
+                    - paragraph [ref=e1230]: 1X2 Gaming
+                    - link "Real Play" [ref=e1231]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1232]:
+                      - /url: javascript://
+                - generic [ref=e1233]: 3 Card Holdem
+            - listitem [ref=e1234]:
+              - generic [ref=e1235] [cursor=pointer]:
+                - generic [ref=e1236]:
+                  - img [ref=e1237]
+                  - generic [ref=e1239]:
+                    - paragraph [ref=e1240]: 1X2 Gaming
+                    - link "Real Play" [ref=e1241]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1242]:
+                      - /url: javascript://
+                - generic [ref=e1243]: 6in1 Blackjack
+        - generic [ref=e1244]:
+          - generic [ref=e1246]:
+            - heading "Popular Slot Games" [level=3] [ref=e1247]
+            - button "4 Show All" [ref=e1249] [cursor=pointer]:
+              - paragraph [ref=e1250]: "4"
+              - generic [ref=e1251]: Show All
+          - list [ref=e1254]:
+            - listitem [ref=e1255]:
+              - generic [ref=e1256] [cursor=pointer]:
+                - generic [ref=e1257]:
+                  - img [ref=e1258]
+                  - generic [ref=e1260]:
+                    - paragraph [ref=e1261]: 1X2 Gaming
+                    - link "Real Play" [ref=e1262]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1263]:
+                      - /url: javascript://
+                - generic [ref=e1264]: Flip n Spin
+            - listitem [ref=e1265]:
+              - generic [ref=e1266] [cursor=pointer]:
+                - generic [ref=e1267]:
+                  - img [ref=e1268]
+                  - generic [ref=e1270]:
+                    - paragraph [ref=e1271]: Evoplay
+                    - link "Real Play" [ref=e1272]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1273]:
+                      - /url: javascript://
+                - generic [ref=e1274]: Young Wolf Song
+            - listitem [ref=e1275]:
+              - generic [ref=e1276] [cursor=pointer]:
+                - generic [ref=e1277]:
+                  - img [ref=e1278]
+                  - generic [ref=e1280]:
+                    - paragraph [ref=e1281]: Pragmatic Play
+                    - link "Real Play" [ref=e1282]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1283]:
+                      - /url: javascript://
+                - generic [ref=e1284]: 7 Monkeys
+            - listitem [ref=e1285]:
+              - generic [ref=e1286] [cursor=pointer]:
+                - generic [ref=e1287]:
+                  - img [ref=e1288]
+                  - generic [ref=e1290]:
+                    - paragraph [ref=e1291]: Blueprint
+                    - link "Real Play" [ref=e1292]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1293]:
+                      - /url: javascript://
+                - generic [ref=e1294]: 7s
+        - generic [ref=e1295]:
+          - generic [ref=e1297]:
+            - heading "Popular Casino Games" [level=3] [ref=e1298]
+            - button "4 Show All" [ref=e1300] [cursor=pointer]:
+              - paragraph [ref=e1301]: "4"
+              - generic [ref=e1302]: Show All
+          - list [ref=e1305]:
+            - listitem [ref=e1306]:
+              - generic [ref=e1307] [cursor=pointer]:
+                - generic [ref=e1308]:
+                  - img [ref=e1309]
+                  - generic [ref=e1311]:
+                    - paragraph [ref=e1312]: 1X2 Gaming
+                    - link "Real Play" [ref=e1313]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1314]:
+                      - /url: javascript://
+                - generic [ref=e1315]: Flip n Spin
+            - listitem [ref=e1316]:
+              - generic [ref=e1317] [cursor=pointer]:
+                - generic [ref=e1318]:
+                  - img [ref=e1319]
+                  - generic [ref=e1321]:
+                    - paragraph [ref=e1322]: Evoplay
+                    - link "Real Play" [ref=e1323]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1324]:
+                      - /url: javascript://
+                - generic [ref=e1325]: Young Wolf Song
+            - listitem [ref=e1326]:
+              - generic [ref=e1327] [cursor=pointer]:
+                - generic [ref=e1328]:
+                  - img [ref=e1329]
+                  - generic [ref=e1331]:
+                    - paragraph [ref=e1332]: Pragmatic Play
+                    - link "Real Play" [ref=e1333]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1334]:
+                      - /url: javascript://
+                - generic [ref=e1335]: 7 Monkeys
+            - listitem [ref=e1336]:
+              - generic [ref=e1337] [cursor=pointer]:
+                - generic [ref=e1338]:
+                  - img [ref=e1339]
+                  - generic [ref=e1341]:
+                    - paragraph [ref=e1342]: Blueprint
+                    - link "Real Play" [ref=e1343]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1344]:
+                      - /url: javascript://
+                - generic [ref=e1345]: 7s
+        - generic [ref=e1346]:
+          - generic [ref=e1348]:
+            - heading "Highlighted Slot Games" [level=3] [ref=e1349]
+            - button "3 Show All" [ref=e1351] [cursor=pointer]:
+              - paragraph [ref=e1352]: "3"
+              - generic [ref=e1353]: Show All
+          - list [ref=e1356]:
+            - listitem [ref=e1357]:
+              - generic [ref=e1358] [cursor=pointer]:
+                - generic [ref=e1359]:
+                  - img [ref=e1360]
+                  - generic [ref=e1362]:
+                    - paragraph [ref=e1363]: Pragmatic Play
+                    - link "Real Play" [ref=e1364]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1365]:
+                      - /url: javascript://
+                - generic [ref=e1366]: Mustang Gold
+            - listitem [ref=e1367]:
+              - generic [ref=e1368] [cursor=pointer]:
+                - generic [ref=e1369]:
+                  - img [ref=e1370]
+                  - generic [ref=e1372]:
+                    - paragraph [ref=e1373]: Pragmatic Play
+                    - link "Real Play" [ref=e1374]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1375]:
+                      - /url: javascript://
+                - generic [ref=e1376]: Mustang Trail
+            - listitem [ref=e1377]:
+              - generic [ref=e1378] [cursor=pointer]:
+                - generic [ref=e1379]:
+                  - img [ref=e1380]
+                  - generic [ref=e1382]:
+                    - paragraph [ref=e1383]: Tomhorn
+                    - link "Real Play" [ref=e1384]:
+                      - /url: javascript://
+                    - link "Fun Play" [ref=e1385]:
+                      - /url: javascript://
+                - generic [ref=e1386]: Wild Pearl
+        - generic [ref=e1387]:
+          - heading "Top Feature Games" [level=3] [ref=e1389]
+          - list [ref=e1391]:
+            - listitem [ref=e1392]:
+              - img [ref=e1394] [cursor=pointer]
+            - listitem [ref=e1395]:
+              - img [ref=e1397] [cursor=pointer]
+            - listitem [ref=e1398]:
+              - img [ref=e1400] [cursor=pointer]
+            - listitem [ref=e1401]:
+              - img [ref=e1403] [cursor=pointer]
+            - listitem [ref=e1404]:
+              - img [ref=e1406] [cursor=pointer]
+        - generic [ref=e1408] [cursor=pointer]:
+          - img [ref=e1410]
+          - heading "Aviator" [level=2] [ref=e1411]
+        - generic [ref=e1413] [cursor=pointer]:
+          - img [ref=e1415]
+          - heading "Third Party" [level=2] [ref=e1416]
+    - generic:
+      - alertdialog
+  - generic [ref=e1417]:
+    - link "Back To Top " [ref=e1418] [cursor=pointer]:
+      - /url: javascript://
+      - text: Back To Top
+      - generic [ref=e1419]: 
+    - contentinfo [ref=e1420]:
+      - generic [ref=e1421]:
+        - generic [ref=e1423]:
+          - generic [ref=e1424]:
+            - heading "Content" [level=2] [ref=e1425]
+            - list [ref=e1426]:
+              - listitem [ref=e1427]:
+                - link "Contact" [ref=e1428] [cursor=pointer]:
+                  - /url: /content/page/contact
+              - listitem [ref=e1429]:
+                - link "FAQ" [ref=e1430] [cursor=pointer]:
+                  - /url: /content/page/faq
+              - listitem [ref=e1431]:
+                - link "Responsible Gambling" [ref=e1432] [cursor=pointer]:
+                  - /url: /content/page/responsible_gambling
+              - listitem [ref=e1433]:
+                - link "About us" [ref=e1434] [cursor=pointer]:
+                  - /url: /content/page/about_us
+              - listitem [ref=e1435]:
+                - link "My Rules" [ref=e1436] [cursor=pointer]:
+                  - /url: /content/page/rules
+              - listitem [ref=e1437]:
+                - link "Disclaimer" [ref=e1438] [cursor=pointer]:
+                  - /url: /content/page/disclaimer
+              - listitem [ref=e1439]:
+                - link "Terms And Condition" [ref=e1440] [cursor=pointer]:
+                  - /url: /content/page/terms_&_conditions
+              - listitem [ref=e1441]:
+                - link "Point Page 2" [ref=e1442] [cursor=pointer]:
+                  - /url: /content/page/point_page_2
+              - listitem [ref=e1443]:
+                - link "SponsorShip" [ref=e1444] [cursor=pointer]:
+                  - /url: /content/page/sponsorships
+              - listitem [ref=e1445]:
+                - link "Privacy Policy" [ref=e1446] [cursor=pointer]:
+                  - /url: /content/page/privacy_policy
+              - listitem [ref=e1447]:
+                - link "Bonus Rules" [ref=e1448] [cursor=pointer]:
+                  - /url: /content/page/bonus_rules
+              - listitem [ref=e1449]:
+                - link "Refund Policy" [ref=e1450] [cursor=pointer]:
+                  - /url: /content/page/refund_policy
+              - listitem [ref=e1451]:
+                - link "Slot Casino Rules" [ref=e1452] [cursor=pointer]:
+                  - /url: /content/page/slot_rules_popup
+          - generic [ref=e1453]:
+            - heading "Support Center" [level=2] [ref=e1454]
+            - list [ref=e1455]:
+              - listitem [ref=e1456]:
+                - link "Help Me" [ref=e1457] [cursor=pointer]:
+                  - /url: /account/contact
+          - list [ref=e1460]:
+            - listitem [ref=e1461]:
+              - 'link "Whatsapp #1" [ref=e1462] [cursor=pointer]':
+                - /url: https://wa.me/+447476560617
+                - img [ref=e1463]
+                - generic [ref=e1464]: "Whatsapp #1"
+          - generic [ref=e1465]:
+            - heading "Sports" [level=2] [ref=e1466]
+            - list [ref=e1467]:
+              - listitem [ref=e1468]:
+                - link "Live Betting" [ref=e1469] [cursor=pointer]:
+                  - /url: /sport/live
+              - listitem [ref=e1470]:
+                - link "Sport Betting" [ref=e1471] [cursor=pointer]:
+                  - /url: /sport/pregame
+              - listitem [ref=e1472]:
+                - link "Statistics" [ref=e1473] [cursor=pointer]:
+                  - /url: https://s5.sir.sportradar.com/betradar/en
+        - generic [ref=e1474]:
+          - generic [ref=e1475]: Providers
+          - generic [ref=e1476]:
+            - link [ref=e1477] [cursor=pointer]:
+              - /url: https://www.pragmaticplay.com/
+              - img [ref=e1478]
+            - link [ref=e1479] [cursor=pointer]:
+              - /url: https://egt-interactive.com/
+              - img [ref=e1480]
+            - link [ref=e1481] [cursor=pointer]:
+              - /url: https://playson.com/
+              - img [ref=e1482]
+            - link [ref=e1483] [cursor=pointer]:
+              - /url: https://www.evolutiongaming.com/
+              - img [ref=e1484]
+            - link [ref=e1485] [cursor=pointer]:
+              - /url: https://ezugi.com/
+              - img [ref=e1486]
+            - link [ref=e1487] [cursor=pointer]:
+              - /url: https://www.betgames.tv/
+              - img [ref=e1488]
+            - link [ref=e1489] [cursor=pointer]:
+              - /url: https://tvbet.tv/
+              - img [ref=e1490]
+            - link [ref=e1491] [cursor=pointer]:
+              - /url: https://www.netent.com/
+              - img [ref=e1492]
+            - link [ref=e1493] [cursor=pointer]:
+              - /url: https://betsoft.com/
+              - img [ref=e1494]
+            - link [ref=e1495] [cursor=pointer]:
+              - /url: https://habanerosystems.com/
+              - img [ref=e1496]
+            - link [ref=e1497] [cursor=pointer]:
+              - /url: https://www.ebet.com/
+              - img [ref=e1498]
+            - link [ref=e1499] [cursor=pointer]:
+              - /url: https://www.vivogaming.com/
+              - img [ref=e1500]
+            - link [ref=e1501] [cursor=pointer]:
+              - /url: https://mrslotty.com/
+              - img [ref=e1502]
+            - link [ref=e1503] [cursor=pointer]:
+              - /url: https://www.isoftbet.com/
+              - img [ref=e1504]
+            - link [ref=e1505] [cursor=pointer]:
+              - /url: https://leap-gaming.com/
+              - img [ref=e1506]
+            - link [ref=e1507] [cursor=pointer]:
+              - /url: https://goldenrace.com/
+              - img [ref=e1508]
+            - link [ref=e1509] [cursor=pointer]:
+              - /url: http://asia-gaming.com/
+              - img [ref=e1510]
+            - link [ref=e1511] [cursor=pointer]:
+              - /url: https://www.betradar.com/
+              - img [ref=e1512]
+            - link [ref=e1513] [cursor=pointer]:
+              - /url: http://www.1x2gaming.com/
+              - img [ref=e1514]
+            - link [ref=e1515] [cursor=pointer]:
+              - /url: https://pariplayltd.com/
+              - img [ref=e1516]
+            - link [ref=e1517] [cursor=pointer]:
+              - /url: javascript://
+              - img [ref=e1518]
+            - link [ref=e1519] [cursor=pointer]:
+              - /url: http://wearecasino.com/
+              - img [ref=e1520]
+            - link [ref=e1521] [cursor=pointer]:
+              - /url: https://endorphina.com/
+              - img [ref=e1522]
+            - link [ref=e1523] [cursor=pointer]:
+              - /url: https://kironinteractive.com/
+              - img [ref=e1524]
+            - link [ref=e1525] [cursor=pointer]:
+              - /url: https://www.edge-gaming.com/
+              - img [ref=e1526]
+            - link [ref=e1527] [cursor=pointer]:
+              - /url: https://www.virtualgeneration.com/
+              - img [ref=e1528]
+            - link [ref=e1529] [cursor=pointer]:
+              - /url: https://www.fazi.rs/
+              - img [ref=e1530]
+            - link [ref=e1531] [cursor=pointer]:
+              - /url: https://spribe.co/games/aviator
+              - img [ref=e1532]
+            - link [ref=e1533] [cursor=pointer]:
+              - /url: javascript://
+              - img [ref=e1534]
+            - link [ref=e1535] [cursor=pointer]:
+              - /url: https://www.amatic.com/
+              - img [ref=e1536]
+            - link [ref=e1537] [cursor=pointer]:
+              - /url: https://www.yggdrasilgaming.com/
+              - img [ref=e1538]
+            - link [ref=e1539] [cursor=pointer]:
+              - /url: https://gameart.net/
+              - img [ref=e1540]
+            - link [ref=e1541] [cursor=pointer]:
+              - /url: https://www.microgaming.co.uk/
+              - img [ref=e1542]
+          - list [ref=e1546]:
+            - listitem [ref=e1547]
+            - listitem [ref=e1549]
+            - listitem [ref=e1551]
+            - listitem [ref=e1553]
+            - listitem [ref=e1555]
+            - listitem [ref=e1557]
+            - listitem [ref=e1559]
+            - listitem [ref=e1561]
+            - listitem [ref=e1563]
+            - listitem [ref=e1565]
+            - listitem [ref=e1567]
+            - listitem [ref=e1569]
+            - listitem [ref=e1571]
+            - listitem [ref=e1573]
+            - listitem [ref=e1575]
+            - listitem [ref=e1577]
+            - listitem [ref=e1579]
+            - listitem [ref=e1581]
+            - listitem [ref=e1583]
+            - listitem [ref=e1585]
+            - listitem [ref=e1587]
+            - listitem [ref=e1589]
+            - listitem [ref=e1591]
+            - listitem [ref=e1593]
+            - listitem [ref=e1595]
+            - listitem [ref=e1597]
+            - listitem [ref=e1599]
+            - listitem [ref=e1601]
+            - listitem [ref=e1603]
+            - listitem [ref=e1605]
+            - listitem [ref=e1607]
+            - listitem [ref=e1609]
+            - listitem [ref=e1611]
+            - listitem [ref=e1613]
+            - listitem [ref=e1615]
+            - listitem [ref=e1617]
+            - listitem [ref=e1619]
+            - listitem [ref=e1621]
+            - listitem [ref=e1623]
+            - listitem [ref=e1625]
+            - listitem [ref=e1627]
+            - listitem [ref=e1629]
+          - generic [ref=e1631]: Payment Methods
+      - paragraph [ref=e1635]: ©Hoco MicroService | 2020 - 2025 | All Rights Reserved
+```
