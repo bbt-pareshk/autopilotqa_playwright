@@ -7,13 +7,19 @@ export default defineConfig({
 
   reporter: [
     ['list'],
-    ['html', { open: process.env.CI ? 'never' : 'on-failure' }],
+    [
+      'html',
+      {
+        open: !process.env.CI ? 'always' : 'never', // open HTML report only on local runs
+      },
+    ],
     [
       'allure-playwright',
       {
         outputFolder: 'allure-results',
         detail: true,
         suiteTitle: true,
+        // open: false, // optional, prevents Allure from opening automatically
       },
     ],
   ],
@@ -28,18 +34,38 @@ export default defineConfig({
   },
 
   projects: [
+    // 🔹 SETUP PROJECT (LOGIN ONCE)
     {
-      name: 'chromium',
+      name: 'setup',
+      testMatch: /.*\.setup\.ts/,
       use: {
         browserName: 'chromium',
         channel: 'chrome',
-
-        // ✅ CORRECT PLACE FOR ARGS
-        launchOptions: process.env.CI === 'true'
-          ? {
+        baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', // fallback if env not set
+        launchOptions:
+          process.env.CI === 'true'
+            ? {
               args: ['--no-sandbox', '--disable-setuid-sandbox'],
             }
-          : {},
+            : {},
+      },
+    },
+
+    // 🔹 E2E TESTS (REUSE LOGIN)
+    {
+      name: 'e2e',
+      dependencies: ['setup'],
+      use: {
+        browserName: 'chromium',
+        channel: 'chrome',
+        baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', // fallback if env not set
+        storageState: 'storage/user.auth.json',
+        launchOptions:
+          process.env.CI === 'true'
+            ? {
+              args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            }
+            : {},
       },
     },
   ],

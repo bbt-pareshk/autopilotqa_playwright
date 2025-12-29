@@ -5,10 +5,10 @@ import { LoginPage } from '../../src/pages/auth/LoginPage';
 
 const TEST_ROLE = process.env.TEST_ROLE;
 
+
 /* =========================================================
    Login – Single User (Smoke + Regression)
 ========================================================= */
-
 test.describe('Login – Single User', () => {
 
   test(
@@ -63,7 +63,7 @@ test.describe('Login – Negative', () => {
 
   test(
     'Login fails with invalid credentials',
-    { tag: '@smoke' },
+{ tag: '@smoke' },
     async ({ page }, testInfo) => {
 
       testInfo.annotations.push(
