@@ -1,4 +1,5 @@
 import { defineConfig } from '@playwright/test';
+import { ENV } from './src/config/env';
 
 export default defineConfig({
   testDir: './tests',
@@ -41,7 +42,7 @@ export default defineConfig({
       use: {
         browserName: 'chromium',
         channel: 'chrome',
-        baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', // fallback if env not set
+        baseURL: ENV.BASE_URL,
         launchOptions:
           process.env.CI === 'true'
             ? {
@@ -54,12 +55,12 @@ export default defineConfig({
     // 🔹 AFTER-LOGIN PROJECT (REUSE LOGIN)
     {
       name: 'after-login',
-      dependencies: ['setup'],
+      dependencies: ['prepare-auth'],
       testIgnore: /.*login\.spec\.ts/, // IMPORTANT LINE
       use: {
         browserName: 'chromium',
         channel: 'chrome',
-        baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', // fallback if env not set
+        baseURL: ENV.BASE_URL,
         storageState: 'storage/user.auth.json',
         
         launchOptions:
@@ -74,12 +75,12 @@ export default defineConfig({
   // 🔹 BEFORE-LOGIN PROJECT (LOGIN TESTS)
   {
     name: 'before-login',
-    dependencies: ['setup'],
+    dependencies: ['prepare-auth'],
     testMatch: /.*login\.spec\.ts/,
     use: {
       browserName: 'chromium',
       channel: 'chrome',
-      baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', 
+      baseURL: ENV.BASE_URL,
       storageState: undefined, // KEY LINE
     },
   },
