@@ -34,9 +34,9 @@ export default defineConfig({
   },
 
   projects: [
-    // 🔹 SETUP PROJECT (LOGIN ONCE)
+    // 🔹 PREPARE-AUTH PROJECT (LOGIN ONCE)
     {
-      name: 'setup',
+      name: 'prepare-auth',
       testMatch: /.*\.setup\.ts/,
       use: {
         browserName: 'chromium',
@@ -51,9 +51,9 @@ export default defineConfig({
       },
     },
 
-    // 🔹 E2E TESTS (REUSE LOGIN)
+    // 🔹 AFTER-LOGIN PROJECT (REUSE LOGIN)
     {
-      name: 'e2e',
+      name: 'after-login',
       dependencies: ['setup'],
       testIgnore: /.*login\.spec\.ts/, // IMPORTANT LINE
       use: {
@@ -71,9 +71,9 @@ export default defineConfig({
       },
     },
 
-  // 🔹 LOGGED-OUT PROJECT (LOGIN TESTS)
+  // 🔹 BEFORE-LOGIN PROJECT (LOGIN TESTS)
   {
-    name: 'logged-out',
+    name: 'before-login',
     dependencies: ['setup'],
     testMatch: /.*login\.spec\.ts/,
     use: {
