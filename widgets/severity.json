@@ -1,1 +1,1 @@
-[]
+[{"uid":"243f2979e0aa1697","name":"Admin user can login successfully","time":{"start":1767092471665,"stop":1767092471665,"duration":0},"status":"skipped","severity":"normal"},{"uid":"4cdd306166fd6073","name":"User sees account balance on dashboard after login","time":{"start":1767092471664,"stop":1767092471664,"duration":0},"status":"skipped","severity":"normal"},{"uid":"fcc46b4b17cbe455","name":"authenticate admin user","time":{"start":1767092445870,"stop":1767092466698,"duration":20828},"status":"failed","severity":"normal"}]
