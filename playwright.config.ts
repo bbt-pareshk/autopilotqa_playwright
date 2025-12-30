@@ -55,11 +55,13 @@ export default defineConfig({
     {
       name: 'e2e',
       dependencies: ['setup'],
+      testIgnore: /.*login\.spec\.ts/, // IMPORTANT LINE
       use: {
         browserName: 'chromium',
         channel: 'chrome',
         baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', // fallback if env not set
         storageState: 'storage/user.auth.json',
+        
         launchOptions:
           process.env.CI === 'true'
             ? {
@@ -68,5 +70,19 @@ export default defineConfig({
             : {},
       },
     },
+
+  // 🔹 LOGGED-OUT PROJECT (LOGIN TESTS)
+  {
+    name: 'logged-out',
+    dependencies: ['setup'],
+    testMatch: /.*login\.spec\.ts/,
+    use: {
+      browserName: 'chromium',
+      channel: 'chrome',
+      baseURL: process.env.BASE_URL || 'https://qa.hocodev.co/', 
+      storageState: undefined, // KEY LINE
+    },
+  },
   ],
 });
+

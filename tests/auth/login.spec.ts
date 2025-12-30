@@ -72,7 +72,7 @@ test.describe('Login – Negative', () => {
 
       const loginPage = new LoginPage(page);
       await loginPage.openLoginPage();
-      await loginPage.login('tonystark7', '123456');
+      await loginPage.login('tonystark', '654321');
       await loginPage.verifyLoginFailed();
     }
   );
