@@ -10,7 +10,9 @@ import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
  * - Persist authenticated session
  * - Used by e2e project via dependencies
  */
-test('authenticate admin user', async ({ loginAs, page }) => {
+test('authenticate admin user', async ({ loginAs, page }, testInfo) => {
+   console.log('▶ Base URL (project):', testInfo.project.use.baseURL);
+
   // Login using shared fixture
   await loginAs(UserRole.ADMIN);
 
