@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright CI – Smoke Tests
 
 on:
   push:
@@ -8,15 +8,7 @@ on:
 
   workflow_dispatch:
     inputs:
-      suite:
-        description: "Test suite to run"
-        required: true
-        default: "smoke"
-        type: choice
-        options:
-          - smoke
-          - regression
-      environment:
+     environment:
         description: "Target environment"
         required: true
         default: "staging"
@@ -26,31 +18,31 @@ on:
           - live
 
 jobs:
-  test:
+  smoke-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
-      # 1️⃣ Checkout
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Node setup
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
 
-      # 3️⃣ Install deps
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Install Playwright
+     # 4️⃣ Install Playwright browsers
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # 5️⃣ Linux dependencies (safe list)
+      # 5️⃣ Install Linux system dependencies
       - name: Install system dependencies
         run: |
           sudo apt-get update
@@ -60,20 +52,16 @@ jobs:
             libpango-1.0-0 libpangocairo-1.0-0 libgtk-3-0 \
             libxshmfence1 libx11-xcb1 libxcb-dri3-0 libxfixes3 \
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
-            wget || echo "Some packages failed, continuing..."
+            wget
 
-      # 6️⃣ Run tests
-      - name: Run Playwright Tests
+      # 6️⃣ Run Smoke Tests (CI Gate)
+      - name: Run Smoke Tests
         env:
           ENVIRONMENT: ${{ inputs.environment }}
           CI: true
         run: |
-          echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }}"
-          if [ "${{ inputs.suite }}" = "smoke" ]; then
-            npx playwright test --grep @smoke || true
-          else
-            npx playwright test --grep @regression || true
-          fi
+          echo "Running Smoke Tests on CI"
+          npx playwright test --grep @smoke
           
       # 7️⃣ Optional severity gate
       - name: Fail build on critical failures
