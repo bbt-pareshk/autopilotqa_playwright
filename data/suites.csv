@@ -1,4 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","5820","User sees account balance on dashboard after login","after-login","2025-12-30","passed","2025-12-30","Dashboard","dashboard/dashboard.spec.ts","",""
-"","11641","Admin user can login successfully","before-login","2025-12-30","passed","2025-12-30","Login – Single User","auth/login.spec.ts","",""
-"","15901","authenticate admin user","prepare-auth","2025-12-30","passed","2025-12-30","","setup/auth.setup.ts","",""
+"","15013","authenticate admin user","prepare-auth","2025-12-31","passed","2025-12-31","","setup/auth.setup.ts","",""
+"","8149","Login fails with invalid credentials","before-login","2025-12-31","passed","2025-12-31","Login – Negative","auth/login.spec.ts","",""
+"","12570","Admin user can login successfully","before-login","2025-12-31","passed","2025-12-31","Login – Single User","auth/login.spec.ts","",""
+"","4812","User sees account balance on dashboard after login","after-login","2025-12-31","passed","2025-12-31","Dashboard","dashboard/dashboard.spec.ts","",""
