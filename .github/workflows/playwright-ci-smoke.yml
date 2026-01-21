@@ -124,7 +124,7 @@ jobs:
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-           # 📊 Collect Playwright test statistics + failed test names (FIXED)
+           # 📊 Collect Playwright test statistics + failed test names (FIXED CORRECTLY)
       - name: Collect Test Stats
         if: always()
         run: |
@@ -153,7 +153,10 @@ jobs:
           for (const suite of data.suites || []) {
             for (const spec of suite.specs || []) {
               for (const test of spec.tests || []) {
-                if (test.outcome === 'unexpected') {
+                const hasFailure = (test.results || [])
+                  .some(r => r.status === 'failed');
+
+                if (hasFailure) {
                   failedTests.push(spec.title);
                 }
               }
@@ -163,7 +166,7 @@ jobs:
           const failedList =
             failedTests.length === 0
               ? 'None'
-              : failedTests.slice(0, 5).join('\\n• ');
+              : [...new Set(failedTests)].slice(0, 5).join('\\n• ');
 
           fs.appendFileSync(process.env.GITHUB_ENV, `TOTAL=${total}\n`);
           fs.appendFileSync(process.env.GITHUB_ENV, `PASSED=${passed}\n`);
@@ -172,6 +175,7 @@ jobs:
           fs.appendFileSync(process.env.GITHUB_ENV, `FLAKY=${flaky}\n`);
           fs.appendFileSync(process.env.GITHUB_ENV, `FAILED_TESTS=${failedList}\n`);
           EOF
+
 
       # 🔔 Slack Notification (with test names)
       - name: Notify Slack
