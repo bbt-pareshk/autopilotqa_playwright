@@ -190,7 +190,7 @@ jobs:
           --data "{
             \"attachments\": [{
               \"color\": \"$COLOR\",
-              \"title\": \"Playwright Smoke Test Results\",
-              \"text\": \"*Status:* $STATUS\n*Environment:* ${ENVIRONMENT:-staging}\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"title\": \"Playwright Test Results\",
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
             }]
           }" $SLACK_WEBHOOK_URL
