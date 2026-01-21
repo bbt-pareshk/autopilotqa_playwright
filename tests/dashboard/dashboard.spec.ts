@@ -21,12 +21,10 @@ test.describe('Dashboard', () => {
     { tag: ['@smoke', '@regression'] },
     async ({ page }) => {
       // User is already logged in via storageState
-      await page.goto('/dashboard1');
+      await page.goto('/dashboard');
 
-      const dashboard = new DashboardPage(page);
-     
-      // Verify balance section is visible
-      await dashboard.verifyBalanceIsVisible();
+      await expect(page).toHaveURL('https://google.com');
+       throw new Error('Intentionally failing this test');
     }
   );
 });
