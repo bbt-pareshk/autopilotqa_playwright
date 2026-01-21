@@ -8,7 +8,7 @@ on:
 
   workflow_dispatch:
     inputs:
-     environment:
+      environment:
         description: "Target environment"
         required: true
         default: "staging"
@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-     # 4️⃣ Install Playwright browsers
+      # 4️⃣ Install Playwright browsers
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
@@ -62,7 +62,7 @@ jobs:
         run: |
           echo "Running Smoke Tests on CI"
           npx playwright test --grep @smoke
-          
+
       # 7️⃣ Optional severity gate
       - name: Fail build on critical failures
         run: |
@@ -71,12 +71,14 @@ jobs:
           else
             echo "No critical check script found"
           fi
+
       # 8️⃣ Generate Allure
       - name: Generate Allure Report
         run: |
           npm install -g allure-commandline
           mkdir -p allure-report
           allure generate allure-results --clean -o allure-report || true
+
       # 9️⃣ Upload Allure artifact
       - name: Upload Allure Report Artifact
         uses: actions/upload-artifact@v4
@@ -111,4 +113,25 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
-          
+
+      # 🔔 1️⃣3️⃣ Slack Notification (ADDED – SAFE)
+      - name: Notify Slack
+        if: always()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          STATUS="${{ job.status }}"
+          COLOR="#36a64f"
+
+          if [ "$STATUS" != "success" ]; then
+            COLOR="#ff0000"
+          fi
+
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"attachments\": [{
+              \"color\": \"$COLOR\",
+              \"title\": \"Playwright Smoke Test Results\",
+              \"text\": \"*Status:* $STATUS\n*Environment:* ${{ inputs.environment }}\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+            }]
+          }" $SLACK_WEBHOOK_URL
