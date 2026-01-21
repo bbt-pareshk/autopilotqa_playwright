@@ -124,7 +124,7 @@ jobs:
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-           # 📊 Collect Playwright test statistics + failed test names (FIXED CORRECTLY)
+            # 📊 Collect Playwright test statistics + failed test names (FINAL FIX)
       - name: Collect Test Stats
         if: always()
         run: |
@@ -148,25 +148,35 @@ jobs:
           const flaky = stats.flaky || 0;
           const total = passed + failed + skipped + flaky;
 
-          const failedTests = [];
+          const failedTests = new Set();
 
-          for (const suite of data.suites || []) {
-            for (const spec of suite.specs || []) {
-              for (const test of spec.tests || []) {
-                const hasFailure = (test.results || [])
-                  .some(r => r.status === 'failed');
+          function walkSuites(suites = []) {
+            for (const suite of suites) {
+              // Go deeper
+              if (suite.suites) {
+                walkSuites(suite.suites);
+              }
 
-                if (hasFailure) {
-                  failedTests.push(spec.title);
+              // Read specs at this level
+              for (const spec of suite.specs || []) {
+                for (const test of spec.tests || []) {
+                  const hasFailure = (test.results || [])
+                    .some(r => r.status === 'failed');
+
+                  if (hasFailure) {
+                    failedTests.add(spec.title);
+                  }
                 }
               }
             }
           }
 
+          walkSuites(data.suites || []);
+
           const failedList =
-            failedTests.length === 0
+            failedTests.size === 0
               ? 'None'
-              : [...new Set(failedTests)].slice(0, 5).join('\\n• ');
+              : Array.from(failedTests).slice(0, 5).join('\\n• ');
 
           fs.appendFileSync(process.env.GITHUB_ENV, `TOTAL=${total}\n`);
           fs.appendFileSync(process.env.GITHUB_ENV, `PASSED=${passed}\n`);
