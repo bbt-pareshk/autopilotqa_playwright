@@ -1,0 +1,14 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="12.814133999999997">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-21T07:18:39.297Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="7.533" errors="0">
+<testcase name="authenticate admin user" classname="setup\auth.setup.ts" time="7.533">
+<system-out>
+<![CDATA[▶ Base URL (project): https://qa.hocodev.co/
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-01-21T07:18:39.297Z" hostname="after-login" tests="1" failures="0" skipped="0" time="1.67" errors="0">
+<testcase name="Dashboard 2 › Dashboard validations" classname="dashboard\dashboard.spec.ts" time="1.67">
+</testcase>
+</testsuite>
+</testsuites>
