@@ -1,1 +1,1 @@
-[]
+[{"uid":"fe87a4dbe01b231e","name":"authenticate admin user","time":{"start":1768994176005,"stop":1768994189040,"duration":13035},"status":"passed","severity":"normal"},{"uid":"c444e99ae034513f","name":"2 - User sees account balance on dashboard after login","time":{"start":1768994203637,"stop":1768994210116,"duration":6479},"status":"passed","severity":"normal"},{"uid":"32a1ea51c829b2cd","name":"User sees account balance on dashboard after login","time":{"start":1768994196435,"stop":1768994203493,"duration":7058},"status":"passed","severity":"normal"}]
