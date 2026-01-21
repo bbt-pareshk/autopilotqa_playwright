@@ -54,6 +54,16 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget || echo "Some packages failed, continuing..."
 
+       # 🌍 Resolve environment name
+      - name: Resolve Environment
+        run: |
+          if [ -n "${{ inputs.environment }}" ]; then
+            echo "ENVIRONMENT=${{ inputs.environment }}" >> $GITHUB_ENV
+          else
+            echo "ENVIRONMENT=staging" >> $GITHUB_ENV
+          fi
+
+
       # 6️⃣ Run Smoke Tests (SAFE)
       - name: Run Smoke Tests
         env:
