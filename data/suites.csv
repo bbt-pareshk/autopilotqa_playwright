@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","6518","User sees account balance on dashboard after login","after-login","2026-01-21","passed","2026-01-21","Dashboard","dashboard/dashboard.spec.ts","",""
-"","15025","authenticate admin user","prepare-auth","2026-01-21","passed","2026-01-21","","setup/auth.setup.ts","",""
-"","6049","2 - User sees account balance on dashboard after login","after-login","2026-01-21","passed","2026-01-21","Dashboard","dashboard/dashboard.spec.ts","",""
+"","6199","User sees account balance on dashboard after login","after-login","2026-01-21","passed","2026-01-21","Dashboard","dashboard/dashboard.spec.ts","",""
+"","6218","2 - User sees account balance on dashboard after login","after-login","2026-01-21","passed","2026-01-21","Dashboard","dashboard/dashboard.spec.ts","",""
+"","11819","authenticate admin user","prepare-auth","2026-01-21","passed","2026-01-21","","setup/auth.setup.ts","",""
