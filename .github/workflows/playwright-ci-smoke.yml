@@ -72,12 +72,12 @@ jobs:
             echo "No critical check script found"
           fi
 
-     # 8️⃣ Generate Allure
-- name: Generate Allure Report
-  run: |
-    npm install -g allure-commandline
-    mkdir -p allure-report
-    allure generate ./allure-results -o ./allure-report --clean || true
+      # 8️⃣ Generate Allure (FIXED)
+      - name: Generate Allure Report
+        run: |
+          npm install -g allure-commandline
+          mkdir -p allure-report
+          allure generate --clean -o allure-report ./allure-results || true
 
       # 9️⃣ Upload Allure artifact
       - name: Upload Allure Report Artifact
@@ -114,7 +114,7 @@ jobs:
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-      # 🔔 1️⃣3️⃣ Slack Notification (ADDED – SAFE)
+      # 🔔 1️⃣3️⃣ Slack Notification
       - name: Notify Slack
         if: always()
         env:
