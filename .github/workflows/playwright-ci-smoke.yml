@@ -114,7 +114,55 @@ jobs:
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-      # 🔔 1️⃣3️⃣ Slack Notification (ADDED)
+      # 📊 Collect Playwright test statistics + failed test names (ADDED)
+      - name: Collect Test Stats
+        if: always()
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+
+          const file = 'results/results.json';
+          if (!fs.existsSync(file)) {
+            fs.appendFileSync(process.env.GITHUB_ENV,
+              'TOTAL=0\nPASSED=0\nFAILED=0\nSKIPPED=0\nFLAKY=0\nFAILED_TESTS=None\n'
+            );
+            process.exit(0);
+          }
+
+          const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+          let total = 0, passed = 0, failed = 0, skipped = 0, flaky = 0;
+          const failedTests = [];
+
+          for (const suite of data.suites || []) {
+            for (const spec of suite.specs || []) {
+              for (const test of spec.tests || []) {
+                total++;
+                if (test.outcome === 'expected') passed++;
+                else if (test.outcome === 'unexpected') {
+                  failed++;
+                  failedTests.push(spec.title);
+                }
+                else if (test.outcome === 'skipped') skipped++;
+                else if (test.outcome === 'flaky') flaky++;
+              }
+            }
+          }
+
+          const failedList =
+            failedTests.length === 0
+              ? 'None'
+              : failedTests.slice(0, 5).join('\\n• ');
+
+          fs.appendFileSync(process.env.GITHUB_ENV, `TOTAL=${total}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `PASSED=${passed}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `FAILED=${failed}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `SKIPPED=${skipped}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `FLAKY=${flaky}\n`);
+          fs.appendFileSync(process.env.GITHUB_ENV, `FAILED_TESTS=${failedList}\n`);
+          EOF
+
+      # 🔔 Slack Notification (with test names)
       - name: Notify Slack
         if: always()
         env:
@@ -132,6 +180,6 @@ jobs:
             \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Smoke Test Results\",
-              \"text\": \"*Status:* $STATUS\n*Environment:* ${{ inputs.environment }}\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"text\": \"*Status:* $STATUS\n*Environment:* ${ENVIRONMENT:-staging}\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
             }]
           }" $SLACK_WEBHOOK_URL
