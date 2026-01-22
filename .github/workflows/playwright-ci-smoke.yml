@@ -56,7 +56,7 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget || echo "Some packages failed, continuing..."
 
-      # 🌍 Resolve environment name
+      # 🌍 Resolve ENVIRONMENT (THIS IS THE CRITICAL FIX)
       - name: Resolve Environment
         run: |
           if [ -n "${{ inputs.environment }}" ]; then
@@ -65,22 +65,13 @@ jobs:
             echo "ENVIRONMENT=staging" >> $GITHUB_ENV
           fi
 
-      # ✅ ONLY REQUIRED FIX (DO NOT REMOVE)
-      - name: Set Base URL
-        run: |
-          if [ "$ENVIRONMENT" = "staging" ]; then
-            echo "BASE_URL=${{ secrets.STAGING_BASE_URL }}" >> $GITHUB_ENV
-          else
-            echo "BASE_URL=${{ secrets.LIVE_BASE_URL }}" >> $GITHUB_ENV
-          fi
-
       # 6️⃣ Run Smoke Tests (SAFE)
       - name: Run Smoke Tests
         env:
-          ENVIRONMENT: ${{ inputs.environment }}
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
           CI: true
         run: |
-          echo "Running Smoke Tests on ${{ inputs.environment }}"
+          echo "Running Smoke Tests on $ENVIRONMENT"
           npx playwright test --grep @smoke || true
 
       # 7️⃣ Optional severity gate
@@ -136,7 +127,7 @@ jobs:
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-      # 📊 Collect Playwright test statistics + failed test names
+      # 📊 Collect Playwright test statistics
       - name: Collect Test Stats
         if: always()
         run: |
@@ -209,6 +200,6 @@ jobs:
             \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Test Results\",
-              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n🌍 Allure Report: $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n *Allure Report:* $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
             }]
           }" $SLACK_WEBHOOK_URL
