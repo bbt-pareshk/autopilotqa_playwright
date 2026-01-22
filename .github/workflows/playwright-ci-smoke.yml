@@ -54,7 +54,7 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget || echo "Some packages failed, continuing..."
 
-       # 🌍 Resolve environment name
+      # 🌍 Resolve environment name
       - name: Resolve Environment
         run: |
           if [ -n "${{ inputs.environment }}" ]; then
@@ -62,7 +62,6 @@ jobs:
           else
             echo "ENVIRONMENT=staging" >> $GITHUB_ENV
           fi
-
 
       # 6️⃣ Run Smoke Tests (SAFE)
       - name: Run Smoke Tests
@@ -103,17 +102,16 @@ jobs:
           name: playwright-html-report
           path: playwright-report
 
-    # 1️⃣1️⃣ Deploy Allure Report to PUBLIC report repo
-- name: Deploy Allure Report to GitHub Pages
-  uses: peaceiris/actions-gh-pages@v4
-  with:
-    personal_token: ${{ secrets.GH_PAGES_TOKEN }}
-    external_repository: <YOUR_USERNAME>/autopilotqa-allure-report
-    publish_branch: gh-pages
-    publish_dir: ./allure-report
-    user_name: github-actions
-    user_email: github-actions@github.com
-
+      # 1️⃣1️⃣ Deploy Allure to PUBLIC GitHub Pages repo
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+          external_repository: bbt-pareshk/autopilotqa-allure-report
+          publish_branch: gh-pages
+          publish_dir: ./allure-report
+          user_name: github-actions
+          user_email: github-actions@github.com
 
       # 1️⃣2️⃣ CI Summary links
       - name: Add CI Summary Links
@@ -121,12 +119,12 @@ jobs:
           echo "## 📊 Test Reports" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🔵 Allure Report (Online)" >> $GITHUB_STEP_SUMMARY
-          echo "👉 https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> $GITHUB_STEP_SUMMARY
+          echo "👉 https://${GITHUB_REPOSITORY_OWNER}.github.io/autopilotqa-allure-report/" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-            # 📊 Collect Playwright test statistics + failed test names (FINAL FIX)
+      # 📊 Collect Playwright test statistics
       - name: Collect Test Stats
         if: always()
         run: |
@@ -154,18 +152,10 @@ jobs:
 
           function walkSuites(suites = []) {
             for (const suite of suites) {
-              // Go deeper
-              if (suite.suites) {
-                walkSuites(suite.suites);
-              }
-
-              // Read specs at this level
+              if (suite.suites) walkSuites(suite.suites);
               for (const spec of suite.specs || []) {
                 for (const test of spec.tests || []) {
-                  const hasFailure = (test.results || [])
-                    .some(r => r.status === 'failed');
-
-                  if (hasFailure) {
+                  if ((test.results || []).some(r => r.status === 'failed')) {
                     failedTests.add(spec.title);
                   }
                 }
@@ -188,8 +178,7 @@ jobs:
           fs.appendFileSync(process.env.GITHUB_ENV, `FAILED_TESTS=${failedList}\n`);
           EOF
 
-
-      # 🔔 Slack Notification (with test names)
+      # 🔔 Slack Notification
       - name: Notify Slack
         if: always()
         env:
