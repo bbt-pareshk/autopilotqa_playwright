@@ -1,0 +1,1549 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e10]:
+          - link [ref=e12] [cursor=pointer]:
+            - /url: /
+          - switch [ref=e18] [cursor=pointer]
+        - generic [ref=e22]:
+          - link "New" [ref=e24] [cursor=pointer]:
+            - /url: /spin_a_wheel
+            - generic [ref=e25]:
+              - img [ref=e26]
+              - emphasis [ref=e27]: New
+          - link "Design 1 Design 2 New" [ref=e29] [cursor=pointer]:
+            - /url: javascript://
+            - generic [ref=e30]: Design 1
+            - generic [ref=e31]: Design 2
+            - generic [ref=e32]: New
+          - link "Statistics" [ref=e34] [cursor=pointer]:
+            - /url: https://s5.sir.sportradar.com/betradar/en
+            - text: 
+            - generic [ref=e35]: Statistics
+          - link "Claim Bonus" [ref=e37] [cursor=pointer]:
+            - /url: /content/lost_bonus
+            - text: 
+            - generic [ref=e38]: Claim Bonus
+          - list [ref=e39]:
+            - listitem [ref=e40]:
+              - link "Sign In" [ref=e41] [cursor=pointer]:
+                - /url: javascript://
+                - generic [ref=e42]: Sign In
+            - listitem [ref=e43]:
+              - link "Register" [ref=e44] [cursor=pointer]:
+                - /url: javascript://
+                - generic [ref=e45]: Register
+          - generic [ref=e47] [cursor=pointer]:
+            - combobox "en" [ref=e48]:
+              - generic [ref=e49]:
+                - img "en" [ref=e51]
+                - generic [ref=e52]: EN
+            - button "dropdown trigger" [ref=e53]:
+              - img [ref=e55]
+      - list [ref=e61]:
+        - listitem [ref=e62]:
+          - link "Sports Betting" [ref=e63] [cursor=pointer]:
+            - /url: /sport/pregame
+            - generic [ref=e64]: Sports Betting
+        - listitem [ref=e65]:
+          - link "Live Betting" [ref=e66] [cursor=pointer]:
+            - /url: /sport/live
+            - generic [ref=e67]: Live Betting
+        - listitem [ref=e68]:
+          - link "Slot Casino" [ref=e69] [cursor=pointer]:
+            - /url: /casino/slot
+            - generic [ref=e70]: Slot Casino
+        - listitem [ref=e71]:
+          - link "Live Casino" [ref=e72] [cursor=pointer]:
+            - /url: /casino/live
+            - generic [ref=e73]: Live Casino
+        - listitem [ref=e74]:
+          - link "Virtual Sports" [ref=e75] [cursor=pointer]:
+            - /url: /casino/virtual
+            - generic [ref=e76]: Virtual Sports
+        - listitem [ref=e77]:
+          - link "Fast Games" [ref=e78] [cursor=pointer]:
+            - /url: /casino/category/1017?pgType=4&category=1017
+            - generic [ref=e79]: Fast Games
+        - listitem [ref=e80]:
+          - link "Crash Games" [ref=e81] [cursor=pointer]:
+            - /url: /casino/category/46?pgType=4&category=46
+            - generic [ref=e82]: Crash Games
+        - listitem [ref=e83]:
+          - link "Affiliate" [ref=e84] [cursor=pointer]:
+            - /url: https://affiliate.hocosoftware.com
+            - generic [ref=e85]: Affiliate
+        - listitem [ref=e86]:
+          - link "Promotion" [ref=e87] [cursor=pointer]:
+            - /url: /content/promotion
+            - generic [ref=e88]: Promotion
+  - generic [ref=e91]:
+    - generic [ref=e93]:
+      - generic [ref=e95]:
+        - generic [ref=e98]:
+          - generic:
+            - group "1 / 3" [ref=e99]:
+              - link [ref=e100] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e101]
+            - group "2 / 3" [ref=e102]:
+              - link [ref=e103] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e104]
+            - group "3 / 3" [ref=e105]:
+              - link [ref=e106] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e107]
+        - generic [ref=e108]:
+          - button "Previous slide" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: 
+          - generic [ref=e111]:
+            - generic [ref=e112]: "2"
+            - text: /
+            - generic [ref=e113]: "3"
+          - button "Next slide" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: 
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - heading "Bet By Sports" [level=3] [ref=e120]
+          - generic [ref=e125]:
+            - generic:
+              - group "1 / 44" [ref=e126]:
+                - generic [ref=e127] [cursor=pointer]:
+                  - img "Football" [ref=e129]
+                  - generic [ref=e130]: Football
+              - group "2 / 44" [ref=e131]:
+                - generic [ref=e132] [cursor=pointer]:
+                  - img "Basketball" [ref=e134]
+                  - generic [ref=e135]: Basketball
+              - group "3 / 44" [ref=e136]:
+                - generic [ref=e137] [cursor=pointer]:
+                  - img "Volleyball" [ref=e139]
+                  - generic [ref=e140]: Volleyball
+              - group "4 / 44" [ref=e141]:
+                - generic [ref=e142] [cursor=pointer]:
+                  - img "Tennis" [ref=e144]
+                  - generic [ref=e145]: Tennis
+              - group "5 / 44" [ref=e146]:
+                - generic [ref=e147] [cursor=pointer]:
+                  - img "Baseball" [ref=e149]
+                  - generic [ref=e150]: Baseball
+              - group "6 / 44" [ref=e151]:
+                - generic [ref=e152] [cursor=pointer]:
+                  - img "Ice Hockey" [ref=e154]
+                  - generic [ref=e155]: Ice Hockey
+              - group "7 / 44" [ref=e156]:
+                - generic [ref=e157] [cursor=pointer]:
+                  - img "Handball" [ref=e159]
+                  - generic [ref=e160]: Handball
+              - group "8 / 44" [ref=e161]:
+                - generic [ref=e162] [cursor=pointer]:
+                  - img "E-Football" [ref=e164]
+                  - generic [ref=e165]: E-Football
+              - group "9 / 44" [ref=e166]:
+                - generic [ref=e167] [cursor=pointer]:
+                  - img "E-Basketball" [ref=e169]
+                  - generic [ref=e170]: E-Basketball
+              - group "10 / 44" [ref=e171]:
+                - generic [ref=e172] [cursor=pointer]:
+                  - img "Table Tennis" [ref=e174]
+                  - generic [ref=e175]: Table Tennis
+              - group "11 / 44" [ref=e176]:
+                - generic [ref=e177] [cursor=pointer]:
+                  - img "MMA" [ref=e179]
+                  - generic [ref=e180]: MMA
+              - group "12 / 44" [ref=e181]:
+                - generic [ref=e182] [cursor=pointer]:
+                  - img "Boxing" [ref=e184]
+                  - generic [ref=e185]: Boxing
+              - group "13 / 44" [ref=e186]:
+                - generic [ref=e187] [cursor=pointer]:
+                  - 'img "Counter-Strike: GO (CS:GO)" [ref=e189]'
+                  - generic [ref=e190]: "Counter-Strike: GO (CS:GO)"
+              - group "14 / 44" [ref=e191]:
+                - generic [ref=e192] [cursor=pointer]:
+                  - img "League of Legends (LoL)" [ref=e194]
+                  - generic [ref=e195]: League of Legends (LoL)
+              - group "15 / 44" [ref=e196]:
+                - generic [ref=e197] [cursor=pointer]:
+                  - img "Snooker" [ref=e199]
+                  - generic [ref=e200]: Snooker
+              - group "16 / 44" [ref=e201]:
+                - generic [ref=e202] [cursor=pointer]:
+                  - img "King of Glory (KoG)" [ref=e204]
+                  - generic [ref=e205]: King of Glory (KoG)
+              - group "17 / 44" [ref=e206]:
+                - generic [ref=e207] [cursor=pointer]:
+                  - img "Futsal" [ref=e209]
+                  - generic [ref=e210]: Futsal
+              - group "18 / 44" [ref=e211]:
+                - generic [ref=e212] [cursor=pointer]:
+                  - img "Dota 2" [ref=e214]
+                  - generic [ref=e215]: Dota 2
+              - group "19 / 44" [ref=e216]:
+                - generic [ref=e217] [cursor=pointer]:
+                  - img "Water Polo" [ref=e219]
+                  - generic [ref=e220]: Water Polo
+              - group "20 / 44" [ref=e221]:
+                - generic [ref=e222] [cursor=pointer]:
+                  - img "Cricket" [ref=e224]
+                  - generic [ref=e225]: Cricket
+              - group "21 / 44" [ref=e226]:
+                - generic [ref=e227] [cursor=pointer]:
+                  - img "Badminton" [ref=e229]
+                  - generic [ref=e230]: Badminton
+              - group "22 / 44" [ref=e231]:
+                - generic [ref=e232] [cursor=pointer]:
+                  - img "Valorant" [ref=e234]
+                  - generic [ref=e235]: Valorant
+              - group "23 / 44" [ref=e236]:
+                - generic [ref=e237] [cursor=pointer]:
+                  - img "Pool" [ref=e239]
+                  - generic [ref=e240]: Pool
+              - group "24 / 44" [ref=e241]:
+                - generic [ref=e242] [cursor=pointer]:
+                  - img "Floorball" [ref=e244]
+                  - generic [ref=e245]: Floorball
+              - group "25 / 44" [ref=e246]:
+                - generic [ref=e247] [cursor=pointer]:
+                  - img "Bowls" [ref=e249]
+                  - generic [ref=e250]: Bowls
+              - group "26 / 44" [ref=e251]:
+                - generic [ref=e252] [cursor=pointer]:
+                  - img "Bandy" [ref=e254]
+                  - generic [ref=e255]: Bandy
+              - group "27 / 44" [ref=e256]:
+                - generic [ref=e257] [cursor=pointer]:
+                  - img "Darts" [ref=e259]
+                  - generic [ref=e260]: Darts
+              - group "28 / 44" [ref=e261]:
+                - generic [ref=e262] [cursor=pointer]:
+                  - img "Biathlon" [ref=e264]
+                  - generic [ref=e265]: Biathlon
+              - group "29 / 44" [ref=e266]:
+                - generic [ref=e267] [cursor=pointer]:
+                  - img "Squash" [ref=e269]
+                  - generic [ref=e270]: Squash
+              - group "30 / 44" [ref=e271]:
+                - generic [ref=e272] [cursor=pointer]:
+                  - img "Golf" [ref=e274]
+                  - generic [ref=e275]: Golf
+              - group "31 / 44" [ref=e276]:
+                - generic [ref=e277] [cursor=pointer]:
+                  - img "Motorbikes" [ref=e279]
+                  - generic [ref=e280]: Motorbikes
+              - group "32 / 44" [ref=e281]:
+                - generic [ref=e282] [cursor=pointer]:
+                  - img "3x3 Basketball" [ref=e284]
+                  - generic [ref=e285]: 3x3 Basketball
+              - group "33 / 44" [ref=e286]:
+                - generic [ref=e287] [cursor=pointer]:
+                  - img "Special bets" [ref=e289]
+                  - generic [ref=e290]: Special bets
+              - group "34 / 44" [ref=e291]:
+                - generic [ref=e292] [cursor=pointer]:
+                  - img "Alpine Skiing" [ref=e294]
+                  - generic [ref=e295]: Alpine Skiing
+              - group "35 / 44" [ref=e296]:
+                - generic [ref=e297] [cursor=pointer]:
+                  - img "Call of Duty (COD)" [ref=e299]
+                  - generic [ref=e300]: Call of Duty (COD)
+              - group "36 / 44" [ref=e301]:
+                - generic [ref=e302] [cursor=pointer]:
+                  - img "American Football" [ref=e304]
+                  - generic [ref=e305]: American Football
+              - group "37 / 44" [ref=e306]:
+                - generic [ref=e307] [cursor=pointer]:
+                  - img "Rugby Union" [ref=e309]
+                  - generic [ref=e310]: Rugby Union
+              - group "38 / 44" [ref=e311]:
+                - generic [ref=e312] [cursor=pointer]:
+                  - img "Politics" [ref=e314]
+                  - generic [ref=e315]: Politics
+              - group "39 / 44" [ref=e316]:
+                - generic [ref=e317] [cursor=pointer]:
+                  - img "Cycling" [ref=e319]
+                  - generic [ref=e320]: Cycling
+              - group "40 / 44" [ref=e321]:
+                - generic [ref=e322] [cursor=pointer]:
+                  - img "Speedway" [ref=e324]
+                  - generic [ref=e325]: Speedway
+              - group "41 / 44" [ref=e326]:
+                - generic [ref=e327] [cursor=pointer]:
+                  - img "Gaelic football" [ref=e329]
+                  - generic [ref=e330]: Gaelic football
+              - group "42 / 44" [ref=e331]:
+                - generic [ref=e332] [cursor=pointer]:
+                  - img "Rugby League" [ref=e334]
+                  - generic [ref=e335]: Rugby League
+              - group "43 / 44" [ref=e336]:
+                - generic [ref=e337] [cursor=pointer]:
+                  - img "Aussie Rules" [ref=e339]
+                  - generic [ref=e340]: Aussie Rules
+              - group "44 / 44" [ref=e341]:
+                - generic [ref=e342] [cursor=pointer]:
+                  - img "Formula 1" [ref=e344]
+                  - generic [ref=e345]: Formula 1
+        - generic [ref=e347] [cursor=pointer]:
+          - img [ref=e349]
+          - heading "Live Sports" [level=2] [ref=e350]
+        - generic [ref=e352] [cursor=pointer]:
+          - img [ref=e354]
+          - heading "Pre Sports" [level=2] [ref=e355]
+        - generic [ref=e357] [cursor=pointer]:
+          - img [ref=e359]
+          - heading "Live Casino" [level=2] [ref=e360]
+        - generic [ref=e362] [cursor=pointer]:
+          - img [ref=e364]
+          - heading "Slot Casino" [level=2] [ref=e365]
+        - generic [ref=e367] [cursor=pointer]:
+          - img [ref=e369]
+          - heading "Promotion World" [level=2] [ref=e370]
+        - generic [ref=e371]:
+          - heading "Popular Pre Matches" [level=3] [ref=e373]
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - generic [ref=e379]:
+                - generic:
+                  - group "1 / 33" [ref=e380]:
+                    - generic [ref=e381] [cursor=pointer]:
+                      - img "Football" [ref=e383]
+                      - generic [ref=e384]: Football
+                  - group "2 / 33" [ref=e385]:
+                    - generic [ref=e386] [cursor=pointer]:
+                      - img "Basketball" [ref=e388]
+                      - generic: Basketball
+                  - group "3 / 33" [ref=e389]:
+                    - generic [ref=e390] [cursor=pointer]:
+                      - img "Volleyball" [ref=e392]
+                      - generic: Volleyball
+                  - group "4 / 33" [ref=e393]:
+                    - generic [ref=e394] [cursor=pointer]:
+                      - img "Tennis" [ref=e396]
+                      - generic: Tennis
+                  - group "5 / 33" [ref=e397]:
+                    - generic [ref=e398] [cursor=pointer]:
+                      - img "Baseball" [ref=e400]
+                      - generic: Baseball
+                  - group "6 / 33" [ref=e401]:
+                    - generic [ref=e402] [cursor=pointer]:
+                      - img "Ice Hockey" [ref=e404]
+                      - generic: Ice Hockey
+                  - group "7 / 33" [ref=e405]:
+                    - generic [ref=e406] [cursor=pointer]:
+                      - img "Handball" [ref=e408]
+                      - generic: Handball
+                  - group "8 / 33" [ref=e409]:
+                    - generic [ref=e410] [cursor=pointer]:
+                      - img "Table Tennis" [ref=e412]
+                      - generic: Table Tennis
+                  - group "9 / 33" [ref=e413]:
+                    - generic [ref=e414] [cursor=pointer]:
+                      - img "MMA" [ref=e416]
+                      - generic: MMA
+                  - group "10 / 33" [ref=e417]:
+                    - generic [ref=e418] [cursor=pointer]:
+                      - img "Boxing" [ref=e420]
+                      - generic: Boxing
+                  - group "11 / 33" [ref=e421]:
+                    - generic [ref=e422] [cursor=pointer]:
+                      - 'img "Counter-Strike: GO (CS:GO)" [ref=e424]'
+                      - generic: "Counter-Strike: GO (CS:GO)"
+                  - group "12 / 33" [ref=e425]:
+                    - generic [ref=e426] [cursor=pointer]:
+                      - img "League of Legends (LoL)" [ref=e428]
+                      - generic: League of Legends (LoL)
+                  - group "13 / 33" [ref=e429]:
+                    - generic [ref=e430] [cursor=pointer]:
+                      - img "Snooker" [ref=e432]
+                      - generic: Snooker
+                  - group "14 / 33" [ref=e433]:
+                    - generic [ref=e434] [cursor=pointer]:
+                      - img "King of Glory (KoG)" [ref=e436]
+                      - generic: King of Glory (KoG)
+                  - group "15 / 33" [ref=e437]:
+                    - generic [ref=e438] [cursor=pointer]:
+                      - img "Futsal" [ref=e440]
+                      - generic: Futsal
+                  - group "16 / 33" [ref=e441]:
+                    - generic [ref=e442] [cursor=pointer]:
+                      - img "Dota 2" [ref=e444]
+                      - generic: Dota 2
+                  - group "17 / 33" [ref=e445]:
+                    - generic [ref=e446] [cursor=pointer]:
+                      - img "Water Polo" [ref=e448]
+                      - generic: Water Polo
+                  - group "18 / 33" [ref=e449]:
+                    - generic [ref=e450] [cursor=pointer]:
+                      - img "Cricket" [ref=e452]
+                      - generic: Cricket
+                  - group "19 / 33" [ref=e453]:
+                    - generic [ref=e454] [cursor=pointer]:
+                      - img "Badminton" [ref=e456]
+                      - generic: Badminton
+                  - group "20 / 33" [ref=e457]:
+                    - generic [ref=e458] [cursor=pointer]:
+                      - img "Valorant" [ref=e460]
+                      - generic: Valorant
+                  - group "21 / 33" [ref=e461]:
+                    - generic [ref=e462] [cursor=pointer]:
+                      - img "Pool" [ref=e464]
+                      - generic: Pool
+                  - group "22 / 33" [ref=e465]:
+                    - generic [ref=e466] [cursor=pointer]:
+                      - img "Floorball" [ref=e468]
+                      - generic: Floorball
+                  - group "23 / 33" [ref=e469]:
+                    - generic [ref=e470] [cursor=pointer]:
+                      - img "Bowls" [ref=e472]
+                      - generic: Bowls
+                  - group "24 / 33" [ref=e473]:
+                    - generic [ref=e474] [cursor=pointer]:
+                      - img "Bandy" [ref=e476]
+                      - generic: Bandy
+                  - group "25 / 33" [ref=e477]:
+                    - generic [ref=e478] [cursor=pointer]:
+                      - img "Darts" [ref=e480]
+                      - generic: Darts
+                  - group "26 / 33" [ref=e481]:
+                    - generic [ref=e482] [cursor=pointer]:
+                      - img "Squash" [ref=e484]
+                      - generic: Squash
+                  - group "27 / 33" [ref=e485]:
+                    - generic [ref=e486] [cursor=pointer]:
+                      - img "Golf" [ref=e488]
+                      - generic: Golf
+                  - group "28 / 33" [ref=e489]:
+                    - generic [ref=e490] [cursor=pointer]:
+                      - img "3x3 Basketball" [ref=e492]
+                      - generic: 3x3 Basketball
+                  - group "29 / 33" [ref=e493]:
+                    - generic [ref=e494] [cursor=pointer]:
+                      - img "Call of Duty (COD)" [ref=e496]
+                      - generic: Call of Duty (COD)
+                  - group "30 / 33" [ref=e497]:
+                    - generic [ref=e498] [cursor=pointer]:
+                      - img "American Football" [ref=e500]
+                      - generic: American Football
+                  - group "31 / 33" [ref=e501]:
+                    - generic [ref=e502] [cursor=pointer]:
+                      - img "Rugby Union" [ref=e504]
+                      - generic: Rugby Union
+                  - group "32 / 33" [ref=e505]:
+                    - generic [ref=e506] [cursor=pointer]:
+                      - img "Gaelic football" [ref=e508]
+                      - generic: Gaelic football
+                  - group "33 / 33" [ref=e509]:
+                    - generic [ref=e510] [cursor=pointer]:
+                      - img "Aussie Rules" [ref=e512]
+                      - generic: Aussie Rules
+              - generic [ref=e513]:
+                - button "Previous slide" [disabled] [ref=e514]:
+                  - img [ref=e515]
+                - button "Next slide" [ref=e517] [cursor=pointer]:
+                  - img [ref=e518]
+            - generic [ref=e522]:
+              - link "Match Result" [ref=e523] [cursor=pointer]:
+                - /url: javascript://
+              - link "Double Chance" [ref=e524] [cursor=pointer]:
+                - /url: javascript://
+              - link "Total Goals" [ref=e525] [cursor=pointer]:
+                - /url: javascript://
+            - generic [ref=e526]:
+              - generic [ref=e529]:
+                - generic:
+                  - group "1 / 12" [ref=e530]:
+                    - generic [ref=e531] [cursor=pointer]:
+                      - generic [ref=e532]:
+                        - generic [ref=e534]:
+                          - img [ref=e536]
+                          - generic [ref=e537]: England - Premier League
+                        - generic [ref=e538]:
+                          - generic [ref=e539]: 
+                          - generic [ref=e540]: 24/01 • 15:00
+                      - generic [ref=e542]:
+                        - generic [ref=e543]:
+                          - generic [ref=e544]: 
+                          - generic [ref=e545]: "+610"
+                        - generic [ref=e546]:
+                          - generic [ref=e547]: Burnley
+                          - img [ref=e549]
+                          - generic [ref=e554]: Tottenham Hotspur
+                      - generic [ref=e555]:
+                        - generic [ref=e557]:
+                          - generic [ref=e558]: "1"
+                          - generic [ref=e559]: "3.55"
+                        - generic [ref=e561]:
+                          - generic [ref=e562]: X
+                          - generic [ref=e563]: "3.37"
+                        - generic [ref=e565]:
+                          - generic [ref=e566]: "2"
+                          - generic [ref=e567]: "2.04"
+                  - group "2 / 12" [ref=e568]:
+                    - generic [ref=e569] [cursor=pointer]:
+                      - generic [ref=e570]:
+                        - generic [ref=e572]:
+                          - img [ref=e574]
+                          - generic [ref=e575]: World - Club Friendlies (Possible Format Change)
+                        - generic [ref=e576]:
+                          - generic [ref=e577]: 
+                          - generic [ref=e578]: 22/01 • 16:00
+                      - generic [ref=e580]:
+                        - generic [ref=e581]:
+                          - generic [ref=e582]: 
+                          - generic [ref=e583]: "+296"
+                        - generic [ref=e584]:
+                          - generic [ref=e585]: Randers FC
+                          - img [ref=e587]
+                          - generic [ref=e592]: Real Salt Lake
+                      - generic [ref=e593]:
+                        - generic [ref=e595]:
+                          - generic [ref=e596]: "1"
+                          - generic [ref=e597]: "2.08"
+                        - generic [ref=e599]:
+                          - generic [ref=e600]: X
+                          - generic [ref=e601]: "3.34"
+                        - generic [ref=e603]:
+                          - generic [ref=e604]: "2"
+                          - generic [ref=e605]: "3.12"
+                  - group "3 / 12" [ref=e606]:
+                    - generic [ref=e607] [cursor=pointer]:
+                      - generic [ref=e608]:
+                        - generic [ref=e610]:
+                          - img [ref=e612]
+                          - generic [ref=e613]: Europe - UEFA Europa League
+                        - generic [ref=e614]:
+                          - generic [ref=e615]: 
+                          - generic [ref=e616]: 22/01 • 20:00
+                      - generic [ref=e618]:
+                        - generic [ref=e619]:
+                          - generic [ref=e620]: 
+                          - generic [ref=e621]: "+682"
+                        - generic [ref=e622]:
+                          - generic [ref=e623]: GNK Dinamo Zagreb
+                          - img [ref=e625]
+                          - generic [ref=e630]: FCSB
+                      - generic [ref=e631]:
+                        - generic [ref=e633]:
+                          - generic [ref=e634]: "1"
+                          - generic [ref=e635]: "1.69"
+                        - generic [ref=e637]:
+                          - generic [ref=e638]: X
+                          - generic [ref=e639]: "3.88"
+                        - generic [ref=e641]:
+                          - generic [ref=e642]: "2"
+                          - generic [ref=e643]: "4.80"
+                  - group "4 / 12" [ref=e644]:
+                    - generic [ref=e645] [cursor=pointer]:
+                      - generic [ref=e646]:
+                        - generic [ref=e648]:
+                          - img [ref=e650]
+                          - generic [ref=e651]: Europe - UEFA Europa League
+                        - generic [ref=e652]:
+                          - generic [ref=e653]: 
+                          - generic [ref=e654]: 22/01 • 17:45
+                      - generic [ref=e656]:
+                        - generic [ref=e657]:
+                          - generic [ref=e658]: 
+                          - generic [ref=e659]: "+680"
+                        - generic [ref=e660]:
+                          - generic [ref=e661]: Malmo FF
+                          - img [ref=e663]
+                          - generic [ref=e668]: FK Crvena Zvezda
+                      - generic [ref=e669]:
+                        - generic [ref=e671]:
+                          - generic [ref=e672]: "1"
+                          - generic [ref=e673]: "3.81"
+                        - generic [ref=e675]:
+                          - generic [ref=e676]: X
+                          - generic [ref=e677]: "3.72"
+                        - generic [ref=e679]:
+                          - generic [ref=e680]: "2"
+                          - generic [ref=e681]: "1.91"
+                  - group "5 / 12" [ref=e682]:
+                    - generic [ref=e683] [cursor=pointer]:
+                      - generic [ref=e684]:
+                        - generic [ref=e686]:
+                          - img [ref=e688]
+                          - generic [ref=e689]: Europe - UEFA Europa League
+                        - generic [ref=e690]:
+                          - generic [ref=e691]: 
+                          - generic [ref=e692]: 22/01 • 20:00
+                      - generic [ref=e694]:
+                        - generic [ref=e695]:
+                          - generic [ref=e696]: 
+                          - generic [ref=e697]: "+688"
+                        - generic [ref=e698]:
+                          - generic [ref=e699]: Red Bull Salzburg
+                          - img [ref=e701]
+                          - generic [ref=e706]: FC Basel
+                      - generic [ref=e707]:
+                        - generic [ref=e709]:
+                          - generic [ref=e710]: "1"
+                          - generic [ref=e711]: "2.13"
+                        - generic [ref=e713]:
+                          - generic [ref=e714]: X
+                          - generic [ref=e715]: "3.82"
+                        - generic [ref=e717]:
+                          - generic [ref=e718]: "2"
+                          - generic [ref=e719]: "3.09"
+                  - group "6 / 12" [ref=e720]:
+                    - generic [ref=e721] [cursor=pointer]:
+                      - generic [ref=e722]:
+                        - generic [ref=e724]:
+                          - img [ref=e726]
+                          - generic [ref=e727]: World - UAE-Qatar Super Cup
+                        - generic [ref=e728]:
+                          - generic [ref=e729]: 
+                          - generic [ref=e730]: 22/01 • 16:00
+                      - generic [ref=e732]:
+                        - generic [ref=e733]:
+                          - generic [ref=e734]: 
+                          - generic [ref=e735]: "+23"
+                        - generic [ref=e736]:
+                          - generic [ref=e737]: Al Gharafa SC
+                          - img [ref=e739]
+                          - generic [ref=e744]: Al Sharjah SC
+                      - generic [ref=e745]:
+                        - generic [ref=e747]:
+                          - generic [ref=e748]: "1"
+                          - generic [ref=e749]: "2.49"
+                        - generic [ref=e751]:
+                          - generic [ref=e752]: X
+                          - generic [ref=e753]: "3.81"
+                        - generic [ref=e755]:
+                          - generic [ref=e756]: "2"
+                          - generic [ref=e757]: "2.29"
+                  - group "7 / 12" [ref=e758]:
+                    - generic [ref=e759] [cursor=pointer]:
+                      - generic [ref=e760]:
+                        - generic [ref=e762]:
+                          - img [ref=e764]
+                          - generic [ref=e765]: Egypt - Second Division
+                        - generic [ref=e766]:
+                          - generic [ref=e767]: 
+                          - generic [ref=e768]: 22/01 • 12:30
+                      - generic [ref=e770]:
+                        - generic [ref=e771]:
+                          - generic [ref=e772]: 
+                          - generic [ref=e773]: "+92"
+                        - generic [ref=e774]:
+                          - generic [ref=e775]: Tersana SC
+                          - img [ref=e777]
+                          - generic [ref=e782]: El Qanah FC
+                      - generic [ref=e783]:
+                        - generic [ref=e785]:
+                          - generic [ref=e786]: "1"
+                          - generic [ref=e787]: "4.33"
+                        - generic [ref=e789]:
+                          - generic [ref=e790]: X
+                          - generic [ref=e791]: "2.64"
+                        - generic [ref=e793]:
+                          - generic [ref=e794]: "2"
+                          - generic [ref=e795]: "2.04"
+                  - group "8 / 12" [ref=e796]:
+                    - generic [ref=e797] [cursor=pointer]:
+                      - generic [ref=e798]:
+                        - generic [ref=e800]:
+                          - img [ref=e802]
+                          - generic [ref=e803]: Italy - Campionato Primavera 1
+                        - generic [ref=e804]:
+                          - generic [ref=e805]: 
+                          - generic [ref=e806]: 22/01 • 13:00
+                      - generic [ref=e808]:
+                        - generic [ref=e809]:
+                          - generic [ref=e810]: 
+                          - generic [ref=e811]: "+21"
+                        - generic [ref=e812]:
+                          - generic [ref=e813]: Torino U20
+                          - img [ref=e815]
+                          - generic [ref=e820]: AS Roma U20
+                      - generic [ref=e821]:
+                        - generic [ref=e823]:
+                          - generic [ref=e824]: "1"
+                          - generic [ref=e825]: "2.85"
+                        - generic [ref=e827]:
+                          - generic [ref=e828]: X
+                          - generic [ref=e829]: "3.45"
+                        - generic [ref=e831]:
+                          - generic [ref=e832]: "2"
+                          - generic [ref=e833]: "2.18"
+                  - group "9 / 12" [ref=e834]:
+                    - generic [ref=e835] [cursor=pointer]:
+                      - generic [ref=e836]:
+                        - generic [ref=e838]:
+                          - img [ref=e840]
+                          - generic [ref=e841]: Europe - UEFA Champions League
+                        - generic [ref=e842]:
+                          - generic [ref=e843]: 
+                          - generic [ref=e844]: 28/01 • 20:00
+                      - generic [ref=e846]:
+                        - generic [ref=e847]:
+                          - generic [ref=e848]: 
+                          - generic [ref=e849]: "+410"
+                        - generic [ref=e850]:
+                          - generic [ref=e851]: Arsenal
+                          - img [ref=e853]
+                          - generic [ref=e858]: FC Kairat Almaty
+                      - generic [ref=e859]:
+                        - generic [ref=e861]:
+                          - generic [ref=e862]: "1"
+                          - generic [ref=e863]: "1.03"
+                        - generic [ref=e865]:
+                          - generic [ref=e866]: X
+                          - generic [ref=e867]: "17.00"
+                        - generic [ref=e869]:
+                          - generic [ref=e870]: "2"
+                          - generic [ref=e871]: "26.00"
+                  - group "10 / 12" [ref=e872]:
+                    - generic [ref=e873] [cursor=pointer]:
+                      - generic [ref=e874]:
+                        - generic [ref=e876]:
+                          - img [ref=e878]
+                          - generic [ref=e879]: Jamaica - National Premier League
+                        - generic [ref=e880]:
+                          - generic [ref=e881]: 
+                          - generic [ref=e882]: 22/01 • 20:00
+                      - generic [ref=e884]:
+                        - generic [ref=e885]:
+                          - generic [ref=e886]: 
+                          - generic [ref=e887]: "+94"
+                        - generic [ref=e888]:
+                          - generic [ref=e889]: Chapelton Maroons FC
+                          - img [ref=e891]
+                          - generic [ref=e896]: Waterhouse FC
+                      - generic [ref=e897]:
+                        - generic [ref=e899]:
+                          - generic [ref=e900]: "1"
+                          - generic [ref=e901]: "3.11"
+                        - generic [ref=e903]:
+                          - generic [ref=e904]: X
+                          - generic [ref=e905]: "2.75"
+                        - generic [ref=e907]:
+                          - generic [ref=e908]: "2"
+                          - generic [ref=e909]: "2.42"
+                  - group "11 / 12" [ref=e910]:
+                    - generic [ref=e911] [cursor=pointer]:
+                      - generic [ref=e912]:
+                        - generic [ref=e914]:
+                          - img [ref=e916]
+                          - generic [ref=e917]: Malta - First Division - Women
+                        - generic [ref=e918]:
+                          - generic [ref=e919]: 
+                          - generic [ref=e920]: 22/01 • 19:15
+                      - generic [ref=e922]:
+                        - generic [ref=e923]:
+                          - generic [ref=e924]: 
+                          - generic [ref=e925]: "+17"
+                        - generic [ref=e926]:
+                          - generic [ref=e927]: Birkirkara FC (Wom)
+                          - img [ref=e929]
+                          - generic [ref=e934]: Swieqi United FC (Wom)
+                      - generic [ref=e935]:
+                        - generic [ref=e937]:
+                          - generic [ref=e938]: "1"
+                          - generic [ref=e939]: "3.35"
+                        - generic [ref=e941]:
+                          - generic [ref=e942]: X
+                          - generic [ref=e943]: "4.33"
+                        - generic [ref=e945]:
+                          - generic [ref=e946]: "2"
+                          - generic [ref=e947]: "1.75"
+                  - group "12 / 12" [ref=e948]:
+                    - generic [ref=e949] [cursor=pointer]:
+                      - generic [ref=e950]:
+                        - generic [ref=e952]:
+                          - img [ref=e954]
+                          - generic [ref=e955]: Europe - UEFA Europa League
+                        - generic [ref=e956]:
+                          - generic [ref=e957]: 
+                          - generic [ref=e958]: 22/01 • 20:00
+                      - generic [ref=e960]:
+                        - generic [ref=e961]:
+                          - generic [ref=e962]: 
+                          - generic [ref=e963]: "+688"
+                        - generic [ref=e964]:
+                          - generic [ref=e965]: Utrecht
+                          - img [ref=e967]
+                          - generic [ref=e972]: KRC Genk
+                      - generic [ref=e973]:
+                        - generic [ref=e975]:
+                          - generic [ref=e976]: "1"
+                          - generic [ref=e977]: "2.96"
+                        - generic [ref=e979]:
+                          - generic [ref=e980]: X
+                          - generic [ref=e981]: "3.38"
+                        - generic [ref=e983]:
+                          - generic [ref=e984]: "2"
+                          - generic [ref=e985]: "2.37"
+              - generic [ref=e987]:
+                - button "Previous slide" [disabled] [ref=e988]:
+                  - img [ref=e989]
+                - button "Next slide" [ref=e991] [cursor=pointer]:
+                  - img [ref=e992]
+        - generic [ref=e996]:
+          - generic [ref=e998]:
+            - heading "Popular Pragmatic Games" [level=3] [ref=e999]
+            - button "13 Show All" [ref=e1001] [cursor=pointer]:
+              - paragraph [ref=e1002]: "13"
+              - generic [ref=e1003]: Show All
+          - list [ref=e1006]:
+            - listitem [ref=e1007]:
+              - generic [ref=e1008]:
+                - img [ref=e1010]
+                - generic [ref=e1012]:
+                  - generic [ref=e1013]:
+                    - heading "Sweet Bonanza" [level=2] [ref=e1014]
+                    - heading "Pragmatic Play" [level=6] [ref=e1015]
+                  - link "" [ref=e1017] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1018]: 
+            - listitem [ref=e1019]:
+              - generic [ref=e1020]:
+                - img [ref=e1022]
+                - generic [ref=e1024]:
+                  - generic [ref=e1025]:
+                    - heading "Gates of Olympus 1000" [level=2] [ref=e1026]
+                    - heading "Pragmatic Play" [level=6] [ref=e1027]
+                  - link "" [ref=e1029] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1030]: 
+            - listitem [ref=e1031]:
+              - generic [ref=e1032]:
+                - img [ref=e1034]
+                - generic [ref=e1036]:
+                  - generic [ref=e1037]:
+                    - heading "Sugar Rush 1000" [level=2] [ref=e1038]
+                    - heading "Pragmatic Play" [level=6] [ref=e1039]
+                  - link "" [ref=e1041] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1042]: 
+            - listitem [ref=e1043]:
+              - generic [ref=e1044]:
+                - img [ref=e1046]
+                - generic [ref=e1048]:
+                  - generic [ref=e1049]:
+                    - heading "Zeus vs Hades - Gods of War" [level=2] [ref=e1050]
+                    - heading "Pragmatic Play" [level=6] [ref=e1051]
+                  - link "" [ref=e1053] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1054]: 
+            - listitem [ref=e1055]:
+              - generic [ref=e1056]:
+                - img [ref=e1058]
+                - generic [ref=e1060]:
+                  - generic [ref=e1061]:
+                    - heading "Big Bass Bonanza" [level=2] [ref=e1062]
+                    - heading "Pragmatic Play" [level=6] [ref=e1063]
+                  - link "" [ref=e1065] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1066]: 
+            - listitem [ref=e1067]:
+              - generic [ref=e1068]:
+                - img [ref=e1070]
+                - generic [ref=e1072]:
+                  - generic [ref=e1073]:
+                    - heading "Wisdom of Athena" [level=2] [ref=e1074]
+                    - heading "Pragmatic Play" [level=6] [ref=e1075]
+                  - link "" [ref=e1077] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1078]: 
+            - listitem [ref=e1079]:
+              - generic [ref=e1080]:
+                - img [ref=e1082]
+                - generic [ref=e1084]:
+                  - generic [ref=e1085]:
+                    - heading "Year Of The Dragon King" [level=2] [ref=e1086]
+                    - heading "Pragmatic Play" [level=6] [ref=e1087]
+                  - link "" [ref=e1089] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1090]: 
+            - listitem [ref=e1091]:
+              - generic [ref=e1092]:
+                - img [ref=e1094]
+                - generic [ref=e1096]:
+                  - generic [ref=e1097]:
+                    - heading "Madame Destiny Megaways" [level=2] [ref=e1098]
+                    - heading "Pragmatic Play" [level=6] [ref=e1099]
+                  - link "" [ref=e1101] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1102]: 
+            - listitem [ref=e1103]:
+              - generic [ref=e1104]:
+                - img [ref=e1106]
+                - generic [ref=e1108]:
+                  - generic [ref=e1109]:
+                    - heading "3 Buzzing Wilds" [level=2] [ref=e1110]
+                    - heading "Pragmatic Play" [level=6] [ref=e1111]
+                  - link "" [ref=e1113] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1114]: 
+            - listitem [ref=e1115]:
+              - generic [ref=e1116]:
+                - img [ref=e1118]
+                - generic [ref=e1120]:
+                  - generic [ref=e1121]:
+                    - heading "Big Bass Christmas Bash" [level=2] [ref=e1122]
+                    - heading "Pragmatic Play" [level=6] [ref=e1123]
+                  - link "" [ref=e1125] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1126]: 
+        - generic [ref=e1127]:
+          - generic [ref=e1129]:
+            - heading "Popular Evolution Games" [level=3] [ref=e1130]
+            - button "19 Show All" [ref=e1132] [cursor=pointer]:
+              - paragraph [ref=e1133]: "19"
+              - generic [ref=e1134]: Show All
+          - list [ref=e1137]:
+            - listitem [ref=e1138]:
+              - generic [ref=e1139]:
+                - img [ref=e1141]
+                - generic [ref=e1143]:
+                  - generic [ref=e1144]:
+                    - heading "Crazy Balls" [level=2] [ref=e1145]
+                    - heading "Evolution Gaming" [level=6] [ref=e1146]
+                  - link "" [ref=e1148] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1149]: 
+            - listitem [ref=e1150]:
+              - generic [ref=e1151]:
+                - img [ref=e1153]
+                - generic [ref=e1155]:
+                  - generic [ref=e1156]:
+                    - heading "Balloon Race" [level=2] [ref=e1157]
+                    - heading "Evolution Gaming" [level=6] [ref=e1158]
+                  - link "" [ref=e1160] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1161]: 
+            - listitem [ref=e1162]:
+              - generic [ref=e1163]:
+                - img [ref=e1165]
+                - generic [ref=e1167]:
+                  - generic [ref=e1168]:
+                    - heading "Stock Market" [level=2] [ref=e1169]
+                    - heading "Evolution Gaming" [level=6] [ref=e1170]
+                  - link "" [ref=e1172] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1173]: 
+            - listitem [ref=e1174]:
+              - generic [ref=e1175]:
+                - img [ref=e1177]
+                - generic [ref=e1179]:
+                  - generic [ref=e1180]:
+                    - heading "Dream Catcher" [level=2] [ref=e1181]
+                    - heading "Evolution Gaming" [level=6] [ref=e1182]
+                  - link "" [ref=e1184] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1185]: 
+            - listitem [ref=e1186]:
+              - generic [ref=e1187]:
+                - img [ref=e1189]
+                - generic [ref=e1191]:
+                  - generic [ref=e1192]:
+                    - heading "2 Hand Casino Hold'em" [level=2] [ref=e1193]
+                    - heading "Evolution Gaming" [level=6] [ref=e1194]
+                  - link "" [ref=e1196] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1197]: 
+            - listitem [ref=e1198]:
+              - generic [ref=e1199]:
+                - img [ref=e1201]
+                - generic [ref=e1203]:
+                  - generic [ref=e1204]:
+                    - heading "Bac Bo" [level=2] [ref=e1205]
+                    - heading "Evolution Gaming" [level=6] [ref=e1206]
+                  - link "" [ref=e1208] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1209]: 
+            - listitem [ref=e1210]:
+              - generic [ref=e1211]:
+                - img [ref=e1213]
+                - generic [ref=e1215]:
+                  - generic [ref=e1216]:
+                    - heading "Caribbean Stud Poker" [level=2] [ref=e1217]
+                    - heading "Evolution Gaming" [level=6] [ref=e1218]
+                  - link "" [ref=e1220] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1221]: 
+            - listitem [ref=e1222]:
+              - generic [ref=e1223]:
+                - img [ref=e1225]
+                - generic [ref=e1227]:
+                  - generic [ref=e1228]:
+                    - heading "Cash or Crash" [level=2] [ref=e1229]
+                    - heading "Evolution Gaming" [level=6] [ref=e1230]
+                  - link "" [ref=e1232] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1233]: 
+            - listitem [ref=e1234]:
+              - generic [ref=e1235]:
+                - img [ref=e1237]
+                - generic [ref=e1239]:
+                  - generic [ref=e1240]:
+                    - heading "Casino Hold'em" [level=2] [ref=e1241]
+                    - heading "Evolution Gaming" [level=6] [ref=e1242]
+                  - link "" [ref=e1244] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1245]: 
+            - listitem [ref=e1246]:
+              - generic [ref=e1247]:
+                - img [ref=e1249]
+                - generic [ref=e1251]:
+                  - generic [ref=e1252]:
+                    - 'heading "Dead or Alive: Saloon" [level=2] [ref=e1253]'
+                    - heading "Evolution Gaming" [level=6] [ref=e1254]
+                  - link "" [ref=e1256] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1257]: 
+        - generic [ref=e1258]:
+          - generic [ref=e1260]:
+            - heading "Popular Crash Games" [level=3] [ref=e1261]
+            - button "20 Show All" [ref=e1263] [cursor=pointer]:
+              - paragraph [ref=e1264]: "20"
+              - generic [ref=e1265]: Show All
+          - list [ref=e1268]:
+            - listitem [ref=e1269]:
+              - generic [ref=e1270]:
+                - img [ref=e1272]
+                - generic [ref=e1274]:
+                  - generic [ref=e1275]:
+                    - heading "Crash Duel X" [level=2] [ref=e1276]
+                    - heading "SmartSoft" [level=6] [ref=e1277]
+                  - link "" [ref=e1279] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1280]: 
+            - listitem [ref=e1281]:
+              - generic [ref=e1282]:
+                - img [ref=e1284]
+                - generic [ref=e1286]:
+                  - generic [ref=e1287]:
+                    - heading "Smash X" [level=2] [ref=e1288]
+                    - heading "SmartSoft" [level=6] [ref=e1289]
+                  - link "" [ref=e1291] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1292]: 
+            - listitem [ref=e1293]:
+              - generic [ref=e1294]:
+                - img [ref=e1296]
+                - generic [ref=e1298]:
+                  - generic [ref=e1299]:
+                    - heading "Aviator" [level=2] [ref=e1300]
+                    - heading "Spribe" [level=6] [ref=e1301]
+                  - link "" [ref=e1303] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1304]: 
+            - listitem [ref=e1305]:
+              - generic [ref=e1306]:
+                - img [ref=e1308]
+                - generic [ref=e1310]:
+                  - generic [ref=e1311]:
+                    - heading "Aviatrix" [level=2] [ref=e1312]
+                    - heading "Aviatrix" [level=6] [ref=e1313]
+                  - link "" [ref=e1315] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1316]: 
+            - listitem [ref=e1317]:
+              - generic [ref=e1318]:
+                - img [ref=e1320]
+                - generic [ref=e1322]:
+                  - generic [ref=e1323]:
+                    - heading "Triple Cash Or Crash" [level=2] [ref=e1324]
+                    - heading "Betsoft" [level=6] [ref=e1325]
+                  - link "" [ref=e1327] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1328]: 
+            - listitem [ref=e1329]:
+              - generic [ref=e1330]:
+                - img [ref=e1332]
+                - generic [ref=e1334]:
+                  - generic [ref=e1335]:
+                    - heading "Burning Chilli X" [level=2] [ref=e1336]
+                    - heading "BGaming" [level=6] [ref=e1337]
+                  - link "" [ref=e1339] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1340]: 
+            - listitem [ref=e1341]:
+              - generic [ref=e1342]:
+                - img [ref=e1344]
+                - generic [ref=e1346]:
+                  - generic [ref=e1347]:
+                    - heading "Cricketer X" [level=2] [ref=e1348]
+                    - heading "SmartSoft" [level=6] [ref=e1349]
+                  - link "" [ref=e1351] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1352]: 
+            - listitem [ref=e1353]:
+              - generic [ref=e1354]:
+                - img [ref=e1356]
+                - generic [ref=e1358]:
+                  - generic [ref=e1359]:
+                    - heading "Avia Rush" [level=2] [ref=e1360]
+                    - heading "Evoplay" [level=6] [ref=e1361]
+                  - link "" [ref=e1363] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1364]: 
+            - listitem [ref=e1365]:
+              - generic [ref=e1366]:
+                - img [ref=e1368]
+                - generic [ref=e1370]:
+                  - generic [ref=e1371]:
+                    - heading "Balloon" [level=2] [ref=e1372]
+                    - heading "SmartSoft" [level=6] [ref=e1373]
+                  - link "" [ref=e1375] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1376]: 
+            - listitem [ref=e1377]:
+              - generic [ref=e1378]:
+                - img [ref=e1380]
+                - generic [ref=e1382]:
+                  - generic [ref=e1383]:
+                    - heading "Big Bass Amazon Xtreme" [level=2] [ref=e1384]
+                    - heading "Pragmatic Play" [level=6] [ref=e1385]
+                  - link "" [ref=e1387] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1388]: 
+        - generic [ref=e1389]:
+          - generic [ref=e1391]:
+            - heading "Popular BlackJack Games" [level=3] [ref=e1392]
+            - button "13 Show All" [ref=e1394] [cursor=pointer]:
+              - paragraph [ref=e1395]: "13"
+              - generic [ref=e1396]: Show All
+          - list [ref=e1399]:
+            - listitem [ref=e1400]:
+              - generic [ref=e1401]:
+                - img [ref=e1403]
+                - generic [ref=e1405]:
+                  - generic [ref=e1406]:
+                    - heading "Bombay Live Blackjack Lobby" [level=2] [ref=e1407]
+                    - heading "Live88" [level=6] [ref=e1408]
+                  - link "" [ref=e1410] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1411]: 
+            - listitem [ref=e1412]:
+              - generic [ref=e1413]:
+                - img [ref=e1415]
+                - generic [ref=e1417]:
+                  - generic [ref=e1418]:
+                    - heading "Infinite Bet Stacker Blackjack" [level=2] [ref=e1419]
+                    - heading "Evolution Gaming" [level=6] [ref=e1420]
+                  - link "" [ref=e1422] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1423]: 
+            - listitem [ref=e1424]:
+              - generic [ref=e1425]:
+                - img [ref=e1427]
+                - generic [ref=e1429]:
+                  - generic [ref=e1430]:
+                    - heading "Blackjack Party" [level=2] [ref=e1431]
+                    - heading "Evolution Gaming" [level=6] [ref=e1432]
+                  - link "" [ref=e1434] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1435]: 
+            - listitem [ref=e1436]:
+              - generic [ref=e1437]:
+                - img [ref=e1439]
+                - generic [ref=e1441]:
+                  - generic [ref=e1442]:
+                    - heading "First Person Blackjack" [level=2] [ref=e1443]
+                    - heading "Evolution Gaming" [level=6] [ref=e1444]
+                  - link "" [ref=e1446] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1447]: 
+            - listitem [ref=e1448]:
+              - generic [ref=e1449]:
+                - img [ref=e1451]
+                - generic [ref=e1453]:
+                  - generic [ref=e1454]:
+                    - heading "First Person Lightning Blackjack" [level=2] [ref=e1455]
+                    - heading "Evolution Gaming" [level=6] [ref=e1456]
+                  - link "" [ref=e1458] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1459]: 
+            - listitem [ref=e1460]:
+              - generic [ref=e1461]:
+                - img [ref=e1463]
+                - generic [ref=e1465]:
+                  - generic [ref=e1466]:
+                    - heading "Infinite Blackjack" [level=2] [ref=e1467]
+                    - heading "Evolution Gaming" [level=6] [ref=e1468]
+                  - link "" [ref=e1470] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1471]: 
+            - listitem [ref=e1472]:
+              - generic [ref=e1473]:
+                - img [ref=e1475]
+                - generic [ref=e1477]:
+                  - generic [ref=e1478]:
+                    - heading "Power Blackjack" [level=2] [ref=e1479]
+                    - heading "Evolution Gaming" [level=6] [ref=e1480]
+                  - link "" [ref=e1482] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1483]: 
+            - listitem [ref=e1484]:
+              - generic [ref=e1485]:
+                - img [ref=e1487]
+                - generic [ref=e1489]:
+                  - generic [ref=e1490]:
+                    - heading "ONE Blackjack" [level=2] [ref=e1491]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1492]
+                  - link "" [ref=e1494] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1495]: 
+            - listitem [ref=e1496]:
+              - generic [ref=e1497]:
+                - img [ref=e1499]
+                - generic [ref=e1501]:
+                  - generic [ref=e1502]:
+                    - heading "Turkish BlackjackX 8" [level=2] [ref=e1503]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1504]
+                  - link "" [ref=e1506] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1507]: 
+            - listitem [ref=e1508]:
+              - generic [ref=e1509]:
+                - img [ref=e1511]
+                - generic [ref=e1513]:
+                  - generic [ref=e1514]:
+                    - heading "VIP Blackjack 1" [level=2] [ref=e1515]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1516]
+                  - link "" [ref=e1518] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1519]: 
+        - generic [ref=e1520]:
+          - generic [ref=e1522]:
+            - heading "Popular Roulette Games" [level=3] [ref=e1523]
+            - button "19 Show All" [ref=e1525] [cursor=pointer]:
+              - paragraph [ref=e1526]: "19"
+              - generic [ref=e1527]: Show All
+          - list [ref=e1530]:
+            - listitem [ref=e1531]:
+              - generic [ref=e1532]:
+                - img [ref=e1534]
+                - generic [ref=e1536]:
+                  - generic [ref=e1537]:
+                    - heading "Fortune Roulette" [level=2] [ref=e1538]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1539]
+                  - link "" [ref=e1541] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1542]: 
+            - listitem [ref=e1543]:
+              - generic [ref=e1544]:
+                - img [ref=e1546]
+                - generic [ref=e1548]:
+                  - generic [ref=e1549]:
+                    - heading "French Roulette La Partage" [level=2] [ref=e1550]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1551]
+                  - link "" [ref=e1553] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1554]: 
+            - listitem [ref=e1555]:
+              - generic [ref=e1556]:
+                - img [ref=e1558]
+                - generic [ref=e1560]:
+                  - generic [ref=e1561]:
+                    - heading "Squeeze Baccarat" [level=2] [ref=e1562]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1563]
+                  - link "" [ref=e1565] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1566]: 
+            - listitem [ref=e1567]:
+              - generic [ref=e1568]:
+                - img [ref=e1570]
+                - generic [ref=e1572]:
+                  - generic [ref=e1573]:
+                    - heading "Red Door Roulette" [level=2] [ref=e1574]
+                    - heading "Evolution Gaming" [level=6] [ref=e1575]
+                  - link "" [ref=e1577] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1578]: 
+            - listitem [ref=e1579]:
+              - generic [ref=e1580]:
+                - img [ref=e1582]
+                - generic [ref=e1584]:
+                  - generic [ref=e1585]:
+                    - heading "Immersive Roulette" [level=2] [ref=e1586]
+                    - heading "Evolution Gaming" [level=6] [ref=e1587]
+                  - link "" [ref=e1589] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1590]: 
+            - listitem [ref=e1591]:
+              - generic [ref=e1592]:
+                - img [ref=e1594]
+                - generic [ref=e1596]:
+                  - generic [ref=e1597]:
+                    - heading "Lucky 6 Roulette" [level=2] [ref=e1598]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1599]
+                  - link "" [ref=e1601] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1602]: 
+            - listitem [ref=e1603]:
+              - generic [ref=e1604]:
+                - img [ref=e1606]
+                - generic [ref=e1608]:
+                  - generic [ref=e1609]:
+                    - heading "Baccarat Control Squeeze" [level=2] [ref=e1610]
+                    - heading "Evolution Gaming" [level=6] [ref=e1611]
+                  - link "" [ref=e1613] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1614]: 
+            - listitem [ref=e1615]:
+              - generic [ref=e1616]:
+                - img [ref=e1618]
+                - generic [ref=e1620]:
+                  - generic [ref=e1621]:
+                    - heading "Baccarat Squeeze" [level=2] [ref=e1622]
+                    - heading "Evolution Gaming" [level=6] [ref=e1623]
+                  - link "" [ref=e1625] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1626]: 
+            - listitem [ref=e1627]:
+              - generic [ref=e1628]:
+                - img [ref=e1630]
+                - generic [ref=e1632]:
+                  - generic [ref=e1633]:
+                    - heading "Golden Wealth Baccarat" [level=2] [ref=e1634]
+                    - heading "Evolution Gaming" [level=6] [ref=e1635]
+                  - link "" [ref=e1637] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1638]: 
+            - listitem [ref=e1639]:
+              - generic [ref=e1640]:
+                - img [ref=e1642]
+                - generic [ref=e1644]:
+                  - generic [ref=e1645]:
+                    - heading "Instant Roulette" [level=2] [ref=e1646]
+                    - heading "Evolution Gaming" [level=6] [ref=e1647]
+                  - link "" [ref=e1649] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1650]: 
+        - generic [ref=e1651]:
+          - generic [ref=e1653]:
+            - heading "Popular Baccarat Games" [level=3] [ref=e1654]
+            - button "13 Show All" [ref=e1656] [cursor=pointer]:
+              - paragraph [ref=e1657]: "13"
+              - generic [ref=e1658]: Show All
+          - list [ref=e1661]:
+            - listitem [ref=e1662]:
+              - generic [ref=e1663]:
+                - img [ref=e1665]
+                - generic [ref=e1667]:
+                  - generic [ref=e1668]:
+                    - heading "Mini Baccarat" [level=2] [ref=e1669]
+                    - heading "Live88" [level=6] [ref=e1670]
+                  - link "" [ref=e1672] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1673]: 
+            - listitem [ref=e1674]:
+              - generic [ref=e1675]:
+                - img [ref=e1677]
+                - generic [ref=e1679]:
+                  - generic [ref=e1680]:
+                    - heading "Dragon Tiger" [level=2] [ref=e1681]
+                    - heading "Evolution Gaming" [level=6] [ref=e1682]
+                  - link "" [ref=e1684] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1685]: 
+            - listitem [ref=e1686]:
+              - generic [ref=e1687]:
+                - img [ref=e1689]
+                - generic [ref=e1691]:
+                  - generic [ref=e1692]:
+                    - heading "Golden Wealth Baccarat" [level=2] [ref=e1693]
+                    - heading "Evolution Gaming" [level=6] [ref=e1694]
+                  - link "" [ref=e1696] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1697]: 
+            - listitem [ref=e1698]:
+              - generic [ref=e1699]:
+                - img [ref=e1701]
+                - generic [ref=e1703]:
+                  - generic [ref=e1704]:
+                    - heading "Japanese Golden Wealth Baccarat" [level=2] [ref=e1705]
+                    - heading "Evolution Gaming" [level=6] [ref=e1706]
+                  - link "" [ref=e1708] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1709]: 
+            - listitem [ref=e1710]:
+              - generic [ref=e1711]:
+                - img [ref=e1713]
+                - generic [ref=e1715]:
+                  - generic [ref=e1716]:
+                    - heading "Peek Baccarat" [level=2] [ref=e1717]
+                    - heading "Evolution Gaming" [level=6] [ref=e1718]
+                  - link "" [ref=e1720] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1721]: 
+            - listitem [ref=e1722]:
+              - generic [ref=e1723]:
+                - img [ref=e1725]
+                - generic [ref=e1727]:
+                  - generic [ref=e1728]:
+                    - heading "XXXtreme Lightning Baccarat" [level=2] [ref=e1729]
+                    - heading "Evolution Gaming" [level=6] [ref=e1730]
+                  - link "" [ref=e1732] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1733]: 
+            - listitem [ref=e1734]:
+              - generic [ref=e1735]:
+                - img [ref=e1737]
+                - generic [ref=e1739]:
+                  - generic [ref=e1740]:
+                    - heading "Mega Baccarat" [level=2] [ref=e1741]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1742]
+                  - link "" [ref=e1744] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1745]: 
+            - listitem [ref=e1746]:
+              - generic [ref=e1747]:
+                - img [ref=e1749]
+                - generic [ref=e1751]:
+                  - generic [ref=e1752]:
+                    - heading "Privé Lounge Baccarat 1" [level=2] [ref=e1753]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1754]
+                  - link "" [ref=e1756] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1757]: 
+            - listitem [ref=e1758]:
+              - generic [ref=e1759]:
+                - img [ref=e1761]
+                - generic [ref=e1763]:
+                  - generic [ref=e1764]:
+                    - heading "Speed Baccarat 12" [level=2] [ref=e1765]
+                    - heading "Pragmatic Play Live" [level=6] [ref=e1766]
+                  - link "" [ref=e1768] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1769]: 
+            - listitem [ref=e1770]:
+              - generic [ref=e1771]:
+                - img [ref=e1773]
+                - generic [ref=e1775]:
+                  - generic [ref=e1776]:
+                    - heading "Baccarat High Roller 1" [level=2] [ref=e1777]
+                    - heading "Live88" [level=6] [ref=e1778]
+                  - link "" [ref=e1780] [cursor=pointer]:
+                    - /url: javascript://
+                    - generic [ref=e1781]: 
+        - generic [ref=e1782]:
+          - heading "Top Feature Games" [level=3] [ref=e1784]
+          - list [ref=e1786]:
+            - listitem [ref=e1787]:
+              - img [ref=e1789] [cursor=pointer]
+            - listitem [ref=e1790]:
+              - img [ref=e1792] [cursor=pointer]
+            - listitem [ref=e1793]:
+              - img [ref=e1795] [cursor=pointer]
+            - listitem [ref=e1796]:
+              - img [ref=e1798] [cursor=pointer]
+            - listitem [ref=e1799]:
+              - img [ref=e1801] [cursor=pointer]
+            - listitem [ref=e1802]:
+              - img [ref=e1804] [cursor=pointer]
+            - listitem [ref=e1805]:
+              - img [ref=e1807] [cursor=pointer]
+            - listitem [ref=e1808]:
+              - img [ref=e1810] [cursor=pointer]
+            - listitem [ref=e1811]:
+              - img [ref=e1813] [cursor=pointer]
+    - generic:
+      - alertdialog
+  - generic [ref=e1814]:
+    - link "Back To Top " [ref=e1815] [cursor=pointer]:
+      - /url: javascript://
+      - text: Back To Top
+      - generic [ref=e1816]: 
+    - contentinfo [ref=e1817]:
+      - generic [ref=e1818]:
+        - generic [ref=e1820]:
+          - generic [ref=e1821]:
+            - heading "Content" [level=2] [ref=e1822]
+            - list [ref=e1823]:
+              - listitem [ref=e1824]:
+                - link "About Us" [ref=e1825] [cursor=pointer]:
+                  - /url: /content/page/about_us
+              - listitem [ref=e1826]:
+                - link "Privacy Policy" [ref=e1827] [cursor=pointer]:
+                  - /url: /content/page/privacy_policy
+              - listitem [ref=e1828]:
+                - link "Terms & Conditions" [ref=e1829] [cursor=pointer]:
+                  - /url: /content/page/terms_&_conditions
+              - listitem [ref=e1830]:
+                - link "Contact" [ref=e1831] [cursor=pointer]:
+                  - /url: /content/page/contact
+              - listitem [ref=e1832]:
+                - link "FAQ" [ref=e1833] [cursor=pointer]:
+                  - /url: /content/page/faq
+              - listitem [ref=e1834]:
+                - link "AML Policy" [ref=e1835] [cursor=pointer]:
+                  - /url: /content/page/aml_policy
+          - generic [ref=e1836]:
+            - heading "Sports" [level=2] [ref=e1837]
+            - list [ref=e1838]:
+              - listitem [ref=e1839]:
+                - link "Live Betting" [ref=e1840] [cursor=pointer]:
+                  - /url: /sport/live
+              - listitem [ref=e1841]:
+                - link "Sport Betting" [ref=e1842] [cursor=pointer]:
+                  - /url: /sport/pregame
+              - listitem [ref=e1843]:
+                - link "Statistics" [ref=e1844] [cursor=pointer]:
+                  - /url: https://s5.sir.sportradar.com/betradar/en
+          - generic [ref=e1845]:
+            - heading "Games" [level=2] [ref=e1846]
+            - list [ref=e1847]:
+              - listitem [ref=e1848]:
+                - link "Casino Games" [ref=e1849] [cursor=pointer]:
+                  - /url: /casino/slot
+              - listitem [ref=e1850]:
+                - link "Live Casino" [ref=e1851] [cursor=pointer]:
+                  - /url: /casino/live
+              - listitem [ref=e1852]:
+                - link "Virtual Sports" [ref=e1853] [cursor=pointer]:
+                  - /url: /casino/virtual
+          - generic [ref=e1854]:
+            - heading "Support Center" [level=2] [ref=e1855]
+            - list [ref=e1856]:
+              - listitem [ref=e1857]:
+                - link "Help Me" [ref=e1858] [cursor=pointer]:
+                  - /url: /content/contacthelp
+          - generic [ref=e1859]:
+            - heading "Designed By" [level=2] [ref=e1860]
+            - link [ref=e1861] [cursor=pointer]:
+              - /url: https://www.hocosoftware.com
+              - img [ref=e1862]
+          - generic [ref=e1864]:
+            - heading "Social Media" [level=2] [ref=e1865]
+            - generic [ref=e1866]:
+              - link "" [ref=e1867] [cursor=pointer]:
+                - /url: https://www.facebook.com
+                - generic [ref=e1868]: 
+              - link "" [ref=e1869] [cursor=pointer]:
+                - /url: https://www.instagram.com/
+                - generic [ref=e1870]: 
+              - link [ref=e1871] [cursor=pointer]:
+                - /url: https://x.com/?lang=en
+                - img [ref=e1872]
+              - link "" [ref=e1874] [cursor=pointer]:
+                - /url: https://www.youtube.com/
+                - generic [ref=e1875]: 
+              - link [ref=e1876] [cursor=pointer]:
+                - /url: https://www.tiktok.com/en/
+                - img [ref=e1877]
+          - paragraph [ref=e1881]:
+            - img [ref=e1882]
+          - list [ref=e1885]:
+            - listitem [ref=e1886]:
+              - 'link "Telegram #1" [ref=e1887] [cursor=pointer]':
+                - /url: https://telegram.org/
+                - img [ref=e1888]
+                - generic [ref=e1889]: "Telegram #1"
+            - listitem [ref=e1890]:
+              - 'link "Telegram #2" [ref=e1891] [cursor=pointer]':
+                - /url: https://telegram1.org/
+                - img [ref=e1892]
+                - generic [ref=e1893]: "Telegram #2"
+        - paragraph [ref=e1897]: ©DemoHoco | 2024 - 2026 | All Rights Reserved
+```
