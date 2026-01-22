@@ -3,8 +3,13 @@ dotenv.config();
 
 type EnvironmentType = 'staging' | 'live';
 
-const CURRENT_ENV = (process.env.ENVIRONMENT as EnvironmentType) || 'live';
+const CURRENT_ENV = process.env.ENVIRONMENT as EnvironmentType;
 
+if (!CURRENT_ENV || !['staging', 'live'].includes(CURRENT_ENV)) {
+  throw new Error(
+    `❌ ENVIRONMENT not set or invalid. Received: "${CURRENT_ENV}"`
+  );
+}
 const ENV_CONFIG = {
   staging: {
     BASE_URL: process.env.STAGING_BASE_URL!,
@@ -43,4 +48,7 @@ const ENV_CONFIG = {
   }
 };
 
-export const ENV = ENV_CONFIG[CURRENT_ENV];
+export const ENV = {
+  BASE_URL: process.env.BASE_URL ?? ENV_CONFIG[CURRENT_ENV].BASE_URL,
+  USERS: ENV_CONFIG[CURRENT_ENV].USERS
+};
