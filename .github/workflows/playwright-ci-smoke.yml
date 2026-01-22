@@ -103,15 +103,17 @@ jobs:
           name: playwright-html-report
           path: playwright-report
 
-      # 1️⃣1️⃣ Deploy Allure to GitHub Pages
-      - name: Deploy Allure Report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
-          publish_branch: gh-pages
-          user_name: github-actions
-          user_email: github-actions@github.com
+    # 1️⃣1️⃣ Deploy Allure Report to PUBLIC report repo
+- name: Deploy Allure Report to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+    external_repository: <YOUR_USERNAME>/autopilotqa-allure-report
+    publish_branch: gh-pages
+    publish_dir: ./allure-report
+    user_name: github-actions
+    user_email: github-actions@github.com
+
 
       # 1️⃣2️⃣ CI Summary links
       - name: Add CI Summary Links
