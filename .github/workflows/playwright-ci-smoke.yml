@@ -79,6 +79,7 @@ jobs:
             node scripts/check-critical.js || true
           else
             echo "No critical check script found"
+          fi
 
       # 8️⃣ Generate Allure
       - name: Generate Allure Report
@@ -101,31 +102,28 @@ jobs:
           name: playwright-html-report
           path: playwright-report
 
-      # 1️⃣1️⃣ Deploy Allure to PUBLIC GitHub Pages repo
+      # 1️⃣1️⃣ Deploy Allure to GitHub Pages
       - name: Deploy Allure Report to GitHub Pages
-        id: deploy_allure
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
-          external_repository: bbt-pareshk/autopilotqa-allure-report
-          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
+          publish_branch: gh-pages
           user_name: github-actions
           user_email: github-actions@github.com
 
       # 1️⃣2️⃣ CI Summary links
       - name: Add CI Summary Links
         run: |
-          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/autopilotqa-allure-report/"
           echo "## 📊 Test Reports" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🔵 Allure Report (Online)" >> $GITHUB_STEP_SUMMARY
-          echo "👉 $ALLURE_URL" >> $GITHUB_STEP_SUMMARY
+          echo "👉 https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-      # 📊 Collect Playwright test statistics
+      # 📊 Collect Playwright test statistics + failed test names
       - name: Collect Test Stats
         if: always()
         run: |
@@ -187,7 +185,6 @@ jobs:
         run: |
           STATUS="${{ job.status }}"
           COLOR="#36a64f"
-          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/autopilotqa-allure-report/"
 
           if [ "$STATUS" != "success" ]; then
             COLOR="#ff0000"
@@ -195,9 +192,9 @@ jobs:
 
           curl -X POST -H 'Content-type: application/json' \
           --data "{
-            \"attachments\": [ {
+            \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Test Results\",
-              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\n🌍 Allure Report: $ALLURE_URL\"
-            } ]
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+            }]
           }" $SLACK_WEBHOOK_URL
