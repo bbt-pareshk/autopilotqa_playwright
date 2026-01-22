@@ -178,7 +178,7 @@ jobs:
           fs.appendFileSync(process.env.GITHUB_ENV, `FAILED_TESTS=${failedList}\n`);
           EOF
 
-      # 🔔 Slack Notification
+      # 🔔 Slack Notification (PRIVATE CI + PUBLIC REPORT)
       - name: Notify Slack
         if: always()
         env:
@@ -191,11 +191,28 @@ jobs:
             COLOR="#ff0000"
           fi
 
+          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/autopilotqa-allure-report/"
+
           curl -X POST -H 'Content-type: application/json' \
           --data "{
             \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Test Results\",
-              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n\
+*Status:* $STATUS\n\
+*Environment:* $ENVIRONMENT\n\n\
+*Test Summary*\n\
+• Total: *$TOTAL*\n\
+• Passed: *$PASSED*\n\
+• Failed: *$FAILED*\n\
+• Skipped: *$SKIPPED*\n\
+• Flaky: *$FLAKY*\n\n\
+*Failed Tests (Top 5)*\n\
+• $FAILED_TESTS\n\n\
+*Reports*\n\
+• 🔒 <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\n\
+• 🌍 <$ALLURE_URL|View Allure Report>\n\n\
+*Repository:* ${{ github.repository }}\n\
+*Branch:* ${{ github.ref_name }}\"
             }]
           }" $SLACK_WEBHOOK_URL
