@@ -91,15 +91,10 @@ jobs:
           CI_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
           cat > payload.json <<EOF
-          {
-            "text": "*Playwright Smoke Tests*
-• Status: *$STATUS*
-• Environment: *$ENVIRONMENT*
-
-🔒 CI Run: $CI_URL
-🌍 Allure Report: $ALLURE_URL"
-          }
-          EOF
+{
+  "text": "*Playwright Smoke Tests*\n• Status: *$STATUS*\n• Environment: *$ENVIRONMENT*\n\n🔒 CI Run: $CI_URL\n🌍 Allure Report: $ALLURE_URL"
+}
+EOF
 
           curl -X POST -H "Content-type: application/json" \
             --data @payload.json \
