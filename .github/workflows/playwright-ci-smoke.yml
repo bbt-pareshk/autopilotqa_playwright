@@ -65,15 +65,15 @@ jobs:
             echo "ENVIRONMENT=staging" >> $GITHUB_ENV
           fi
 
-      # 🔗 Set Base URL dynamically
-- name: Set Base URL
-  run: |
-    if [ "$ENVIRONMENT" = "staging" ]; then
-      echo "BASE_URL=${{ secrets.STAGING_BASE_URL }}" >> $GITHUB_ENV
-    else
-      echo "BASE_URL=${{ secrets.LIVE_BASE_URL }}" >> $GITHUB_ENV
-    fi
-    
+      # ✅ ONLY REQUIRED FIX (DO NOT REMOVE)
+      - name: Set Base URL
+        run: |
+          if [ "$ENVIRONMENT" = "staging" ]; then
+            echo "BASE_URL=${{ secrets.STAGING_BASE_URL }}" >> $GITHUB_ENV
+          else
+            echo "BASE_URL=${{ secrets.LIVE_BASE_URL }}" >> $GITHUB_ENV
+          fi
+
       # 6️⃣ Run Smoke Tests (SAFE)
       - name: Run Smoke Tests
         env:
