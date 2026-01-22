@@ -168,7 +168,7 @@ jobs:
           const failedList =
             failedTests.size === 0
               ? 'None'
-              : Array.from(failedTests).slice(0, 5).join('\\n• ');
+              : Array.from(failedTests).slice(0, 5).join('\n• ');
 
           fs.appendFileSync(process.env.GITHUB_ENV, `TOTAL=${total}\n`);
           fs.appendFileSync(process.env.GITHUB_ENV, `PASSED=${passed}\n`);
@@ -199,21 +199,25 @@ jobs:
               {
                 "color": "$COLOR",
                 "title": "Playwright Test Results",
-                "text": "*Workflow:* ${{ github.workflow }}\n\
-*Status:* $STATUS\n\
-*Environment:* $ENVIRONMENT\n\n\
-*Test Summary*\n\
-• Total: *$TOTAL*\n\
-• Passed: *$PASSED*\n\
-• Failed: *$FAILED*\n\
-• Skipped: *$SKIPPED*\n\
-• Flaky: *$FLAKY*\n\n\
-*Failed Tests (Top 5)*\n\
-• $FAILED_TESTS\n\n\
-*Reports*\n\
-• 🔒 <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\n\
-• 🌍 <$ALLURE_URL|View Allure Report>\n\n\
-*Repository:* ${{ github.repository }}\n\
+                "text": "*Workflow:* ${{ github.workflow }}
+*Status:* $STATUS
+*Environment:* $ENVIRONMENT
+
+*Test Summary*
+• Total: *$TOTAL*
+• Passed: *$PASSED*
+• Failed: *$FAILED*
+• Skipped: *$SKIPPED*
+• Flaky: *$FLAKY*
+
+*Failed Tests (Top 5)*
+• $FAILED_TESTS
+
+*Reports*
+• 🔒 <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>
+• 🌍 <$ALLURE_URL|View Allure Report>
+
+*Repository:* ${{ github.repository }}
 *Branch:* ${{ github.ref_name }}"
               }
             ]
