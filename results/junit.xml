@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="35.705034">
-<testsuite name="setup\auth.setup.ts" timestamp="2026-01-23T07:13:56.580Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="16.165" errors="0">
-<testcase name="authenticate admin user" classname="setup\auth.setup.ts" time="16.165">
+<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="36.536885999999996">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-23T09:03:12.746Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="16.43" errors="0">
+<testcase name="authenticate admin user" classname="setup\auth.setup.ts" time="16.43">
 <system-out>
 <![CDATA[[CHAT WIDGET] ALLOWED | Test: authenticate admin user
 ▶ Base URL (project): https://www.treebet365.com/
@@ -8,8 +8,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="chat\chat-widget.spec.ts" timestamp="2026-01-23T07:13:56.580Z" hostname="after-login" tests="1" failures="0" skipped="0" time="12.418" errors="0">
-<testcase name="Chat widget loads on dashboard" classname="chat\chat-widget.spec.ts" time="12.418">
+<testsuite name="chat\chat-widget.spec.ts" timestamp="2026-01-23T09:03:12.746Z" hostname="after-login" tests="1" failures="0" skipped="0" time="10.901" errors="0">
+<testcase name="Chat widget loads on dashboard" classname="chat\chat-widget.spec.ts" time="10.901">
 <system-out>
 <![CDATA[[CHAT WIDGET] ALLOWED | Test: Chat widget loads on dashboard
 [CHAT PROOF] Chat iframe detected: YES | count=1 | test=Chat widget loads on dashboard
@@ -17,14 +17,14 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-01-23T07:13:56.580Z" hostname="after-login" tests="2" failures="1" skipped="0" time="17.161" errors="0">
-<testcase name="Dashboard › User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="11.307">
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-01-23T09:03:12.746Z" hostname="after-login" tests="2" failures="1" skipped="0" time="17.929" errors="0">
+<testcase name="Dashboard › User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="11.479">
 <system-out>
 <![CDATA[[CHAT WIDGET] ALLOWED | Test: User sees account balance on dashboard after login
 ]]>
 </system-out>
 </testcase>
-<testcase name="Dashboard › 2 - User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="5.854">
+<testcase name="Dashboard › 2 - User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="6.45">
 <properties>
 <property name="fail" value="Known issue">
 </property>
@@ -34,11 +34,11 @@
 
     Expected to fail, but passed.
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\test-results\dashboard-dashboard-Dashbo-d10a4-ce-on-dashboard-after-login-after-login\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    attachment #6: video (video/webm) ──────────────────────────────────────────────────────────────
     ..\test-results\dashboard-dashboard-Dashbo-d10a4-ce-on-dashboard-after-login-after-login\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>

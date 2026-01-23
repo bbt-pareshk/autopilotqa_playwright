@@ -1,7 +1,14 @@
 import { test as base, expect } from '@playwright/test';
+import { allure } from 'allure-playwright';
 
 export const test = base.extend({
   page: async ({ page }, use, testInfo) => {
+
+    // 🔹 Enterprise global parameters
+    allure.parameter('Project', testInfo.project.name);
+    allure.parameter('Browser', testInfo.project.use.browserName ?? 'unknown');
+    allure.parameter('BaseURL', testInfo.project.use.baseURL ?? 'unknown');
+    allure.parameter('Worker', String(testInfo.workerIndex));
 
     const allowChat =
       testInfo.tags.includes('@chat') ||

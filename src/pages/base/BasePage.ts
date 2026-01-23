@@ -11,20 +11,20 @@ export abstract class BasePage {
     await this.page.goto(url, { waitUntil: 'domcontentloaded', timeout });
   }
 
-  async click(locator: Locator, timeout = 10000) {
-    await locator.waitFor({ state: 'visible', timeout });
-    await locator.click({ timeout });
-  }
+async click(locator: Locator, timeout = 10_000) {
+  await locator.waitFor({ state: 'attached', timeout });
+  await locator.click({ timeout });
+}
 
-  async waitForVisible(locator: Locator, timeout = 10000) {
-    await locator.waitFor({ state: 'visible', timeout });
+  async waitForAttached(locator: Locator, timeout = 10000) {
+    await locator.waitFor({ state: 'attached', timeout });
   }
 
   /* ============================
      🔐 STABLE ENTERPRISE INPUT
   ============================ */
   async stableFill(locator: Locator, value: string) {
-    await locator.waitFor({ state: 'visible' });
+    await locator.waitFor({ state: 'attached' });
 
     // Clear using real keyboard (safe)
     await locator.click();

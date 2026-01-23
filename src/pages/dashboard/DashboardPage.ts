@@ -5,23 +5,14 @@ export class DashboardPage extends BasePage {
   private readonly myAccountLink: Locator;
   private readonly balanceDropdown: Locator;
   private readonly realBalance: Locator;
-  //private readonly logout: Locator;
 
   constructor(page: Page) {
     super(page);
 
-    // Account link
     this.myAccountLink = page.getByRole('link', { name: /my account/i });
-
-    // Dropdown menu container
     this.balanceDropdown = page.locator('.dropdown.dhdr-balance-view');
-
-    // Real Balance locator
     this.realBalance = page.locator(
       '.hdr-dropdown-menu .hdr-balance-item:has-text("Real Balance") span.block'
-
-      // Logout locator
-      //this.logout = page.locator({});
     );
   }
 
@@ -36,12 +27,18 @@ export class DashboardPage extends BasePage {
     ).toBeVisible({ timeout: 10_000 });
   }
 
-  // Keep the method name your test uses
   async verifyBalanceIsVisible() {
     await this.openMyAccount();
 
-    await expect(this.realBalance, 'Real balance should be visible').toBeVisible({ timeout: 10_000 });
-    await expect(this.realBalance, 'Real balance should not be empty').not.toHaveText('');
+    await expect(
+      this.realBalance,
+      'Real balance should be visible'
+    ).toBeVisible({ timeout: 10_000 });
+
+    await expect(
+      this.realBalance,
+      'Real balance should not be empty'
+    ).not.toHaveText('');
   }
 
   /* ---------------------------
@@ -49,10 +46,12 @@ export class DashboardPage extends BasePage {
   ---------------------------- */
 
   async openMyAccount() {
-    if (!(await this.balanceDropdown.isVisible())) {
-      await this.myAccountLink.click();
-      await this.balanceDropdown.waitFor({ state: 'visible', timeout: 10_000 });
-    }
+    // ✅ Always try to open — Playwright handles waiting & retry
+    await this.myAccountLink.scrollIntoViewIfNeeded();
+    await this.myAccountLink.click({ timeout: 10_000 });
+
+    // ✅ Assert result, not the click
+    await expect(this.balanceDropdown).toBeVisible({ timeout: 10_000 });
   }
 
   /* ---------------------------

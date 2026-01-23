@@ -11,6 +11,8 @@ export default defineConfig({
   // 🔹 Optional but recommended for CI stability
   workers: process.env.CI ? 4 : undefined,
 
+  globalSetup: './tests/setup/global-setup.ts',
+
   reporter: [
     ['list'],
 
@@ -74,8 +76,8 @@ export default defineConfig({
         launchOptions:
           process.env.CI === 'true'
             ? {
-                args: ['--no-sandbox', '--disable-setuid-sandbox'],
-              }
+              args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            }
             : {},
       },
     },
@@ -94,8 +96,8 @@ export default defineConfig({
         launchOptions:
           process.env.CI === 'true'
             ? {
-                args: ['--no-sandbox', '--disable-setuid-sandbox'],
-              }
+              args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            }
             : {},
       },
     },

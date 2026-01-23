@@ -23,7 +23,7 @@ export class LoginPage extends BasePage {
   async openLoginPage() {
     await this.goto(ENV.BASE_URL);
     await this.click(this.signInLink);
-    await this.waitForVisible(this.usernameInput);
+    await this.waitForAttached(this.usernameInput);
   }
 
   async login(username: string, password: string) {
