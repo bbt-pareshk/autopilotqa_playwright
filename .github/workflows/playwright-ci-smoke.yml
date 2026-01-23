@@ -62,7 +62,7 @@ jobs:
           if [ -n "${{ inputs.environment }}" ]; then
             echo "ENVIRONMENT=${{ inputs.environment }}" >> $GITHUB_ENV
           else
-            echo "ENVIRONMENT=live" >> $GITHUB_ENV
+            echo "ENVIRONMENT=staging" >> $GITHUB_ENV
           fi
 
       # 6️⃣ Run Smoke Tests (SAFE)
