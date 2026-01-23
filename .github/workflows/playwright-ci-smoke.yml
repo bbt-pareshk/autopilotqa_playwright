@@ -56,19 +56,19 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget || echo "Some packages failed, continuing..."
 
-      # 🌍 Resolve ENVIRONMENT (THIS IS THE CRITICAL FIX)
-      - name: Resolve Environment
+      # 🌍 Resolve ENVIRONMENT (default .env + manual override)
+      - name: Resolve ENVIRONMENT (default .env + manual override)
         run: |
-          if [ -n "${{ inputs.environment }}" ]; then
+          echo "Initial ENVIRONMENT from .env: $ENVIRONMENT"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.environment }}" ]; then
+            echo "Overriding ENVIRONMENT from workflow_dispatch input"
             echo "ENVIRONMENT=${{ inputs.environment }}" >> $GITHUB_ENV
-          else
-            echo "ENVIRONMENT=staging" >> $GITHUB_ENV
           fi
 
       # 6️⃣ Run Smoke Tests (SAFE)
       - name: Run Smoke Tests
         env:
-          ENVIRONMENT: ${{ env.ENVIRONMENT }}
           CI: true
         run: |
           echo "Running Smoke Tests on $ENVIRONMENT"
@@ -172,7 +172,7 @@ jobs:
           const failedList =
             failedTests.size === 0
               ? 'None'
-              : Array.from(failedTests).slice(0, 5).join('\\n• ');
+              : Array.from(failedTests).slice(0, 5).join('\n• ');
 
           fs.appendFileSync(process.env.GITHUB_ENV, `TOTAL=${total}\n`);
           fs.appendFileSync(process.env.GITHUB_ENV, `PASSED=${passed}\n`);
@@ -201,6 +201,6 @@ jobs:
             \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Test Results\",
-              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n *Allure Report:* $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Allure Report:* $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
             }]
           }" $SLACK_WEBHOOK_URL
