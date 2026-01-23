@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -57,7 +57,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "prepare-auth",
         "name": "prepare-auth",
@@ -73,7 +73,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "after-login",
         "name": "after-login",
@@ -91,7 +91,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "before-login",
         "name": "before-login",
@@ -134,16 +134,19 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7533,
+                  "duration": 16165,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "▶ Base URL (project): https://qa.hocodev.co/\n"
+                      "text": "[CHAT WIDGET] ALLOWED | Test: authenticate admin user\n"
+                    },
+                    {
+                      "text": "▶ Base URL (project): https://www.treebet365.com/\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-21T07:18:39.962Z",
+                  "startTime": "2026-01-23T07:13:57.243Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -159,6 +162,55 @@
       ]
     },
     {
+      "title": "chat\\chat-widget.spec.ts",
+      "file": "chat/chat-widget.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Chat widget loads on dashboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 15000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "after-login",
+              "projectName": "after-login",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12418,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[CHAT WIDGET] ALLOWED | Test: Chat widget loads on dashboard\n"
+                    },
+                    {
+                      "text": "[CHAT PROOF] Chat iframe detected: YES | count=1 | test=Chat widget loads on dashboard\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-23T07:14:14.602Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8f773a9f6f2e32745229-e444507337ad41764d11",
+          "file": "chat/chat-widget.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
       "title": "dashboard\\dashboard.spec.ts",
       "file": "dashboard/dashboard.spec.ts",
       "column": 0,
@@ -166,15 +218,18 @@
       "specs": [],
       "suites": [
         {
-          "title": "Dashboard 2",
+          "title": "Dashboard",
           "file": "dashboard/dashboard.spec.ts",
-          "line": 34,
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "Dashboard validations",
+              "title": "User sees account balance on dashboard after login",
               "ok": true,
-              "tags": [],
+              "tags": [
+                "smoke",
+                "regression"
+              ],
               "tests": [
                 {
                   "timeout": 60000,
@@ -184,25 +239,19 @@
                   "projectName": "after-login",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1670,
+                      "duration": 11307,
                       "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
+                      "stdout": [
                         {
-                          "title": "User sees account balance",
-                          "duration": 1650
-                        },
-                        {
-                          "title": "User sees something else",
-                          "duration": 16
+                          "text": "[CHAT WIDGET] ALLOWED | Test: User sees account balance on dashboard after login\n"
                         }
                       ],
-                      "startTime": "2026-01-21T07:18:48.673Z",
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-23T07:14:14.631Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -210,10 +259,82 @@
                   "status": "expected"
                 }
               ],
-              "id": "747340cde928aa6c3216-982a87e4067448e848b3",
+              "id": "747340cde928aa6c3216-e801df599b78a4c16a72",
               "file": "dashboard/dashboard.spec.ts",
-              "line": 45,
+              "line": 5,
               "column": 7
+            },
+            {
+              "title": "2 - User sees account balance on dashboard after login",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "Known issue",
+                      "location": {
+                        "file": "D:\\GIT\\autopilotqa_ playwright\\tests\\dashboard\\dashboard.spec.ts",
+                        "line": 26,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "after-login",
+                  "projectName": "after-login",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5854,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[CHAT WIDGET] ALLOWED | Test: 2 - User sees account balance on dashboard after login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-23T07:14:26.183Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "Known issue",
+                          "location": {
+                            "file": "D:\\GIT\\autopilotqa_ playwright\\tests\\dashboard\\dashboard.spec.ts",
+                            "line": 26,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\GIT\\autopilotqa_ playwright\\test-results\\dashboard-dashboard-Dashbo-d10a4-ce-on-dashboard-after-login-after-login\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\GIT\\autopilotqa_ playwright\\test-results\\dashboard-dashboard-Dashbo-d10a4-ce-on-dashboard-after-login-after-login\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "747340cde928aa6c3216-5b85030107988ba636e5",
+              "file": "dashboard/dashboard.spec.ts",
+              "line": 19,
+              "column": 8
             }
           ]
         }
@@ -222,11 +343,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-21T07:18:39.266Z",
-    "duration": 12814.133999999998,
-    "expected": 2,
+    "startTime": "2026-01-23T07:13:56.545Z",
+    "duration": 35705.034,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

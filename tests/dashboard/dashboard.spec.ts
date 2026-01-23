@@ -1,4 +1,4 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect } from '../../src/fixtures/base.fixture';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
 
 test.describe('Dashboard', () => {
@@ -23,8 +23,7 @@ test.describe('Dashboard', () => {
       // User is already logged in via storageState
       await page.goto('/dashboard');
 
-      await expect(page).toHaveURL('https://google.com');
-       throw new Error('Intentionally failing this test');
+      test.fail(true, 'Known issue');
     }
   );
 });

@@ -1,4 +1,4 @@
-import { test as base } from '@playwright/test';
+import { test as base, expect } from './base.fixture';
 import { LoginPage } from '../pages/auth/LoginPage';
 import { users } from '../test-data/users';
 import { UserRole } from '../constants/roles';
