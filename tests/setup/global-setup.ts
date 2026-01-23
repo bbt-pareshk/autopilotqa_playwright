@@ -1,24 +1,22 @@
 import fs from 'fs';
 import path from 'path';
+import { ENV, CURRENT_ENVIRONMENT } from '../../src/config/env';
 
 export default async () => {
   const resultsDir = path.resolve('allure-results');
 
-  // ✅ Ensure directory exists
   if (!fs.existsSync(resultsDir)) {
     fs.mkdirSync(resultsDir, { recursive: true });
   }
 
-  const env = `
-ENV=${process.env.ENV ?? 'staging'}
-BASE_URL=${process.env.BASE_URL ?? 'https://www.treebet365.com'}
+  const content = `
+ENVIRONMENT=${CURRENT_ENVIRONMENT}
+BASE_URL=${ENV.BASE_URL}
 CI=${process.env.CI ?? 'false'}
-BRANCH=${process.env.GIT_BRANCH ?? 'local'}
-COMMIT=${process.env.GIT_COMMIT ?? 'local'}
 `.trim();
 
   fs.writeFileSync(
     path.join(resultsDir, 'environment.properties'),
-    env
+    content
   );
 };

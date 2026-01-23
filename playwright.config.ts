@@ -52,6 +52,7 @@ export default defineConfig({
   ],
 
   use: {
+    baseURL: ENV.BASE_URL,
     headless: process.env.CI === 'true',
     actionTimeout: 10_000,
     navigationTimeout: 15_000,

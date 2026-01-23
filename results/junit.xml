@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="36.536885999999996">
-<testsuite name="setup\auth.setup.ts" timestamp="2026-01-23T09:03:12.746Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="16.43" errors="0">
-<testcase name="authenticate admin user" classname="setup\auth.setup.ts" time="16.43">
+<testsuites id="" name="" tests="4" failures="2" skipped="0" errors="0" time="44.345911">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-23T09:24:36.981Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="16.714" errors="0">
+<testcase name="authenticate admin user" classname="setup\auth.setup.ts" time="16.714">
 <system-out>
 <![CDATA[[CHAT WIDGET] ALLOWED | Test: authenticate admin user
 ▶ Base URL (project): https://www.treebet365.com/
@@ -8,23 +8,57 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="chat\chat-widget.spec.ts" timestamp="2026-01-23T09:03:12.746Z" hostname="after-login" tests="1" failures="0" skipped="0" time="10.901" errors="0">
-<testcase name="Chat widget loads on dashboard" classname="chat\chat-widget.spec.ts" time="10.901">
+<testsuite name="chat\chat-widget.spec.ts" timestamp="2026-01-23T09:24:36.981Z" hostname="after-login" tests="1" failures="1" skipped="0" time="13.442" errors="0">
+<testcase name="Chat widget loads on dashboard" classname="chat\chat-widget.spec.ts" time="13.442">
+<failure message="chat-widget.spec.ts:3:5 Chat widget loads on dashboard" type="FAILURE">
+<![CDATA[  [after-login] › chat\chat-widget.spec.ts:3:5 › Chat widget loads on dashboard @smoke @regression ─
+
+    Error: Chat iframe did not load within 10s
+
+    expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      17 |
+      18 |     // ✅ Deterministic wait for delayed chat injection
+    > 19 |     await expect.poll(
+         |     ^
+      20 |       async () => await chatIframe.count(),
+      21 |       {
+      22 |         timeout: 10_000,
+        at D:\GIT\autopilotqa_ playwright\tests\chat\chat-widget.spec.ts:19:5
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\chat-chat-widget-Chat-widget-loads-on-dashboard-after-login\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\chat-chat-widget-Chat-widget-loads-on-dashboard-after-login\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[[CHAT WIDGET] ALLOWED | Test: Chat widget loads on dashboard
-[CHAT PROOF] Chat iframe detected: YES | count=1 | test=Chat widget loads on dashboard
+
+[[ATTACHMENT|..\test-results\chat-chat-widget-Chat-widget-loads-on-dashboard-after-login\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\chat-chat-widget-Chat-widget-loads-on-dashboard-after-login\video.webm]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-01-23T09:03:12.746Z" hostname="after-login" tests="2" failures="1" skipped="0" time="17.929" errors="0">
-<testcase name="Dashboard › User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="11.479">
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-01-23T09:24:36.981Z" hostname="after-login" tests="2" failures="1" skipped="0" time="25.166" errors="0">
+<testcase name="Dashboard › User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="12.201">
 <system-out>
 <![CDATA[[CHAT WIDGET] ALLOWED | Test: User sees account balance on dashboard after login
 ]]>
 </system-out>
 </testcase>
-<testcase name="Dashboard › 2 - User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="6.45">
+<testcase name="Dashboard › 2 - User sees account balance on dashboard after login" classname="dashboard\dashboard.spec.ts" time="12.965">
 <properties>
 <property name="fail" value="Known issue">
 </property>
