@@ -11,7 +11,7 @@ on:
       environment:
         description: "Target environment"
         required: true
-        default: "live"
+        default: "staging"
         type: choice
         options:
           - staging
@@ -59,8 +59,17 @@ jobs:
       # 🌍 Resolve ENVIRONMENT (default .env + manual override)
       - name: Resolve ENVIRONMENT (default .env + manual override)
         run: |
-          echo "Initial ENVIRONMENT from .env: $ENVIRONMENT"
+          # If ENVIRONMENT is not already set, fail fast
+          if [ -z "$ENVIRONMENT" ]; then
+            echo "❌ ENVIRONMENT is not set. Ensure .env is present."
+            exit 1
+          fi
 
+          # Export default (from .env) so all next steps can see it
+          echo "ENVIRONMENT=$ENVIRONMENT" >> $GITHUB_ENV
+          echo "Using default ENVIRONMENT from .env: $ENVIRONMENT"
+
+          # Manual override only for workflow_dispatch
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.environment }}" ]; then
             echo "Overriding ENVIRONMENT from workflow_dispatch input"
             echo "ENVIRONMENT=${{ inputs.environment }}" >> $GITHUB_ENV
