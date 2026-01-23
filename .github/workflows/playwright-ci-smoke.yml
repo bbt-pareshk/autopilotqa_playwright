@@ -87,9 +87,34 @@ jobs:
       - name: Generate Allure Report
         run: |
           npm install -g allure-commandline
-          mkdir -p allure-report
+
+          # Clean previous outputs
           rm -rf allure-report allure-results/history
-          allure generate --clean -o allure-report ./allure-results || true
+
+          # Use GitHub Run ID for versioning
+          REPORT_ID=${GITHUB_RUN_ID}
+          REPORT_DIR="allure-report/${REPORT_ID}"
+
+          mkdir -p "$REPORT_DIR"
+
+          # Generate Allure report into versioned folder
+          allure generate --clean -o "$REPORT_DIR" ./allure-results || true
+
+          # Create redirect index.html to always point to latest report
+          cat <<EOF > allure-report/index.html
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta http-equiv="refresh" content="0; url=./${REPORT_ID}/index.html">
+              <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+              <meta http-equiv="pragma" content="no-cache">
+              <meta http-equiv="expires" content="0">
+            </head>
+            <body>
+              Redirecting to latest Allure report...
+            </body>
+          </html>
+          EOF
 
       # 9️⃣ Upload Allure artifact
       - name: Upload Allure Report Artifact
