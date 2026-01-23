@@ -112,7 +112,7 @@ jobs:
           external_repository: bbt-pareshk/autopilotqa-allure-report
           publish_branch: gh-pages
           publish_dir: ./allure-report
-           force_orphan: true
+          force_orphan: true
           user_name: github-actions
           user_email: github-actions@github.com
 
