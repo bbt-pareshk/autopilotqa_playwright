@@ -11,7 +11,7 @@ on:
       environment:
         description: "Target environment"
         required: true
-        default: "staging"
+        default: "live"
         type: choice
         options:
           - staging
@@ -56,28 +56,31 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget || echo "Some packages failed, continuing..."
 
-      # 🌍 Resolve ENVIRONMENT (default .env + manual override)
-      - name: Resolve ENVIRONMENT (default .env + manual override)
+      # 🌍 Resolve ENVIRONMENT (THIS IS THE CRITICAL FIX)
+   - name: Resolve ENVIRONMENT
+        shell: bash
         run: |
-          # If ENVIRONMENT is not already set, fail fast
-          if [ -z "$ENVIRONMENT" ]; then
-            echo "❌ ENVIRONMENT is not set. Ensure .env is present."
+          # Resolve ENVIRONMENT via Node (dotenv-safe)
+          ENV_FROM_NODE=$(node -e "require('dotenv').config(); const { CURRENT_ENVIRONMENT } = require('./src/config/env'); console.log(CURRENT_ENVIRONMENT);")
+
+          if [ -z \"$ENV_FROM_NODE\" ]; then
+            echo \"❌ Failed to resolve ENVIRONMENT from Node config\"
             exit 1
           fi
 
-          # Export default (from .env) so all next steps can see it
-          echo "ENVIRONMENT=$ENVIRONMENT" >> $GITHUB_ENV
-          echo "Using default ENVIRONMENT from .env: $ENVIRONMENT"
+          echo \"ENVIRONMENT=$ENV_FROM_NODE\" >> $GITHUB_ENV
+          echo \"Using ENVIRONMENT from Node config: $ENV_FROM_NODE\"
 
-          # Manual override only for workflow_dispatch
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.environment }}" ]; then
-            echo "Overriding ENVIRONMENT from workflow_dispatch input"
-            echo "ENVIRONMENT=${{ inputs.environment }}" >> $GITHUB_ENV
+          # Override ONLY for workflow_dispatch
+          if [ \"${{ github.event_name }}\" = \"workflow_dispatch\" ] && [ -n \"${{ inputs.environment }}\" ]; then
+            echo \"Overriding ENVIRONMENT from workflow_dispatch input\"
+            echo \"ENVIRONMENT=${{ inputs.environment }}\" >> $GITHUB_ENV
           fi
 
       # 6️⃣ Run Smoke Tests (SAFE)
       - name: Run Smoke Tests
         env:
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
           CI: true
         run: |
           echo "Running Smoke Tests on $ENVIRONMENT"
@@ -181,7 +184,7 @@ jobs:
           const failedList =
             failedTests.size === 0
               ? 'None'
-              : Array.from(failedTests).slice(0, 5).join('\n• ');
+              : Array.from(failedTests).slice(0, 5).join('\\n• ');
 
           fs.appendFileSync(process.env.GITHUB_ENV, `TOTAL=${total}\n`);
           fs.appendFileSync(process.env.GITHUB_ENV, `PASSED=${passed}\n`);
@@ -210,6 +213,6 @@ jobs:
             \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Test Results\",
-              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Allure Report:* $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n *Allure Report:* $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
             }]
           }" $SLACK_WEBHOOK_URL
