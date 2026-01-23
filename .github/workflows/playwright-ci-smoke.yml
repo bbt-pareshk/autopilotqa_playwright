@@ -88,6 +88,7 @@ jobs:
         run: |
           npm install -g allure-commandline
           mkdir -p allure-report
+          rm -rf allure-report allure-results/history
           allure generate --clean -o allure-report ./allure-results || true
 
       # 9️⃣ Upload Allure artifact
@@ -113,6 +114,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./allure-report
           force_orphan: true
+          keep_files: false
           user_name: github-actions
           user_email: github-actions@github.com
 
