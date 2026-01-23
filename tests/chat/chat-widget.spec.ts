@@ -2,6 +2,7 @@ import { test, expect } from '../../src/fixtures/base.fixture';
 
 test(
   'Chat widget loads on dashboard',
+     { tag: ['@smoke', '@regression'] },
   async ({ page }, testInfo) => {
     test.setTimeout(15_000);
 
